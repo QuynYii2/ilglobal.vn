@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+composer.lock
+.idea
+.idea/*
+*.xml
+*.idea
+vendor
+.env
