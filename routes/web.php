@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,27 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('/admin', function () {
+    return view('admin.layouts.master');
+});
+
+// Auth
+Route::prefix('auth')->group(function () {
+    Route::get('login', [\App\Http\Controllers\AuthController::class, 'loginProcess'])->name('process.login');
+    Route::post('login', [\App\Http\Controllers\AuthController::class, 'login'])->name('auth.login');
+    Route::get('register', [\App\Http\Controllers\AuthController::class, 'processRegister'])->name('process.register');
+    Route::post('register', [\App\Http\Controllers\AuthController::class, 'register'])->name('auth.register');
+    Route::get('logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('auth.logout');
+});
+
+Route::group(['prefix' => 'news'], function () {
+   Route::get('list', [\App\Http\Controllers\Admin\AdminNewsController::class, 'index'])->name('admin.news.list');
+   Route::get('edit/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'edit'])->name('admin.news.edit');
+   Route::put('update/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'update'])->name('admin.news.update');
+   Route::get('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'createProcess'])->name('admin.news.createProcess');
+   Route::post('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'create'])->name('admin.news.create');
+   Route::delete('delete/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'delete'])->name('admin.news.delete');
 });
