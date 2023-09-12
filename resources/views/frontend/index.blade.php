@@ -21,53 +21,7 @@
         <img id="batBeacon394874257857" width="0" height="0" alt=""
              src="https://bat.bing.com/action/0?ti=16005611&amp;tm=gtm002&amp;Ver=2&amp;mid=fd9b0633-5587-4b26-80ea-eb2040f12623&amp;sid=4a81a480505d11ee9cac83ba0d8e7fb6&amp;vid=728432902d2011ee84db2f5ae932f5d5&amp;vids=0&amp;msclkid=N&amp;uach=pv%3D15.0.0&amp;pi=918639831&amp;lg=en-US&amp;sw=1920&amp;sh=1080&amp;sc=24&amp;tl=Transcargo%20-%20Transportation%20WordPress%20Theme%20for%20Logistics%20Preview%20-%20ThemeForest&amp;p=https%3A%2F%2Fpreview.themeforest.net%2Fitem%2Ftranscargo-logistics-transportation-wp-theme%2Ffull_screen_preview%2F13947082%3F_ga%3D2.140270579.1516902346.1690525897-1230148869.1690525897&amp;r=&amp;lt=2171&amp;evt=pageLoad&amp;sv=1&amp;rn=976095">
     </div>
-    <div id="panel-container">
-        <div id="button-relative-container">
-            <div class="bird-container">
-                <img class="bird"
-                     src="chrome-extension://hbdnoadcmapfbngbodpppofgagiclicf/img/kiwi_transparent_run_text.png">
-            </div>
-            <button id="close" class="">
-        <span id="close-svg">
-          <svg viewBox="0 0 24 24" class="close">
-            <path d="M 2 2 L 22 22 M 2 22 L22 2" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="4">
-            </path>
-          </svg>
-        </span>
-            </button>
-        </div>
-        <div>
-        </div>
-    </div>
-    <div id="modal-pick-resolution">
-    </div>
-    <div class="edge_builder edge_builder_top">
-    </div>
-    <div class="edge_builder edge_builder_right">
-    </div>
-    <div class="edge_builder edge_builder_bottom">
-    </div>
-    <div class="edge_builder edge_builder_left">
-    </div>
-    <div class="edge_builder2 edge_builder_top">
-    </div>
-    <div class="edge_builder2 edge_builder_right">
-    </div>
-    <div class="edge_builder2 edge_builder_bottom">
-    </div>
-    <div class="edge_builder2 edge_builder_left">
-    </div>
-    <span id="display_selector"
-          class="badge-warning badge tether-element tether-enabled tether-abutted tether-abutted-left tether-abutted-right tether-abutted-top tether-abutted-bottom tether-element-attached-bottom tether-element-attached-left tether-target-attached-top tether-target-attached-left">
-  </span>
-    <span id="goup_button"
-          class="badge-blue badge tether-element tether-enabled tether-abutted tether-abutted-left tether-abutted-right tether-abutted-top tether-abutted-bottom tether-element-attached-bottom tether-element-attached-right tether-target-attached-top tether-target-attached-left">
-  </span>
-    <div data-tether-id="1">
-    </div>
-    <canvas width="70" height="70">
-    </canvas>
+
 </div>
 
 
