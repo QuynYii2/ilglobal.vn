@@ -4,7 +4,7 @@ namespace Aws\RolesAnywhere;
 use Aws\AwsClient;
 
 /**
- * This client is used to interact with the **IAM Role Anywhere** service.
+ * This client is used to interact with the **IAM Roles Anywhere** service.
  * @method \Aws\Result createProfile(array $args = [])
  * @method \GuzzleHttp\Promise\Promise createProfileAsync(array $args = [])
  * @method \Aws\Result createTrustAnchor(array $args = [])
