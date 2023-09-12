@@ -49,19 +49,18 @@ class AdminNewsController extends Controller
             ];
             $success = News::create($news);
             if ($success) {
-                alert()->success('Success', 'Create user success!');
+                alert()->success('Success', 'Create news success!');
                 return redirect(route('admin.news.list'));
             }
-            alert()->error('Error', 'Create user error');
+            alert()->error('Error', 'Create news error');
             return back();
         } catch (\Exception $exception) {
-            dd($exception);
             alert()->error('Error', 'Please try again!');
             return back();
         }
     }
 
-    public function detail($id)
+    public function edit($id)
     {
         $news = News::find($id);
         if (!$news || $news->status == NewsStatus::DELETED) {
@@ -122,10 +121,10 @@ class AdminNewsController extends Controller
 
             $success = $news->save();
             if ($success) {
-                alert()->success('Success', 'Create user success!');
+                alert()->success('Success', 'Update news success!');
                 return redirect(route('admin.news.list'));
             }
-            alert()->error('Error', 'Create user error');
+            alert()->error('Error', 'Update news error');
             return back();
         } catch (\Exception $exception) {
             alert()->error('Error', 'Please try again!');
@@ -136,7 +135,7 @@ class AdminNewsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function delete(string $id)
     {
         try {
             $news = News::find($id);
@@ -146,6 +145,7 @@ class AdminNewsController extends Controller
 
             $news->status = NewsStatus::DELETED;
             $news->save();
+            alert()->success('Success', 'Delete news success!');
             return redirect(route('admin.news.list'));
         } catch (\Exception $exception) {
             return back();

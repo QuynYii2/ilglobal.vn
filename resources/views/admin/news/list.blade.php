@@ -4,7 +4,6 @@
 
 @section('content')
     <div class="pagetitle">
-        <h1>Dashboard</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="">Home</a></li>
@@ -59,7 +58,7 @@
                             </td>
                             <td id="newsStatus{{$news->id}}">{{$news->status}}</td>
                             <td>
-                                <a href="{{route('admin.show.detail.news', $news->id)}}"
+                                <a href="{{route('admin.news.edit', $news->id)}}"
                                    class="btn btn-secondary">Detail</a>
 
                                 <button class="btn btn-danger" type="button" data-bs-toggle="modal"
@@ -68,7 +67,7 @@
                                 <div class="modal fade" id="modalDelete{{$news->id}}" tabindex="-1"
                                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                        <form action="{{route('admin.delete.news', $news->id)}}" method="post">
+                                        <form action="{{route('admin.news.delete', $news->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
                                             <div class="modal-content">
