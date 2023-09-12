@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Enums\NewsStatus;
 use App\Http\Controllers\Controller;
 use App\Models\News;
+use App\Models\Banners;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -150,5 +151,9 @@ class AdminNewsController extends Controller
         } catch (\Exception $exception) {
             return back();
         }
+    }
+
+    public function createBannerProcess(){
+        return view('admin.banners.create');
     }
 }
