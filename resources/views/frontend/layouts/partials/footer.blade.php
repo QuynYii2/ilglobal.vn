@@ -1,4 +1,4 @@
-<footer id="footer" class="footer">
+<footer id="footer">
     <div class="widgets_row">
         <div class="container">
             <div class="footer_widgets">
@@ -6,8 +6,8 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="footer_logo">
                             <a href="https://logistics.stylemixthemes.com/" data-wpel-link="internal">
-                                <img src="./logo-footer-site_style_blue.svg"
-                                     alt="Transcargo | For Transportation, Logistics and Shipping Companies">
+                                <img src=""
+                                     alt="">
                             </a>
                         </div>
                         <div class="footer_text">
@@ -176,5 +176,4 @@
             </div>
         </div>
     </div>
-
 </footer>
