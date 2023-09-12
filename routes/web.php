@@ -23,6 +23,7 @@ Route::get('/admin', function () {
     return view('admin.layouts.master');
 });
 
+
 // Auth
 Route::prefix('auth')->group(function () {
     Route::get('login', [\App\Http\Controllers\AuthController::class, 'loginProcess'])->name('process.login');
