@@ -56,7 +56,7 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="{{route('admin.banners.create')}}">
+                    <a href="{{route('admin.banner.create')}}">
                         <i class="bi bi-circle"></i><span>Thêm mới</span>
                     </a>
                 </li>
