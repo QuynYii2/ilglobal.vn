@@ -6,7 +6,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="footer_logo">
                             <a href="https://logistics.stylemixthemes.com/" data-wpel-link="internal">
-                                <img src=""
+                                <img src="https://logistics.stylemixthemes.com/wp-content/themes/transcargo/assets/images/logos/logo-site_style_blue-white.svg"
                                      alt="">
                             </a>
                         </div>
