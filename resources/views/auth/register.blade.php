@@ -4,7 +4,6 @@
 
 @section('content')
     <div class="container">
-
         <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
             <div class="container">
                 <div class="row justify-content-center">
@@ -18,19 +17,16 @@
                         </div><!-- End Logo -->
 
                         <div class="card mb-3">
-
                             <div class="card-body">
-
                                 <div class="pt-4 pb-2">
                                     <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
                                     <p class="text-center small">Enter your personal details to create account</p>
                                 </div>
-
                                 <form class="row g-3 needs-validation" novalidate action="{{route('auth.register')}}" method="post">
                                     @csrf
                                     <div class="col-12">
                                         <label for="yourName" class="form-label">Your Name</label>
-                                        <input type="text" name="fullName" class="form-control" id="yourName" required>
+                                        <input type="text" name="name" class="form-control" id="yourName" required>
                                         <div class="invalid-feedback">Please, enter your name!</div>
                                     </div>
 
@@ -72,8 +68,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
-
     </div>
 @endsection

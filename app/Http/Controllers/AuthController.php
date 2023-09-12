@@ -46,7 +46,8 @@ class AuthController extends Controller
         }
 
         if (Auth::attempt($credentials)) {
-            return redirect(route('home'));
+            alert()->error('Error', 'Please try again');
+            return redirect(route('admin.news.list'));
         }
         alert()->error('Error', 'Please try again');
         return back();
@@ -78,7 +79,7 @@ class AuthController extends Controller
             }
 
             $credentials = [
-                'fullName' => $request->input('fullName'),
+                'name' => $request->input('name'),
                 'email' => $email,
                 'password' => Hash::make($password),
                 'role_id' => env('APP_ROLE_USER_DEFAULT', 2),
