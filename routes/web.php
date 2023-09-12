@@ -23,6 +23,7 @@ Route::get('/admin', function () {
     return view('admin.layouts.master');
 });
 
+
 // Auth
 Route::prefix('auth')->group(function () {
     Route::get('login', [\App\Http\Controllers\AuthController::class, 'loginProcess'])->name('process.login');
@@ -41,6 +42,10 @@ Route::group(['prefix' => 'news'], function () {
    Route::get('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'createProcess'])->name('admin.news.createProcess');
    Route::post('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'create'])->name('admin.news.create');
    Route::delete('delete/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'delete'])->name('admin.news.delete');
+});
+
+Route::group(['prefix' => 'banner'], function (){
+    Route::get('create_banner', [\App\Http\Controllers\Admin\AdminNewsController::class, 'createBannerProcess'])->name('admin.banner.create');
 });
 
 Route::get('admin', [\App\Http\Controllers\AdminHomeController::class, 'index'])->name('admin.homepage');
