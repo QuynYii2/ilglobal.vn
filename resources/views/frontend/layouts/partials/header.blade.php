@@ -260,7 +260,7 @@
                         </div>
                         <div class="media-right media-middle">
                             <div class="top_search">
-                                <div class="search_button"><i class="stm-tracking"></i></div>
+                                <div class="search_button"><i class="fa-regular fa-map"></i></div>
                                 <div class="top_search_form">
                                     <p>For more detailed tracking and status information, sign in or contact
                                         your local BestLogistic representative for access.</p>
