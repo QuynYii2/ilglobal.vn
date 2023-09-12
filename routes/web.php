@@ -43,4 +43,8 @@ Route::group(['prefix' => 'news'], function () {
    Route::delete('delete/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'delete'])->name('admin.news.delete');
 });
 
+Route::group(['prefix' => 'banner'], function (){
+    Route::get('create_banner', [\App\Http\Controllers\Admin\AdminNewsController::class, 'createBannerProcess'])->name('admin.banner.create');
+});
+
 Route::get('admin', [\App\Http\Controllers\AdminHomeController::class, 'index'])->name('admin.homepage');

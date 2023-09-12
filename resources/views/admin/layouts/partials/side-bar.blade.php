@@ -50,6 +50,20 @@
             </ul>
         </li><!-- End Icons Nav -->
 
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#banners-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-images"></i><span>Banner</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('admin.banners.create')}}">
+                        <i class="bi bi-circle"></i><span>Thêm mới</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Banners Nav -->
+
+
 {{--        <li class="nav-heading">Pages</li>--}}
 
 {{--        <li class="nav-item">--}}
