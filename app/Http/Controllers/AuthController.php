@@ -12,8 +12,8 @@ class AuthController extends Controller
 {
     public function loginProcess(Request $request)
     {
-        if (Auth::check()){
-            return  back();
+        if (Auth::check()) {
+            return back();
         }
         return view('auth.login');
     }
@@ -30,24 +30,19 @@ class AuthController extends Controller
             return back();
         }
 
-        if ($user->status == UserStatus::DELETED) {
-            alert()->error('Error', 'User has been deleted');
-            return back();
-        }
-
-        if ($user->status == UserStatus::INACTIVE) {
-            alert()->error('Error', 'User is not activated');
-            return back();
-        }
-
         if (!Hash::check($request->password, $user->password)) {
             alert()->error('Error', 'Password or Email is false');
             return back();
         }
 
         if (Auth::attempt($credentials)) {
-            alert()->error('Error', 'Please try again');
-            return redirect(route('admin.news.list'));
+            alert()->success('Success', 'Login success!');
+            $isAdmin = (new HomeController())->checkAdmin();
+            if ($isAdmin == true) {
+                return redirect(route('admin.homepage'));
+            }
+            return redirect(route('index'));
+
         }
         alert()->error('Error', 'Please try again');
         return back();
@@ -55,8 +50,8 @@ class AuthController extends Controller
 
     public function processRegister(Request $request)
     {
-        if (Auth::check()){
-            return  back();
+        if (Auth::check()) {
+            return back();
         }
         return view('auth.register');
     }
@@ -82,7 +77,7 @@ class AuthController extends Controller
                 'name' => $request->input('name'),
                 'email' => $email,
                 'password' => Hash::make($password),
-                'role_id' => env('APP_ROLE_USER_DEFAULT', 2),
+                'role_id' => 2,
                 'avt' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png',
                 'address' => 'Default Address',
                 'status' => UserStatus::ACTIVE,
