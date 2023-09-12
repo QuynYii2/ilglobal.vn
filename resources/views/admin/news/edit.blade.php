@@ -19,8 +19,13 @@
                 @method('PUT')
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="title">News Title</label>
-                        <input type="text" class="form-control" name="title" id="title" value="{{$news->title}}"
+                        <label for="title">News Title (VI)</label>
+                        <input type="text" class="form-control" name="title_vi" id="title" value="{{$news->title_vi}}"
+                               required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="title">News Title (EN)</label>
+                        <input type="text" class="form-control" name="title_en" id="title" value="{{$news->title_en}}"
                                required>
                     </div>
                     <div class="form-group col-md-3">
@@ -43,17 +48,28 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="short_content">Short Content</label>
-                    <textarea type="text" class="form-control description" name="short_content"
+                    <label for="short_content">Short Content (VI)</label>
+                    <textarea type="text" class="form-control description" name="short_content_vi"
                               id="short_content"
-                              placeholder="Enter short description" required>{{$news->short_content}}</textarea>
+                              placeholder="Enter short description" required>{{$news->short_content_vi}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="content">Content</label>
-                    <textarea type="text" class="form-control description" name="content" id="content"
-                              placeholder="Enter description" required>{{$news->content}}</textarea>
+                    <label for="short_content">Short Content (EN)</label>
+                    <textarea type="text" class="form-control description" name="short_content_en"
+                              id="short_content"
+                              placeholder="Enter short description" required>{{$news->short_content_en}}</textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Create</button>
+                <div class="form-group">
+                    <label for="content">Content (VI)</label>
+                    <textarea type="text" class="form-control description" name="content_vi" id="content"
+                              placeholder="Enter description" required>{{$news->content_vi}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content (EN)</label>
+                    <textarea type="text" class="form-control description" name="content_en" id="content"
+                              placeholder="Enter description" required>{{$news->content_en}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Save</button>
             </form>
         </div>
     </section>
