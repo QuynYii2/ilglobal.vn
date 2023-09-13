@@ -154,6 +154,6 @@ class AdminNewsController extends Controller
     }
 
     public function createBannerProcess(){
-        return view('admin.banners.create');
+        return view('admin.banner.create');
     }
 }

@@ -13,6 +13,12 @@
   font-size: 15px;
 }
 
+.delete-button{
+  border: none;
+  background: none;
+  color: #d90909;
+}
+
 .form-group{
   margin-top: 20px;
 }
