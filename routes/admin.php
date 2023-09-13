@@ -15,17 +15,30 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('a
     Route::delete('delete/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'delete'])->name('admin.news.delete');
 });
 
+//Profile
 Route::group(['prefix' => 'configs'], function (){
     Route::get('configs', [\App\Http\Controllers\Admin\ConfigsController::class, 'index'])->name('admin.configs.index');
     Route::post('createLogo', [\App\Http\Controllers\Admin\ConfigsController::class, 'create'])->name('admin.configs.create');
 });
 
+//Menu
 Route::group(['prefix' => 'menus'], function (){
-    Route::get('', [\App\Http\Controllers\Admin\AdminMenuController::class, 'index'])->name('admin.menu.list');
+    Route::get('/', [\App\Http\Controllers\Admin\AdminMenuController::class, 'index'])->name('admin.menu.list');
     Route::get('create', [\App\Http\Controllers\Admin\AdminMenuController::class, 'processCreate'])->name('admin.menu.processCreate');
     Route::post('create', [\App\Http\Controllers\Admin\AdminMenuController::class, 'create'])->name('admin.menu.create');
     Route::get('edit/{id}', [\App\Http\Controllers\Admin\AdminMenuController::class, 'edit'])->name('admin.menu.edit');
     Route::put('update/{id}', [\App\Http\Controllers\Admin\AdminMenuController::class, 'update'])->name('admin.menu.update');
     Route::delete('delete/{id}',[\App\Http\Controllers\Admin\AdminMenuController::class, 'delete'])->name('admin.menu.delete');
+
+});
+
+//Category
+Route::group(['prefix' => 'category'], function (){
+    Route::get('/', [\App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('admin.category.list');
+    Route::get('create', [\App\Http\Controllers\Admin\CategoryController::class, 'create'])->name('admin.category.create');
+    Route::post('create', [\App\Http\Controllers\Admin\CategoryController::class, 'store'])->name('admin.category.store');
+    Route::get('edit/{id}', [\App\Http\Controllers\Admin\CategoryController::class, 'edit'])->name('admin.category.edit');
+    Route::put('update/{id}', [\App\Http\Controllers\Admin\CategoryController::class, 'update'])->name('admin.category.update');
+    Route::delete('delete/{id}',[\App\Http\Controllers\Admin\CategoryController::class, 'delete'])->name('admin.category.delete');
 
 });

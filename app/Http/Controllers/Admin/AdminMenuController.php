@@ -65,7 +65,6 @@ class AdminMenuController extends Controller
         try {
             $menu = Menu::find($id);
 
-
             $title_vi = $request->input('title_vi');
             $title_en = $request->input('title_en');
             $url = $request->input('url');
