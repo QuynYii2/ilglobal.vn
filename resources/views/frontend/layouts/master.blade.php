@@ -63,119 +63,35 @@
 
 <script src="{{asset('assets/js/main.js')}}"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js"></script>
-<script src="https://cdn.skypack.dev/splitting@1.0.6"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
     $(document).ready(function() {
-        const heroEl = document.querySelector(".hero");
-        const fullSizeWrapEl = heroEl.querySelector(".hero__fullsize");
-        const contentEls = heroEl.querySelectorAll(".swiper .content");
-        const contentFullsizeEls = Array.from(contentEls, (el) => {
-            const clone = el.cloneNode(true);
-            splitting({ target: clone, by: "words" });
-            clone.classList.add(
-                "hero__content",
-                "hero__content--hidden",
-                "content--hero"
-            );
-            clone.classList.remove("content--slide");
-            return clone;
-        });
-
-        contentFullsizeEls.forEach((el) => fullSizeWrapEl.appendChild(el));
-
-        const state = {
-            topContent: null,
-            bottomContent: null
-        };
-
-        function slideChange(swiper) {
-            const total = swiper.slides.length - swiper.loopedSlides * 2;
-            const contentIndex = (swiper.activeIndex - swiper.loopedSlides) % total;
-
-            const content = contentFullsizeEls[contentIndex];
-            if (!content) return;
-
-            if (state.bottomContent) {
-                state.bottomContent.classList.remove("hero__content--bottom");
-                state.bottomContent.classList.add("hero__content--hidden");
-            }
-
-            if (state.topContent) {
-                state.topContent.classList.remove("hero__content--top");
-                state.topContent.classList.add("hero__content--bottom");
-            }
-
-            state.bottomContent = state.topContent;
-            state.topContent = content;
-
-            const slidetRect = swiper.slides[swiper.activeIndex].getBoundingClientRect();
-            const parentRect = heroEl.getBoundingClientRect();
-
-            content.style.transition = "none";
-            content.style.left = slidetRect.left - parentRect.left + "px";
-            content.style.top = slidetRect.top - parentRect.top + "px";
-            content.style.width = slidetRect.width + "px";
-            content.style.height = slidetRect.height + "px";
-            content.style.borderRadius = "var(--border-radius, 0)";
-
-            content.getBoundingClientRect();
-
-            content.classList.remove("hero__content--hidden");
-            content.classList.add("hero__content--top", "hero__content--grow");
-
-            content.style.transition = "";
-            content.style.left = "";
-            content.style.top = "";
-            content.style.width = "";
-            content.style.height = "";
-            content.style.borderRadius = "";
-
-            const onShowTextEnd = (event) => {
-                if (event.target !== event.currentTarget) {
-                    event.currentTarget.classList.remove("hero__content--show-text");
-                    event.currentTarget.removeEventListener("transitionend", onShowTextEnd);
-                }
-            };
-
-            const onGrowEnd = (event) => {
-                event.currentTarget.classList.remove("hero__content--grow");
-                event.currentTarget.classList.add("hero__content--show-text");
-                event.currentTarget.addEventListener("transitionend", onShowTextEnd);
-            };
-
-            content.addEventListener("transitionend", onGrowEnd, { once: true });
-        }
-
-        function swiperInit(swiper) {
-            const total = swiper.slides.length - swiper.loopedSlides * 2;
-            const contentIndex = (swiper.activeIndex - swiper.loopedSlides) % total;
-
-            const content = contentFullsizeEls[contentIndex];
-            if (!content) return;
-
-            content.classList.remove("hero__content--hidden");
-            content.classList.add("hero__content--top");
-            state.topContent = content;
-        }
-
         const swiper = new Swiper(".swiper", {
-            slidesPerView: 3.5,
-            spaceBetween: 25,
+            // Optional parameters
+            direction: "horizontal",
             loop: true,
-            speed: 1000,
-            simulateTouch: false,
-
-            autoplay: {
-                delay: 1000
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true
             },
 
+            // If we need pagination
+            /*pagination: {
+            el: '.swiper-pagination',
+          },*/
+
+            // Navigation arrows
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev"
-            },
-            on: { realIndexChange: slideChange, init: swiperInit }
+            }
+
+            // And if we need scrollbar
+            /*scrollbar: {
+            el: '.swiper-scrollbar',
+          },*/
         });
+
     })
 </script>
 
@@ -183,8 +99,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
 </html>

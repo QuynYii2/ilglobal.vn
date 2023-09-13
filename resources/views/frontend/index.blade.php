@@ -625,94 +625,64 @@
 {{--                    <a href="#scroll1" class="scrollSliderButton">Scroll <div class="line"></div></a>--}}
 {{--                </section>--}}
 
-                <div class="hero">
-                    <div class="hero__fullsize"></div>
-                    <div class="hero__swiper swiper">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                <div class="content content--slide">
-
-                                    <img class="content__image" src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
-
-                                    <div class="content__text">
-                                        <h2 class="content__title">Lorem ipsum dolor</h2>
-                                        <p class="content__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, nobis tempora quam ducimus veritatis sint aut adipisci quibusdam repudiandae autem at! At nihil repudiandae dicta obcaecati</p>
-                                    </div>
-
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-image" style="background: url('https://road.cc/sites/default/files/2022-orbea-terra-2.jpeg') no-repeat center center; background-size:cover;"></div>
+                            <div class="overlay"></div>
+                            <div class="content-wrapper content-right">
+                                <div class="content">
+                                    <div class="kicker">ORBEA TERRA</div>
+                                    <h1>GRAVEL FROM THE GROUND UP</h1>
+                                    <p>Designed from the ground up for gravel, Terra isn't a repurposed road bike or a slimmed down mountain bike. Terra IS gravel. Add comfort to your road adventures, finally discover where that dirt trail leads or let your trips spread overnight. There is a wide world out there and Terra is ready to explore it with you.</p>
+                                    <a href="" class="button">LEARN MORE</a>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div class="content content--slide">
-
-                                    <img class="content__image" src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="">
-
-                                    <div class="content__text">
-                                        <h2 class="content__title">Dolore minus quibusdam</h2>
-                                        <p class="content__desc">Enim facilis dolorem maiores quis exercitationem vitae numquam fugiat ex cupiditate deserunt praesentium. Nesciunt autem quasi assumenda exercitationem cupiditate.Earum, nobis tempora quam ducimus veritatis sint aut adipisci quibusdam repudiandae autem at!</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="content content--slide">
-
-                                    <img class="content__image" src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
-
-                                    <div class="content__text">
-                                        <h2 class="content__title">Sequi provident ratione</h2>
-                                        <p class="content__desc">Ipsa quos earum nobis eius voluptates neque dolores mollitia illum quae hic! Aspernatur delectus quas praesentium debitis doloribus velit, fugiat error veritatis est dolorum! Enim, ea optio. Corrupti ab, provident perferendis, doloremque in enim reprehenderit dolorum ea eius ullam eos impedit repellendus.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="content content--slide">
-
-                                    <img class="content__image" src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
-
-                                    <div class="content__text">
-                                        <h2 class="content__title">Aspernatur fugiat qui dolorum</h2>
-                                        <p class="content__desc">Cupiditate voluptas facere nostrum illum quo mollitia ut natus, maiores ipsam veritatis deserunt dignissimos sed harum perferendis dolores quisquam consequuntur tempore! Quae quos neque ex fuga quis! Deleniti obcaecati quo officiis perferendis repellat inventore! Voluptates, tenetur neque perspiciatis nisi dolorem iure voluptas!</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="content content--slide">
-
-                                    <img class="content__image" src="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
-
-                                    <div class="content__text">
-                                        <h2 class="content__title">Tempora repellat aliquam</h2>
-                                        <p class="content__desc">Odio ullam iure quisquam tempora eaque, dolores officia harum, perspiciatis nobis amet vitae optio, deserunt maxime delectus atque laborum iusto voluptatem. Iure facere, mollitia nobis adipisci sapiente et, ea maiores accusantium quos fuga at quam magnam soluta eligendi beatae ipsa a! Assumenda!</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="content content--slide">
-
-                                    <img class="content__image" src="https://images.unsplash.com/photo-1596854307943-279e29c90c14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
-
-                                    <div class="content__text">
-                                        <h2 class="content__title">Debitis rem soluta nulla</h2>
-                                        <p class="content__desc">Eligendi non sunt dolorem nulla iste atque quos suscipit omnis, numquam culpa mollitia, earum inventore, reprehenderit ipsum cumque debitis repellat adipisci quis incidunt natus ad! Atque quidem explicabo ex voluptatibus vero ratione consectetur culpa perferendis quibusdam, id sunt ipsa aliquid porro nemo!</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
                         </div>
-
+                        <div class="swiper-slide">
+                            <div class="swiper-image" style="background: url('https://d1mo5ln9tjltxq.cloudfront.net/-/media/images/my20/bikes/road/gravel/topstone-carbon/topstonecarbon17qa22.ashx?mh=2560&mw=1920&hash=323C6729182132F3B74F4998B12A676E') no-repeat center center; background-size:cover;"></div>
+                            <div class="overlay"></div>
+                            <div class="content-wrapper">
+                                <div class="content">
+                                    <div class="kicker">CANNONDALE TOPSTONE</div>
+                                    <h1>POSITION TO PLAY</h1>
+                                    <p>Relaxed enough to go long, sporty enough to shred, Topstone Carbon offers a riding position that brings comfort and control on all-day adventures and confidence for singletrack sessions.</p>
+                                    <a href="" class="button">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image" style="background: url('https://i.shgcdn.com/6589b327-5a10-47c1-b7bd-441ca22c75e1/-/format/auto/-/preview/3000x3000/-/quality/lighter/') no-repeat center center; background-size:cover;"></div>
+                            <div class="overlay"></div>
+                            <div class="content-wrapper content-right">
+                                <div class="content">
+                                    <div class="kicker">OTSO WAHEELA C</div>
+                                    <h1>VERSATILITY MEETS PERFORMANCE</h1>
+                                    <p>The Waheela C is a carbon-framed drop bar bike with an adjustable geometry, unrivaled ride quality, and enormous tire clearance for 700c x 54mm, 650b x 54mm, or 29" x 2.1" tires.</p>
+                                    <a href="" class="button">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image" style="background: url('https://www.specialized.com/medias/09-ROAD-3212-Gravel-Lander-Diverge-Hero-2880x1620.jpg?context=bWFzdGVyfGltYWdlc3w3ODEyMDd8aW1hZ2UvanBlZ3xpbWFnZXMvaDY5L2g3Yy85MTMxMDk4MDQ2NDk0LmpwZ3wxYTQ2YWQxNmUyNWYzNjIwZjI5NTJmOWRiZDYyYTZjNWEzZDg2N2RhZDhiNDc0ZjEwOGNmYWNkZTVhNTE0MTJl') no-repeat center center; background-size:cover;"></div>
+                            <div class="overlay"></div>
+                            <div class="content-wrapper content-right">
+                                <div class="content">
+                                    <div class="kicker">SPECIALIZED DIVERGE</div>
+                                    <h1>THE ULTIMATE GETAWAY VEHICLE</h1>
+                                    <p>When the road ahead is long and challenging, a smooth ride that delivers confidence, speed, and comfort is mandatory. Meet the Future Shock. It delivers a smooth and confident ride over any terrain, while keeping the frame stiff and nimble for efficient power transfer and precise handling.</p>
+                                    <a href="" class="button">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-nav-wrapper">
+                        <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
-
                 </div>
                 <div class="row-full-width">
                 </div>
@@ -2099,23 +2069,4 @@
         </article>
     </div>
 @endsection
-{{--<script>--}}
-{{--    const showcaseSlider = new Swiper(".home-showcaseSlider", {--}}
-{{--        speed: 1000,--}}
-{{--        slidesPerView: 1,--}}
-{{--        parallax: true,--}}
-{{--        // centeredSlides: true,--}}
-{{--        autoplay: {--}}
-{{--            delay: 3000,--}}
-{{--            disableOnInteraction: false,--}}
-{{--        },--}}
-{{--        pagination: {--}}
-{{--            el: ".showcaseSlider-pagination",--}}
-{{--            clickable: true,--}}
-{{--        },--}}
-{{--        navigation: {--}}
-{{--            nextEl: '.showcaseSlider-next',--}}
-{{--            prevEl: '.showcaseSlider-prev',--}}
-{{--        },--}}
-{{--    });--}}
-{{--</script>--}}
+
