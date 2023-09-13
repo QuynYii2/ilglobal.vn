@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('frontend/index');
 })->name('index');
 
+
 // Auth
 Route::prefix('auth')->group(function () {
     Route::get('login', [\App\Http\Controllers\AuthController::class, 'loginProcess'])->name('process.login');
@@ -32,3 +33,9 @@ Route::prefix('auth')->group(function () {
 Route::group(['prefix' => 'admin', 'middleware' => 'role.admin'], function () {
     require_once __DIR__ . '/admin.php';
 });
+
+Route::group(['prefix' => 'banner'], function (){
+    Route::get('create_banner', [\App\Http\Controllers\Admin\AdminNewsController::class, 'createBannerProcess'])->name('admin.banner.create');
+});
+
+Route::get('admin', [\App\Http\Controllers\AdminHomeController::class, 'index'])->name('admin.homepage');

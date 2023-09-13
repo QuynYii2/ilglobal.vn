@@ -40,6 +40,40 @@
                 <i class="bi bi-person"></i>
                 <span>Profile</span>
             </a>
+            <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="icons-bootstrap.html">
+                        <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="icons-remix.html">
+                        <i class="bi bi-circle"></i><span>Remix Icons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="icons-boxicons.html">
+                        <i class="bi bi-circle"></i><span>Boxicons</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Icons Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#banners-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-images"></i><span>Banner</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('admin.banner.create')}}">
+                        <i class="bi bi-circle"></i><span>Thêm mới</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Banners Nav -->
+
+
+{{--        <li class="nav-heading">Pages</li>--}}
         </li><!-- End Profile Page Nav -->
 
         <li class="nav-item">
