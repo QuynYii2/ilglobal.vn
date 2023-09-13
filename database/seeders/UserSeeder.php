@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
                 'phoneNumber' => '0868955551',
                 'status' => UserStatus::ACTIVE,
                 'role_id' => 1,
-                'password' => Hash::make('APP_PASSWORD_DEFAULT', '123123') ,
+                'password' => Hash::make(env('APP_PASSWORD_DEFAULT', '123123')) ,
             ],
             [
                 'name' => 'Super User',
@@ -35,7 +35,8 @@ class UserSeeder extends Seeder
                 'phoneNumber' => '0868955551',
                 'status' => UserStatus::ACTIVE,
                 'role_id' => 2,
-                'password' => Hash::make('APP_PASSWORD_DEFAULT', '123123') ,
+                'password' => Hash::make(env('APP_PASSWORD_DEFAULT', '123123')) ,
+
 
             ],
         ];
