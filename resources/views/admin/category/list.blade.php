@@ -1,13 +1,13 @@
 @extends('admin.layouts.master')
 
-@section('title', 'Admin List Menu')
+@section('title', 'Admin List Category')
 
 @section('content')
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">Home</a></li>
-                <li class="breadcrumb-item active">List Menu</li>
+                <li class="breadcrumb-item active">List Category</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -15,7 +15,7 @@
     <section class="section dashboard">
         <div class="row">
             <div class="mb-3">
-                <h5>Search Menu</h5>
+                <h5>Search Category</h5>
                 <input class="form-control" id="inputSearchNews" type="text" placeholder="Search..">
                 <br>
             </div>
@@ -24,42 +24,49 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Name</th>
-                    <th scope="col">URL</th>
+                    <th scope="col">Category Parent</th>
                     <th scope="col">Active</th>
                     <th scope="col">Status</th>
                     <th scope="col">Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                @if(!$listMenu->isEmpty())
-                    @foreach($listMenu as $menu)
+                @if(!$listCategory->isEmpty())
+                    @foreach($listCategory as $cate)
                         <tr>
                             <th scope="row">{{$loop->index + 1}}</th>
-                            <td>{{$menu->title_vi}}</td>
-                            <td>{{$menu->url}}</td>
+                            <td>{{$cate->name_vi}}</td>
+                            @if($cate->parent_id)
+                                @php
+                                    $parent_cate = \App\Models\Category::find($cate->parent_id);
+                                @endphp
+                                <td>{{$parent_cate->name_vi}}</td>
+                            @else
+                                <td>--</td>
+                            @endif
                             <td class="text-center">
                                 @php
                                     $isChecked = false;
-                                    if ($menu->status == \App\Enums\MenuStatus::ACTIVE){
+                                    if ($cate->status == \App\Enums\CategoryStatus::ACTIVE){
                                         $isChecked = true;
                                     }
                                 @endphp
-                                <input data-id="{{$menu->id}}" type="checkbox"
+                                <input data-id="{{$cate->id}}" type="checkbox"
                                        class="form-check-input toggleNews"
-                                       id="exampleCheck{{$menu->id}}" {{ $isChecked ? 'checked' : '' }}>
+                                       id="exampleCheck{{$cate->id}}" {{ $isChecked ? 'checked' : '' }}>
                             </td>
-                            <td id="newsStatus{{$menu->id}}">{{$menu->status}}</td>
+                            <td id="newsStatus{{$cate->id}}">{{$cate->status}}</td>
                             <td class="text-center">
-                                <a href="{{route('admin.menu.edit', $menu->id)}}">
+                                <a href="{{route('admin.category.edit', $cate->id)}}">
                                     <i style="color: black" class="bi bi-pencil-square"></i>
                                 </a>
                                 <button type="button" class="delete-button" data-bs-toggle="modal"
-                                        data-bs-target="#modalDelete{{$menu->id}}"><i class="bi bi-trash-fill"></i>
+                                        data-bs-target="#modalDelete{{$cate->id}}"><i class="bi bi-trash-fill"></i>
                                 </button>
-                                <div class="modal fade" id="modalDelete{{$menu->id}}" tabindex="-1"
+                                <div class="modal fade" id="modalDelete{{$cate->id}}" tabindex="-1"
                                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                        <form action="{{route('admin.menu.delete', $menu->id)}}" method="post">
+                                        <form action="{{route('admin.category.delete', $cate->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
                                             <div class="modal-content">

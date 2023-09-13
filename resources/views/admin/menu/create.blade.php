@@ -6,7 +6,7 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">Home</a></li>
                 <li class="breadcrumb-item active">Create Menu</li>
             </ol>
         </nav>
@@ -18,11 +18,11 @@
                 @csrf
                 <div class="row">
                     <div class="form-group col-md-3">
-                        <label for="title_vi">Title VI</label>
+                        <label for="title_vi">Menu Title (VI)</label>
                         <input class="form-control" type="text" id="title_vi" name="title_vi" required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="title_en">Title EN</label>
+                        <label for="title_en">Menu Title (EN)</label>
                         <input class="form-control" type="text" id="title_en" name="title_en" required>
                     </div>
                     <div class="form-group col-md-3">
