@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicons -->
-    <link href="{{asset('scss/img/logo.png')}}" rel="icon">
+    <link href="{{asset('scss/img/configs.png')}}" rel="icon">
     <link href="{{asset('scss/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
