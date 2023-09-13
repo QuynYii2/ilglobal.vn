@@ -28,35 +28,30 @@
         </li><!-- End Tables Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed"  href="{{route('admin.logo.index')}}">
-                <i class="bi bi-gem"></i><span>Logo</span>
+            <a class="nav-link collapsed" data-bs-target="#menu-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-card-list"></i><span>Menu</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
-        </li><!-- End Icons Nav -->
+            <ul id="menu-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('admin.menu.processCreate')}}">
+                        <i class="bi bi-circle"></i><span>Thêm mới menu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('admin.menu.list')}}">
+                        <i class="bi bi-circle"></i><span>Danh sách menu</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Tables Nav -->
 
         <li class="nav-heading">Pages</li>
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="users-profile.html">
+            <a class="nav-link collapsed" href="{{route('admin.configs.index')}}">
                 <i class="bi bi-person"></i>
                 <span>Profile</span>
             </a>
-            <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                <li>
-                    <a href="icons-bootstrap.html">
-                        <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="icons-remix.html">
-                        <i class="bi bi-circle"></i><span>Remix Icons</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="icons-boxicons.html">
-                        <i class="bi bi-circle"></i><span>Boxicons</span>
-                    </a>
-                </li>
-            </ul>
         </li><!-- End Icons Nav -->
 
         <li class="nav-item">
@@ -89,13 +84,6 @@
                 <span>Contact</span>
             </a>
         </li><!-- End Contact Page Nav -->
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="pages-register.html">
-                <i class="bi bi-card-list"></i>
-                <span>Register</span>
-            </a>
-        </li><!-- End Register Page Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="pages-login.html">

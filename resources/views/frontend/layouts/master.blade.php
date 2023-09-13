@@ -13,7 +13,7 @@
 
     <title>@yield('title')</title>
     <!-- Favicons -->
-    <link href="{{asset('scss/img/logo.png')}}" rel="icon">
+    <link href="{{asset('scss/img/configs.png')}}" rel="icon">
     <link href="{{asset('scss/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
