@@ -41,11 +41,11 @@
                             <td>
                                 <img src="{{$news->thumbnail}}" alt="" width="60px" height="60px">
                             </td>
-                            <td>{{$news->title}}</td>
-                            <td>{{$news->views}}</td>
-                            <td>{{$news->user->fullName}}</td>
+                            <td>{{$news->title_vi}}</td>
+                            <td class="text-center">{{$news->views}}</td>
+                            <td>{{$news->user->name}}</td>
                             <td>{{$news->created_at}}</td>
-                            <td>
+                            <td class="text-center">
                                 @php
                                     $isChecked = false;
                                     if ($news->status == \App\Enums\NewsStatus::ACTIVE){
@@ -57,12 +57,12 @@
                                        id="exampleCheck{{$news->id}}" {{ $isChecked ? 'checked' : '' }}>
                             </td>
                             <td id="newsStatus{{$news->id}}">{{$news->status}}</td>
-                            <td>
-                                <a href="{{route('admin.news.edit', $news->id)}}"
-                                   class="btn btn-secondary">Detail</a>
-
-                                <button class="btn btn-danger" type="button" data-bs-toggle="modal"
-                                        data-bs-target="#modalDelete{{$news->id}}">Delete
+                            <td class="text-center">
+                                <a href="{{route('admin.news.edit', $news->id)}}">
+                                    <i style="color: black" class="bi bi-pencil-square"></i>
+                                </a>
+                                <button type="button" class="delete-button" data-bs-toggle="modal"
+                                        data-bs-target="#modalDelete{{$news->id}}"><i class="bi bi-trash-fill"></i>
                                 </button>
                                 <div class="modal fade" id="modalDelete{{$news->id}}" tabindex="-1"
                                      aria-labelledby="exampleModalLabel" aria-hidden="true">

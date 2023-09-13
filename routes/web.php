@@ -16,12 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('frontend/index');
-});
-
-
-Route::get('/admin', function () {
-    return view('admin.layouts.master');
-});
+})->name('index');
 
 
 // Auth
@@ -35,13 +30,8 @@ Route::prefix('auth')->group(function () {
 
 
 //Admin
-Route::group(['prefix' => 'news'], function () {
-   Route::get('list', [\App\Http\Controllers\Admin\AdminNewsController::class, 'index'])->name('admin.news.list');
-   Route::get('edit/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'edit'])->name('admin.news.edit');
-   Route::put('update/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'update'])->name('admin.news.update');
-   Route::get('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'createProcess'])->name('admin.news.createProcess');
-   Route::post('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'create'])->name('admin.news.create');
-   Route::delete('delete/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'delete'])->name('admin.news.delete');
+Route::group(['prefix' => 'admin', 'middleware' => 'role.admin'], function () {
+    require_once __DIR__ . '/admin.php';
 });
 
 Route::group(['prefix' => 'banner'], function (){

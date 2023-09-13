@@ -23,7 +23,7 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="title">News Title (EN)</label>
-                        <input type="text" class="form-control" name="title_en" id="title_en" required>
+                        <input type="text" class="form-control" name="title_en" id="title_en" >
                     </div>
                     <div class="form-group col-md-3">
                         <label for="thumbnail">Choose thumbnail</label>
@@ -48,7 +48,7 @@
                     <label for="short_content">Short Content (EN)</label>
                     <textarea type="text" class="form-control description" name="short_content_en"
                               id="short_content_en"
-                              placeholder="Enter short description" required></textarea>
+                              placeholder="Enter short description" ></textarea>
                 </div>
                 <div class="form-group">
                     <label for="content">Content (VI)</label>
@@ -58,7 +58,7 @@
                 <div class="form-group">
                     <label for="content">Content (EN)</label>
                     <textarea type="text" class="form-control description" name="content_en" id="content_en"
-                              placeholder="Enter description" required></textarea>
+                              placeholder="Enter description" ></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">Create</button>
             </form>

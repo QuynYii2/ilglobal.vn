@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Enums\UserStatus;
 use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -24,7 +25,7 @@ class UserSeeder extends Seeder
                 'phoneNumber' => '0868955551',
                 'status' => UserStatus::ACTIVE,
                 'role_id' => 1,
-                'password' => env('APP_PASSWORD_DEFAULT', '123123'),
+                'password' => Hash::make('APP_PASSWORD_DEFAULT', '123123') ,
             ],
             [
                 'name' => 'Super User',
@@ -34,7 +35,8 @@ class UserSeeder extends Seeder
                 'phoneNumber' => '0868955551',
                 'status' => UserStatus::ACTIVE,
                 'role_id' => 2,
-                'password' => env('APP_PASSWORD_DEFAULT', '123123'),
+                'password' => Hash::make('APP_PASSWORD_DEFAULT', '123123') ,
+
             ],
         ];
 

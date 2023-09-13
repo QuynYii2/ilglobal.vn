@@ -29,7 +29,7 @@
                         <a href="#">
                             <img src="" alt="" class="rounded-circle">
                             <div>
-                                <h4>Vietbnamese</h4>
+                                <h4>Vietnamese</h4>
                             </div>
                         </a>
                     </li>
@@ -97,7 +97,7 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
+                        <a class="dropdown-item d-flex align-items-center" href="{{route('auth.logout')}}">
                             <i class="bi bi-box-arrow-right"></i>
                             <span>Sign Out</span>
                         </a>
