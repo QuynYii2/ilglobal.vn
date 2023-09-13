@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Enums\ConfigStatus;
 use App\Http\Controllers\Controller;
 use App\Models\Configs;
 use App\Models\News;
@@ -12,48 +13,64 @@ class ConfigsController extends Controller
 {
     public function index()
     {
-        return view('admin.logo.index');
+        $config = Configs::orderBy('id','DESC')->first();
+        return view('admin.configs.index',compact('config'));
     }
 
     public function create(Request $request)
     {
+
         try {
-            $thumbnail = $request->file('thumbnail');
+            $config = Configs::orderBy('id','DESC')->first();
+            $logo = $request->file('logo');
             $email = $request->input('email');
             $cskh = $request->input('cskh');
-            $phone = $request->input('phone_number');
+            $phone = $request->input('phone');
             $address = $request->input('address');
             $zalo = $request->input('zalo');
             $facebook = $request->input('facebook');
             $status = $request->input('status');
 
-            if ($request->has('thumbnail')) {
-                $imageName = time() . '.' . $thumbnail->getClientOriginalExtension();
+            if ($request->has('logo')) {
+                $imageName = time() . '.' . $logo->getClientOriginalExtension();
                 $destinationPath = public_path('upload/images');
-                $thumbnail->move($destinationPath, $imageName);
+                $logo->move($destinationPath, $imageName);
                 $imageURL = asset('upload/images/' . $imageName);
             } else {
                 $imageURL = null;
             }
-
-            $configs = [
-                'thumbnail' => $imageURL,
-                'email' => $email,
-                'phone' => $phone,
-                'zalo' => $zalo,
-                'facebook' => $facebook,
-                'address' => $address,
-                'cskh' => $cskh,
-                'status' => $status,
+            if (!$config){
+                $configs = [
+                    'logo' => $imageURL,
+                    'email' => $email,
+                    'phone' => $phone,
+                    'zalo' => $zalo,
+                    'facebook' => $facebook,
+                    'address' => $address,
+                    'cskh' => $cskh,
+                    'status' => $status,
 //                'user_id' => Auth::user()->id,
-            ];
+                ];
 
-            $success = Configs::create($configs);
-            if ($success) {
-                alert()->success('Success', 'Create logo success!');
-                return redirect(route('admin.logo.index'));
+                $success = Configs::create($configs);
+            } else{
+                $config->logo = $imageURL;
+                $config->email = $email;
+                $config->phone = $phone;
+                $config->zalo = $zalo;
+                $config->facebook = $facebook;
+                $config->address = $address;
+                $config->cskh = $cskh;
+                $config->status = $status;
+
+                $success = $config->save();
             }
-            alert()->error('Error', 'Create logo error');
+
+            if ($success) {
+                alert()->success('Success', 'Create configs success!');
+                return redirect(route('admin.configs.index'));
+            }
+            alert()->error('Error', 'Create configs error');
             return back();
         } catch (\Exception $exception) {
             alert()->error('Error', 'Please try again!');

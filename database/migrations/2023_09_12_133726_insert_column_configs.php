@@ -14,7 +14,7 @@ class InsertColumnConfigs extends Migration
     public function up()
     {
         Schema::table('configs', function (Blueprint $table) {
-            $table->string('logo')->change()->nullable();
+            $table->string('configs')->change()->nullable();
             $table->string('cskh')->change()->nullable();
             $table->string('email');
             $table->string('address');
