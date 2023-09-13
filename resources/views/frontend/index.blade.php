@@ -522,108 +522,198 @@
 {{--                        </div>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
-                <section class="home-showcase">
-                    <div class="swiper home-showcaseSlider">
+{{--                <section class="home-showcase">--}}
+{{--                    <div class="swiper home-showcaseSlider">--}}
+{{--                        <div class="swiper-wrapper">--}}
+{{--                            <div class="swiper-slide">--}}
+{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=42)">--}}
+{{--                                    <div class="text-container">--}}
+{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
+{{--                                        <div class="container-arrow-button">--}}
+{{--                                            <a class="cta arrow-button" href="#">--}}
+{{--                                                an example of link--}}
+{{--                                                <svg viewBox="0 0 76.922 65">--}}
+{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
+{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
+{{--                                                </svg>--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="filter"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="swiper-slide">--}}
+{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=43)">--}}
+{{--                                    <div class="text-container">--}}
+{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
+{{--                                        <div class="container-arrow-button">--}}
+{{--                                            <a class="cta arrow-button" href="#">--}}
+{{--                                                an example of link--}}
+{{--                                                <svg viewBox="0 0 76.922 65">--}}
+{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
+{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
+{{--                                                </svg>--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="filter"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="swiper-slide">--}}
+{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=44)">--}}
+{{--                                    <div class="text-container">--}}
+{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
+{{--                                        <div class="container-arrow-button">--}}
+{{--                                            <a class="cta arrow-button" href="#">--}}
+{{--                                                an example of link--}}
+{{--                                                <svg viewBox="0 0 76.922 65">--}}
+{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
+{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
+{{--                                                </svg>--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="filter"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="swiper-slide">--}}
+{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=45)">--}}
+{{--                                    <div class="text-container">--}}
+{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
+{{--                                        <div class="container-arrow-button">--}}
+{{--                                            <a class="cta arrow-button" href="#">--}}
+{{--                                                an example of link--}}
+{{--                                                <svg viewBox="0 0 76.922 65">--}}
+{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
+{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
+{{--                                                </svg>--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="filter"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="swiper-slide">--}}
+{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=46)">--}}
+{{--                                    <div class="text-container">--}}
+{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
+{{--                                        <div class="container-arrow-button">--}}
+{{--                                            <a class="cta arrow-button" href="#">--}}
+{{--                                                an example of link--}}
+{{--                                                <svg viewBox="0 0 76.922 65">--}}
+{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
+{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
+{{--                                                </svg>--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="filter"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+{{--                        <!-- pagination -->--}}
+{{--                        <div class="swiper-pagination showcaseSlider-pagination"></div>--}}
+
+{{--                        <!-- navigation buttons -->--}}
+{{--                        <div class="showcaseSlider-nav">--}}
+{{--                            <div class="swiper-button-prev showcaseSlider-prev"></div>--}}
+{{--                            <div class="swiper-button-next showcaseSlider-next"></div>--}}
+{{--                        </div>--}}
+
+{{--                    </div>--}}
+{{--                    <a href="#scroll1" class="scrollSliderButton">Scroll <div class="line"></div></a>--}}
+{{--                </section>--}}
+
+                <div class="hero">
+                    <div class="hero__fullsize"></div>
+                    <div class="hero__swiper swiper">
                         <div class="swiper-wrapper">
+
                             <div class="swiper-slide">
-                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=42)">
-                                    <div class="text-container">
-                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>
-                                        <div class="container-arrow-button">
-                                            <a class="cta arrow-button" href="#">
-                                                an example of link
-                                                <svg viewBox="0 0 76.922 65">
-                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
+                                <div class="content content--slide">
+
+                                    <img class="content__image" src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
+
+                                    <div class="content__text">
+                                        <h2 class="content__title">Lorem ipsum dolor</h2>
+                                        <p class="content__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, nobis tempora quam ducimus veritatis sint aut adipisci quibusdam repudiandae autem at! At nihil repudiandae dicta obcaecati</p>
                                     </div>
-                                    <div class="filter"></div>
+
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
-                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=43)">
-                                    <div class="text-container">
-                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>
-                                        <div class="container-arrow-button">
-                                            <a class="cta arrow-button" href="#">
-                                                an example of link
-                                                <svg viewBox="0 0 76.922 65">
-                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
+                                <div class="content content--slide">
+
+                                    <img class="content__image" src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="">
+
+                                    <div class="content__text">
+                                        <h2 class="content__title">Dolore minus quibusdam</h2>
+                                        <p class="content__desc">Enim facilis dolorem maiores quis exercitationem vitae numquam fugiat ex cupiditate deserunt praesentium. Nesciunt autem quasi assumenda exercitationem cupiditate.Earum, nobis tempora quam ducimus veritatis sint aut adipisci quibusdam repudiandae autem at!</p>
                                     </div>
-                                    <div class="filter"></div>
+
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
-                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=44)">
-                                    <div class="text-container">
-                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>
-                                        <div class="container-arrow-button">
-                                            <a class="cta arrow-button" href="#">
-                                                an example of link
-                                                <svg viewBox="0 0 76.922 65">
-                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
+                                <div class="content content--slide">
+
+                                    <img class="content__image" src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
+
+                                    <div class="content__text">
+                                        <h2 class="content__title">Sequi provident ratione</h2>
+                                        <p class="content__desc">Ipsa quos earum nobis eius voluptates neque dolores mollitia illum quae hic! Aspernatur delectus quas praesentium debitis doloribus velit, fugiat error veritatis est dolorum! Enim, ea optio. Corrupti ab, provident perferendis, doloremque in enim reprehenderit dolorum ea eius ullam eos impedit repellendus.</p>
                                     </div>
-                                    <div class="filter"></div>
+
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
-                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=45)">
-                                    <div class="text-container">
-                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>
-                                        <div class="container-arrow-button">
-                                            <a class="cta arrow-button" href="#">
-                                                an example of link
-                                                <svg viewBox="0 0 76.922 65">
-                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
+                                <div class="content content--slide">
+
+                                    <img class="content__image" src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
+
+                                    <div class="content__text">
+                                        <h2 class="content__title">Aspernatur fugiat qui dolorum</h2>
+                                        <p class="content__desc">Cupiditate voluptas facere nostrum illum quo mollitia ut natus, maiores ipsam veritatis deserunt dignissimos sed harum perferendis dolores quisquam consequuntur tempore! Quae quos neque ex fuga quis! Deleniti obcaecati quo officiis perferendis repellat inventore! Voluptates, tenetur neque perspiciatis nisi dolorem iure voluptas!</p>
                                     </div>
-                                    <div class="filter"></div>
+
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
-                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=46)">
-                                    <div class="text-container">
-                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>
-                                        <div class="container-arrow-button">
-                                            <a class="cta arrow-button" href="#">
-                                                an example of link
-                                                <svg viewBox="0 0 76.922 65">
-                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
+                                <div class="content content--slide">
+
+                                    <img class="content__image" src="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
+
+                                    <div class="content__text">
+                                        <h2 class="content__title">Tempora repellat aliquam</h2>
+                                        <p class="content__desc">Odio ullam iure quisquam tempora eaque, dolores officia harum, perspiciatis nobis amet vitae optio, deserunt maxime delectus atque laborum iusto voluptatem. Iure facere, mollitia nobis adipisci sapiente et, ea maiores accusantium quos fuga at quam magnam soluta eligendi beatae ipsa a! Assumenda!</p>
                                     </div>
-                                    <div class="filter"></div>
+
                                 </div>
                             </div>
+
+                            <div class="swiper-slide">
+                                <div class="content content--slide">
+
+                                    <img class="content__image" src="https://images.unsplash.com/photo-1596854307943-279e29c90c14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="">
+
+                                    <div class="content__text">
+                                        <h2 class="content__title">Debitis rem soluta nulla</h2>
+                                        <p class="content__desc">Eligendi non sunt dolorem nulla iste atque quos suscipit omnis, numquam culpa mollitia, earum inventore, reprehenderit ipsum cumque debitis repellat adipisci quis incidunt natus ad! Atque quidem explicabo ex voluptatibus vero ratione consectetur culpa perferendis quibusdam, id sunt ipsa aliquid porro nemo!</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
 
-                        <!-- pagination -->
-                        <div class="swiper-pagination showcaseSlider-pagination"></div>
-
-                        <!-- navigation buttons -->
-                        <div class="showcaseSlider-nav">
-                            <div class="swiper-button-prev showcaseSlider-prev"></div>
-                            <div class="swiper-button-next showcaseSlider-next"></div>
-                        </div>
-
+                        <div class="swiper-button-next"></div>
                     </div>
-                    <a href="#scroll1" class="scrollSliderButton">Scroll <div class="line"></div></a>
-                </section>
+
+                </div>
                 <div class="row-full-width">
                 </div>
                 <div class="row-fluid hidden-lg hidden-md hidden-sm custom_1449213766351 row-has-fill row-o-full-height row-o-columns-middle row-flex style-oIZzi"
