@@ -18,6 +18,20 @@
                 @csrf
                 @method('PUT')
                 <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="location">Choose location...</label>
+                        <select id="location" class="form-select" name="location">
+                            @if($menu->location == 'header')
+                                <option value="header">Header</option>
+                                <option value="footer">Footer</option>
+                            @else
+                                <option value="footer">Footer</option>
+                                <option value="header">Header</option>
+                            @endif
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-md-3">
                         <label for="title_vi">Menu Title (VI)</label>
                         <input class="form-control" type="text" id="title_vi" name="title_vi" value="{{$menu->title_vi}}" required>
