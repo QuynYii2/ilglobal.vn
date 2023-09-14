@@ -8,7 +8,7 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="">Home</a></li>
-                <li class="breadcrumb-item active">List News</li>
+                <li class="breadcrumb-item active">List Banners</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -29,6 +29,16 @@
                     <th scope="col">Updated At</th>
                 </tr>
                 </thead>
+                <tbody>
+                @foreach($bannerImages as $bannerImage)
+                    <tr>
+                        <td>{{$bannerImage -> id}}</td>
+                        <td>{{$bannerImage -> bannerImage}}</td>
+                        <td>{{$bannerImage -> created_at}}</td>
+                        <td>{{$bannerImage -> updated_at}}</td>
+                    </tr>
+                @endforeach
+                </tbody>
             </table>
         </div>
     </section>

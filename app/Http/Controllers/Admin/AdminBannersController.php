@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Doctrine\DBAL\Driver\Exception;
 use Illuminate\Http\Request;
 use App\Models\Banners;
+use Illuminate\Support\Facades\DB;
 
 class AdminBannersController extends Controller
 {
@@ -30,7 +31,10 @@ class AdminBannersController extends Controller
     }
 
     public function showListBanner(){
-        return view('admin.banner.list');
+        $bannerImages = DB::table('banners')
+            ->select('id', 'bannerImage', 'created_at', 'updated_at')
+            ->get();
+        return view('admin.banner.list', ['bannerImages' => $bannerImages]);
     }
 
 }
