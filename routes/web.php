@@ -36,7 +36,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'role.admin'], function () {
 });
 
 Route::group(['prefix' => 'banner'], function (){
-    Route::get('create_banner', [\App\Http\Controllers\Admin\AdminNewsController::class, 'createBannerProcess'])->name('admin.banner.create');
+    Route::get('create_banner', [\App\Http\Controllers\Admin\AdminBannersController::class ,'createBannerProcess'])->name('admin.banner.createBannerProcess');
+    Route::post('create_banner', [\App\Http\Controllers\Admin\AdminBannersController::class, 'create'])->name('admin.banner.create');
+    Route::get('list_banner', [\App\Http\Controllers\Admin\AdminBannersController::class, 'showListBanner'])->name('admin.banner.list');
 });
 
 Route::get('admin', [\App\Http\Controllers\HomeController::class, 'index'])->name('admin.homepage');
