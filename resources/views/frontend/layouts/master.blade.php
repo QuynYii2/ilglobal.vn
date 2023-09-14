@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+{{--    --}}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Fashi Template">
@@ -18,7 +23,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,700&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@400;500&family=Poppins:wght@300&family=Roboto+Slab:wght@400;500&family=Roboto:wght@500&display=swap"
           rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,34 +69,6 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
-    // $(document).ready(function() {
-    //     const swiper = new Swiper(".swiper", {
-    //         // Optional parameters
-    //         direction: "horizontal",
-    //         loop: true,
-    //         effect: "fade",
-    //         fadeEffect: {
-    //             crossFade: true
-    //         },
-    //
-    //         // If we need pagination
-    //         /*pagination: {
-    //         el: '.swiper-pagination',
-    //       },*/
-    //
-    //         // Navigation arrows
-    //         navigation: {
-    //             nextEl: ".swiper-button-next",
-    //             prevEl: ".swiper-button-prev"
-    //         }
-    //
-    //         // And if we need scrollbar
-    //         /*scrollbar: {
-    //         el: '.swiper-scrollbar',
-    //       },*/
-    //     });
-    //
-    // })
     const showcaseSlider = new Swiper(".home-showcaseSlider", {
         speed: 1000,
         slidesPerView: 1,

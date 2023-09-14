@@ -2716,8 +2716,15 @@ html {
   margin-bottom: 60px !important;
 }
 
+.column.column_container.col-sm-12.col-lg-6.col-md-5 {
+  margin-top: 35px;
+}
+
 .custom_1450446304318 {
   margin-bottom: 60px !important;
+}
+.custom_1450446304318 .wrapper h2:before {
+  display: none;
 }
 
 .row.row-no-padding .column-inner {
@@ -5732,6 +5739,7 @@ b {
   box-sizing: border-box;
   padding-left: 381.5px;
   padding-right: 381.5px;
+  height: 160px;
 }
 
 #style-hHUs9.style-hHUs9 {
@@ -6240,109 +6248,123 @@ b {
     width: 50%;
   }
 }
-@font-face {
-  font-family: "CabinetGrotesk-light";
-  src: url("http://lucasroussy.com/fonts/cabinet-grotesk/CabinetGrotesk-Light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "CabinetGrotesk-extrabold";
-  src: url("assets/fonts/cabinet-grotesk/CabinetGrotesk-Extrabold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-.bigTitle {
-  font-family: "CabinetGrotesk-extrabold", sans-serif;
-  line-height: 0.9;
-  font-size: 13vw;
-}
-@media (min-width: 425px) {
-  .bigTitle {
-    font-size: 10vw;
-  }
-}
-@media (min-width: 1024px) {
-  .bigTitle {
-    font-size: 6vw;
-  }
-}
-.bigTitle .orangeIcon {
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-  background-color: #f7970e;
-  display: inline-block;
-  margin-left: 5px;
-}
-@media (min-width: 768px) {
-  .bigTitle .orangeIcon {
-    width: 13px;
-    height: 13px;
-  }
-}
-@media (min-width: 1440px) {
-  .bigTitle .orangeIcon {
-    width: 16px;
-    height: 16px;
-  }
+.carousel-caption {
+  top: 33%;
 }
 
-.arrow-button {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-family: "CabinetGrotesk-extrabold", sans-serif;
-  color: #000;
-  transition: padding 1s cubic-bezier(0.16, 1, 0.3, 1);
-  width: fit-content;
-  font-size: 12px;
+.carousel-item {
+  position: relative;
 }
-.arrow-button svg {
-  width: 33px;
-  margin-left: 10px;
+
+.carousel-item img {
+  z-index: 2;
 }
-.arrow-button svg circle {
-  transition: fill 0.75s ease;
-  fill: transparent;
+
+.btn {
+  padding: 14px 26px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-@media (min-width: 425px) {
-  .arrow-button {
-    font-size: 16px;
+
+.btn-danger {
+  background-color: #e34c43;
+  border-color: #e34c43;
+}
+
+.background-overlay {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  z-index: 4;
+}
+
+@media (max-width: 1180px) {
+  .carousel-caption h5 {
+    font-size: 2.5rem !important;
+    margin-bottom: 15px !important;
   }
-  .arrow-button svg {
-    width: 45px;
+  .carousel-caption p {
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+  }
+  .carousel-caption {
+    top: 25%;
   }
 }
-@media (min-width: 1024px) {
-  .arrow-button {
-    font-size: 20px;
+@media (max-width: 980px) {
+  .carousel-caption {
+    top: 20%;
   }
-  .arrow-button svg {
-    width: 62px;
+  .carousel-caption h5 {
+    font-size: 1.5rem !important;
   }
-  .arrow-button:hover {
-    padding-left: 20px;
+  .carousel-caption p {
+    font-size: 1rem !important;
   }
-  .arrow-button:hover svg circle {
-    fill: #8c97d0;
-  }
-}
-@media (min-width: 1440px) {
-  .arrow-button {
-    font-size: 15px;
-  }
-  .arrow-button svg {
-    width: 60px;
+  .carousel-caption .btn {
+    display: none;
   }
 }
-@media (min-width: 1920px) {
-  .arrow-button {
-    font-size: 18px;
-  }
-  .arrow-button svg {
-    width: 70px;
-  }
+section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #001973;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.section-header span {
+  position: absolute;
+  top: 46px;
+  color: rgba(14, 29, 52, 0.06);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 56px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+.section-header p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

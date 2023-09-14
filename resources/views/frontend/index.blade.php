@@ -429,11 +429,11 @@
                                                                                 <h6>
                                                                                     <a href="#"
                                                                                        data-wpel-link="internal">
-                                                                                        {{$product->title_vi}}
+                                                                                        {{strip_tags($product->title_vi)}}
                                                                                     </a>
                                                                                 </h6>
                                                                                 <p>
-                                                                                    {{$product->short_content_vi}}
+                                                                                    {{strip_tags($product->short_content_vi)}}
                                                                                 </p>
                                                                                 <a href="#" class="read_more"
                                                                                    data-wpel-link="internal">
@@ -699,155 +699,40 @@
                                 <h2 style="text-align: left" class="custom_heading custom_1450337066920">
                                     FAQ
                                 </h2>
-                                <div class="tta-container" data-action="collapse">
-                                    <div class="general tta tta-accordion tta-color-theme_style tta-style-outline tta-shape-square tta-o-shape-group tta-controls-align-left tta-o-no-fill">
-                                        <div class="tta-panels-container">
-                                            <div class="tta-panels">
-                                                <div class="tta-panel" id="1450333286729-b84bb545-f459"
-                                                     data-content=".tta-panel-body">
-                                                    <div class="tta-panel-heading">
-                                                        <h4 class="tta-panel-title tta-controls-icon-position-right">
-                                                            <a href="#" data-accordion=""
-                                                               data-container=".tta-container">
-                                                                <span class="tta-title-text">
-                                                                    How many times do i have to tell you a few ways?
-                                                                </span>
-                                                                <i class="tta-controls-icon tta-controls-icon-chevron">
-                                                                </i>
-                                                            </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="tta-panel-body" style="">
-                                                        <div class="text_column content_element ">
-                                                            <div class="wrapper">
-                                                                <p>
-                                                                    Progressively generate synergistic total linkage
-                                                                    through cross-media intellectual capital.
-                                                                    Enthusiastically parallel task team building
-                                                                    e-tailers without standards compliant initiatives.
-                                                                    Progressively monetize client-centric outsourcing
-                                                                    with excellent communities.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tta-panel" id="1450333395266-cee3f8a0-cdaa"
-                                                     data-content=".tta-panel-body">
-                                                    <div class="tta-panel-heading">
-                                                        <h4 class="tta-panel-title tta-controls-icon-position-right">
-                                                            <a href="#" data-accordion=""
-                                                               data-container=".tta-container">
-                                                                <span class="tta-title-text">
-                                                                    What is do i have to tell you a few lorem?
-                                                                </span>
-                                                                <i class="tta-controls-icon tta-controls-icon-chevron">
-                                                                </i>
-                                                            </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="tta-panel-body">
-                                                        <div class="text_column content_element ">
-                                                            <div class="wrapper">
-                                                                <p>
-                                                                    Progressively generate synergistic total linkage
-                                                                    through cross-media intellectual capital.
-                                                                    Enthusiastically parallel task team building
-                                                                    e-tailers without standards compliant initiatives.
-                                                                    Progressively monetize client-centric outsourcing
-                                                                    with excellent communities.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tta-panel active" id="1450333393575-560e10ae-d671"
-                                                     data-content=".tta-panel-body">
-                                                    <div class="tta-panel-heading">
-                                                        <h4 class="tta-panel-title tta-controls-icon-position-right">
-                                                            <a href="#" data-accordion=""
-                                                               data-container=".tta-container">
-                                                                <span class="tta-title-text">
-                                                                    I have a technical problem or support issue I need resolved, who do I email?
-                                                                </span>
-                                                                <i class="tta-controls-icon tta-controls-icon-chevron">
-                                                                </i>
-                                                            </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="tta-panel-body" style="">
-                                                        <div class="text_column content_element ">
-                                                            <div class="wrapper">
-                                                                <p>
-                                                                    Progressively generate synergistic total linkage
-                                                                    through cross-media intellectual capital.
-                                                                    Enthusiastically parallel task team building
-                                                                    e-tailers without standards compliant initiatives.
-                                                                    Progressively monetize client-centric outsourcing
-                                                                    with excellent communities.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tta-panel" id="1450333390085-ccbb2f35-ff19"
-                                                     data-content=".tta-panel-body">
-                                                    <div class="tta-panel-heading">
-                                                        <h4 class="tta-panel-title tta-controls-icon-position-right">
-                                                            <a href="#" data-accordion=""
-                                                               data-container=".tta-container">
-                                                                <span class="tta-title-text">
-                                                                    What other services are you compatible with?
-                                                                </span>
-                                                                <i class="tta-controls-icon tta-controls-icon-chevron">
-                                                                </i>
-                                                            </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="tta-panel-body">
-                                                        <div class="text_column content_element ">
-                                                            <div class="wrapper">
-                                                                <p>
-                                                                    Progressively generate synergistic total linkage
-                                                                    through cross-media intellectual capital.
-                                                                    Enthusiastically parallel task team building
-                                                                    e-tailers without standards compliant initiatives.
-                                                                    Progressively monetize client-centric outsourcing
-                                                                    with excellent communities.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tta-panel" id="1450333387414-6ded1f9e-e822"
-                                                     data-content=".tta-panel-body">
-                                                    <div class="tta-panel-heading">
-                                                        <h4 class="tta-panel-title tta-controls-icon-position-right">
-                                                            <a href="#" data-accordion=""
-                                                               data-container=".tta-container">
-                                                                <span class="tta-title-text">
-                                                                    Are you hiring?
-                                                                </span>
-                                                                <i class="tta-controls-icon tta-controls-icon-chevron">
-                                                                </i>
-                                                            </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="tta-panel-body">
-                                                        <div class="text_column content_element ">
-                                                            <div class="wrapper">
-                                                                <p>
-                                                                    Progressively generate synergistic total linkage
-                                                                    through cross-media intellectual capital.
-                                                                    Enthusiastically parallel task team building
-                                                                    e-tailers without standards compliant initiatives.
-                                                                    Progressively monetize client-centric outsourcing
-                                                                    with excellent communities.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                How many times do i have to tell you a few WAYS?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Progressively generate synergistic total linkage through cross-media intellectual capital. Enthusiastically parallel task team building e-tailers without standards compliant initiatives. Progressively monetize client-centric outsourcing with excellent communities.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                What is do i have to tell you a few lorem?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Progressively generate synergistic total linkage through cross-media intellectual capital. Enthusiastically parallel task team building e-tailers without standards compliant initiatives. Progressively monetize client-centric outsourcing with excellent communities.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                I have a technical problem or support issue I need resolved, who do I email?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Progressively generate synergistic total linkage through cross-media intellectual capital. Enthusiastically parallel task team building e-tailers without standards compliant initiatives. Progressively monetize client-centric outsourcing with excellent communities.
                                             </div>
                                         </div>
                                     </div>
@@ -858,214 +743,46 @@
                 </div>
             </article>
 {{--     start hero slide 2    --}}
-            <div data-full-width="true" data-full-width-init="true" data-stretch-content="true"
-                 class="row-fluid custom_1450356826637 row-no-padding style-n2hfi" id="style-n2hfi">
-                <div class="column column_container col-sm-12">
-                    <div class="column-inner">
-                        <div class="wrapper">
-                            <div class="testimonials style_2 style-EIzLa" id="owl_wr_6501623c64086">
-                                <div class="container">
-                                    <div class="testimonials_carousel_wr">
-                                        <div class="testimonials_carousel owl-carousel owl-theme owl-loaded"
-                                             id="owl_6501623c64087">
-                                            <div class="owl-stage-outer owl-height style-ZqVVw" id="style-ZqVVw">
-                                                <div class="owl-stage style-zCUQF" id="style-zCUQF">
-                                                    <div class="owl-item cloned style-2jAql" id="style-2jAql">
-                                                        <div class="item"
-                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
-                                                            <p>
-                                                                I’ve been happy with the services provided by
-                                                                TransCargo LLC. Samantha Culligan has been
-                                                                wonderful! She has returned my calls quickly, and
-                                                                she answered all my questions!
-                                                            </p>
-                                                            <div class="sep">
-                                                                <i class="stm-testimonials-new-2">
-                                                                </i>
-                                                            </div>
-                                                            <div class="testimonial_info">
-                                                                <h6>
-                                                                    Anna Briggs
-                                                                </h6>
-                                                                <div class="position">
-                                                                    CEO, Smart Move Ltd.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="owl-item cloned style-dXGlZ" id="style-dXGlZ">
-                                                        <div class="item"
-                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_3.jpg">
-                                                            <p>
-                                                                This is due to their excellent service, competitive
-                                                                pricing and customer support. That’s becoming so
-                                                                distant and digital, it’s throughly refreshing to
-                                                                get such a personal touch.
-                                                            </p>
-                                                            <div class="sep">
-                                                                <i class="stm-testimonials-new-2">
-                                                                </i>
-                                                            </div>
-                                                            <div class="testimonial_info">
-                                                                <h6>
-                                                                    Jonathan Adams
-                                                                </h6>
-                                                                <div class="position">
-                                                                    Founder, Great Wall Ltd.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="owl-item style-YFe2A" id="style-YFe2A">
-                                                        <div class="item"
-                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image.jpg">
-                                                            <p>
-                                                                We were previously using an unreliable company with
-                                                                a very complicated registration and transfer
-                                                                process. Then we found TransCargo and the control
-                                                                came back to us.
-                                                            </p>
-                                                            <div class="sep">
-                                                                <i class="stm-testimonials-new-2">
-                                                                </i>
-                                                            </div>
-                                                            <div class="testimonial_info">
-                                                                <h6>
-                                                                    Steve McDonald
-                                                                </h6>
-                                                                <div class="position">
-                                                                    Manager, Tesla Motors Ltd.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="owl-item active style-wm7pi" id="style-wm7pi">
-                                                        <div class="item"
-                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
-                                                            <p>
-                                                                I’ve been happy with the services provided by
-                                                                TransCargo LLC. Samantha Culligan has been
-                                                                wonderful! She has returned my calls quickly, and
-                                                                she answered all my questions!
-                                                            </p>
-                                                            <div class="sep">
-                                                                <i class="stm-testimonials-new-2">
-                                                                </i>
-                                                            </div>
-                                                            <div class="testimonial_info">
-                                                                <h6>
-                                                                    Anna Briggs
-                                                                </h6>
-                                                                <div class="position">
-                                                                    CEO, Smart Move Ltd.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="owl-item style-Pbxkd" id="style-Pbxkd">
-                                                        <div class="item"
-                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_3.jpg">
-                                                            <p>
-                                                                This is due to their excellent service, competitive
-                                                                pricing and customer support. That’s becoming so
-                                                                distant and digital, it’s throughly refreshing to
-                                                                get such a personal touch.
-                                                            </p>
-                                                            <div class="sep">
-                                                                <i class="stm-testimonials-new-2">
-                                                                </i>
-                                                            </div>
-                                                            <div class="testimonial_info">
-                                                                <h6>
-                                                                    Jonathan Adams
-                                                                </h6>
-                                                                <div class="position">
-                                                                    Founder, Great Wall Ltd.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="owl-item cloned style-8kzzA" id="style-8kzzA">
-                                                        <div class="item"
-                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image.jpg">
-                                                            <p>
-                                                                We were previously using an unreliable company with
-                                                                a very complicated registration and transfer
-                                                                process. Then we found TransCargo and the control
-                                                                came back to us.
-                                                            </p>
-                                                            <div class="sep">
-                                                                <i class="stm-testimonials-new-2">
-                                                                </i>
-                                                            </div>
-                                                            <div class="testimonial_info">
-                                                                <h6>
-                                                                    Steve McDonald
-                                                                </h6>
-                                                                <div class="position">
-                                                                    Manager, Tesla Motors Ltd.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="owl-item cloned style-8yyYj" id="style-8yyYj">
-                                                        <div class="item"
-                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
-                                                            <p>
-                                                                I’ve been happy with the services provided by
-                                                                TransCargo LLC. Samantha Culligan has been
-                                                                wonderful! She has returned my calls quickly, and
-                                                                she answered all my questions!
-                                                            </p>
-                                                            <div class="sep">
-                                                                <i class="stm-testimonials-new-2">
-                                                                </i>
-                                                            </div>
-                                                            <div class="testimonial_info">
-                                                                <h6>
-                                                                    Anna Briggs
-                                                                </h6>
-                                                                <div class="position">
-                                                                    CEO, Smart Move Ltd.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="owl-controls">
-                                                <div class="owl-nav">
-                                                    <div class="owl-prev style-k8heS" id="style-k8heS">
-                                                        prev
-                                                    </div>
-                                                    <div class="owl-next style-8EI21" id="style-8EI21">
-                                                        next
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-dots" id="owl-nav-6501623c64088">
-                                            <div class="owl-dot">
-                                                    <span>
-                                                    </span>
-                                            </div>
-                                            <div class="owl-dot active">
-                                                    <span>
-                                                    </span>
-                                            </div>
-                                            <div class="owl-dot">
-                                                    <span>
-                                                    </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-3">
+                <div class="container"> <a class="navbar-brand font-weight-bold text-uppercase" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     </div>
                 </div>
-            </div>
-{{--     end hero slide 2      --}}
+            </nav>
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> <img src="http://bootstraplily.com/demo/detto-ui-kit/img/intro-one/slider-one.jpg" class="d-block w-100" alt="...">
+                        <div class="background-overlay"></div>
+                        <div class="carousel-caption">
+                            <h5 class="display-4 h4-md mb-4 font-weight-bold">A modular UI Kit for Bootstrap</h5>
+                            <p class="h4 mb-5 pb-3 text-white-50">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <a href="" class="btn btn-lg btn-danger">View More</a> </div>
+                    </div>
+                    <div class="carousel-item"> <img src="http://bootstraplily.com/demo/detto-ui-kit/img/intro-one/slider-two.jpg" class="d-block w-100" alt="...">
+                        <div class="background-overlay"></div>
+                        <div class="carousel-caption">
+                            <h5 class="display-4 mb-4 font-weight-bold">A modular UI Kit for Startups</h5>
+                            <p class="h4 mb-5 pb-3 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="" class="btn btn-lg btn-danger">View More</a> </div>
+                    </div>
+                    <div class="carousel-item"> <img src="http://bootstraplily.com/demo/detto-ui-kit/img/intro-one/slider-three.jpg" class="d-block w-100" alt="...">
+                        <div class="background-overlay"></div>
+                        <div class="carousel-caption">
+                            <h5 class="display-4 mb-4 font-weight-bold">A modular UI Kit for Development</h5>
+                            <p class="h4 mb-5 pb-3 text-white-50">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <a href="" class="btn btn-lg btn-danger">View More</a> </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+
+
+            {{--     end hero slide 2      --}}
             <article class="container">
                 <div class="row-full-width">
                 </div>
@@ -1528,7 +1245,6 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7450.9429371919005!2d105.75678!3d20.97373!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1694508342108!5m2!1svi!2s"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
     </div>
 @endsection
 

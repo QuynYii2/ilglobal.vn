@@ -2982,8 +2982,16 @@ html {
 .custom_1450446299241 {
     margin-bottom: 60px !important;
 }
+.column.column_container.col-sm-12.col-lg-6.col-md-5 {
+    margin-top: 35px;
+}
 .custom_1450446304318 {
     margin-bottom: 60px !important;
+    .wrapper {
+        h2:before {
+            display: none;
+        }
+    }
 }
 .row.row-no-padding {
     .column-inner {
@@ -5958,6 +5966,7 @@ b {
     box-sizing: border-box;
     padding-left: 381.5px;
     padding-right: 381.5px;
+    height: 160px;
 }
 #style-hHUs9.style-hHUs9 {
     color: #ffffff;
@@ -6388,120 +6397,120 @@ b {
     }
 }
 
-////////////////// hero slide ////////////////////////
-// Main color
-$color__purple-blue: #8c97d0;
-$color__night-blue: #10112b;
-$color__orange: #f7970e;
-$color__dark-gray: #8f9397;
 
-@font-face {
-    font-family: 'CabinetGrotesk-light';
-    src: url('http://lucasroussy.com/fonts/cabinet-grotesk/CabinetGrotesk-Light.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+// hero slide 2 //
+.carousel-caption {
+    top: 33%;
 }
-
-@font-face {
-    font-family: 'CabinetGrotesk-extrabold';
-    src: url('assets/fonts/cabinet-grotesk/CabinetGrotesk-Extrabold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.carousel-item {
+    position: relative;
 }
-
-$grotesk-light: 'CabinetGrotesk-light', sans-serif;
-$grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
-
-@mixin screen-min($min) {
-    @media (min-width: $min) {
-        @content
+.carousel-item img {
+    z-index: 2;
+}
+.btn {
+    padding: 14px 26px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn-danger {
+    background-color: #e34c43;
+    border-color: #e34c43;
+}
+.background-overlay {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.carousel-control-next, .carousel-control-prev{
+    z-index: 4;
+}
+@media(max-width:1180px) {
+    .carousel-caption h5 {
+        font-size: 2.5rem !important;
+        margin-bottom:15px !important;
     }
-};
-
-@mixin big-orange-square {
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    background-color: $color__orange;
-    @include screen-min(768px) {
-        width: 13px;
-        height: 13px;
+    .carousel-caption p {
+        font-size: 1.5rem !important;
+        margin-bottom:20px !important;
     }
-    @include screen-min(1440px) {
-        width: 16px;
-        height: 16px;
-    }
-};
-
-
-
-.bigTitle {
-    font-family: $grotesk-extrabold;
-    line-height: 0.9;
-    font-size: 13vw;
-
-    @include screen-min(425px) {
-        font-size: 10vw;
-    }
-    @include screen-min(1024px) {
-        font-size: 6vw;
-    }
-    .orangeIcon {
-        @include big-orange-square;
-        display: inline-block;
-        margin-left: 5px;
+    .carousel-caption {
+        top:25%;
     }
 }
-.arrow-button {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-family: $grotesk-extrabold;
-    color: #000;
-    transition: padding 1s cubic-bezier(0.16, 1, 0.3, 1);
-    width: fit-content;
-    font-size: 12px;
-    svg {
-        width: 33px;
-        margin-left: 10px;
-        circle {
-            transition: fill 0.75s ease;
-            fill: transparent;
-        }
+@media(max-width:980px) {
+    .carousel-caption {
+        top: 20%;
     }
+    .carousel-caption h5 {
+        font-size: 1.5rem !important;
+    }
+    .carousel-caption p {
+        font-size: 1rem !important;
+    }
+    .carousel-caption .btn {
+        display:none;
+    }
+}
+//////////////////////////////////////////////
+$color_1: #001973;
+$color_2: rgba(14, 29, 52, 0.06);
 
-    @include screen-min(425px) {
-        font-size: 16px;
-        svg {
-            width: 45px;
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+.section-header {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        color: $color_1;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--color-primary);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
         }
     }
-
-    @include screen-min(1024px) {
-        font-size: 20px;
-        svg {
-            width: 62px;
-        }
-        &:hover {
-            padding-left: 20px;
-            svg {
-                circle {
-                    fill: $color__purple-blue;
-                }
-            }
-        }
+    span {
+        position: absolute;
+        top: 46px;
+        color: $color_2;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        font-weight: 700;
+        font-size: 56px;
+        text-transform: uppercase;
+        line-height: 0;
     }
-    @include screen-min(1440px) {
-        font-size: 15px;
-        svg {
-            width: 60px;
-        }
-    }
-    @include screen-min(1920px) {
-        font-size: 18px;
-        svg {
-            width: 70px;
-        }
+    p {
+        margin-bottom: 0;
+        position: relative;
+        z-index: 2;
     }
 }
 
