@@ -18,7 +18,7 @@
 
     <title>@yield('title')</title>
     <!-- Favicons -->
-    <link href="{{asset('scss/img/configs.png')}}" rel="icon">
+    <link href="{{asset('scss/img/logo.png')}}" rel="icon">
     <link href="{{asset('scss/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -34,7 +34,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Các custom style của frontend -->
+    <link rel="stylesheet" href="{{asset('scss/index.css')}}">
     <link rel="stylesheet" href="{{asset('scss/style.css')}}">
+    <link rel="stylesheet" href="{{asset('scss/js/main.js')}}">
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
