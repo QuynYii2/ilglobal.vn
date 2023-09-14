@@ -6,7 +6,7 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">Home</a></li>
                 <li class="breadcrumb-item active">Create Logo</li>
             </ol>
         </nav>

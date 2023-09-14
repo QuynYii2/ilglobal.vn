@@ -7,7 +7,7 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">Home</a></li>
-                <li class="breadcrumb-item active">List News</li>
+                <li class="breadcrumb-item active">List Pages</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -15,7 +15,7 @@
     <section class="section dashboard">
         <div class="row">
             <div class="mb-3">
-                <h5>Search News</h5>
+                <h5>Search Pages</h5>
                 <input class="form-control" id="inputSearchNews" type="text" placeholder="Search..">
                 <br>
             </div>
@@ -23,9 +23,7 @@
                 <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Image</th>
                     <th scope="col">News Title</th>
-                    <th scope="col">Category</th>
                     <th scope="col">Views</th>
                     <th scope="col">Create By</th>
                     <th scope="col">Create At</th>
@@ -35,52 +33,37 @@
                 </tr>
                 </thead>
                 <tbody>
-                @if(!$listNews->isEmpty())
-                    @foreach($listNews as $news)
+                @if(!$listPages->isEmpty())
+                    @foreach($listPages as $pages)
                         <tr>
                             <th scope="row">{{$loop->index + 1}}</th>
-                            <td>
-                                <img src="{{$news->thumbnail}}" alt="" width="60px" height="60px">
-                            </td>
-                            <td>{{$news->title_vi}}</td>
-                            @php
-                                $listCate = $news->category_vi;
-                                $cates = explode(',', $listCate);
-                            @endphp
-                            <td>
-                            @foreach($cates as $cate)
-                                @php
-                                    $category = \App\Models\Category::find($cate);
-                                @endphp
-                            <span>{{$category->name_vi}}</span>,</br>
-                            @endforeach
-                            </td>
-                            <td class="text-center">{{$news->views}}</td>
-                            <td>{{$news->user->name}}</td>
-                            <td>{{$news->created_at}}</td>
+                            <td>{{$pages->title_vi}}</td>
+                            <td class="text-center">{{$pages->views}}</td>
+                            <td>{{$pages->user->name}}</td>
+                            <td>{{$pages->created_at}}</td>
                             <td class="text-center">
                                 @php
                                     $isChecked = false;
-                                    if ($news->status == \App\Enums\NewsStatus::ACTIVE){
+                                    if ($pages->status == \App\Enums\NewsStatus::ACTIVE){
                                         $isChecked = true;
                                     }
                                 @endphp
-                                <input data-id="{{$news->id}}" type="checkbox"
+                                <input data-id="{{$pages->id}}" type="checkbox"
                                        class="form-check-input toggleNews"
-                                       id="exampleCheck{{$news->id}}" {{ $isChecked ? 'checked' : '' }}>
+                                       id="exampleCheck{{$pages->id}}" {{ $isChecked ? 'checked' : '' }}>
                             </td>
-                            <td id="newsStatus{{$news->id}}">{{$news->status}}</td>
+                            <td id="newsStatus{{$pages->id}}">{{$pages->status}}</td>
                             <td class="text-center">
-                                <a href="{{route('admin.news.edit', $news->id)}}">
+                                <a href="{{route('admin.pages.edit', $pages->id)}}">
                                     <i style="color: black" class="bi bi-pencil-square"></i>
                                 </a>
                                 <button type="button" class="delete-button" data-bs-toggle="modal"
-                                        data-bs-target="#modalDelete{{$news->id}}"><i class="bi bi-trash-fill"></i>
+                                        data-bs-target="#modalDelete{{$pages->id}}"><i class="bi bi-trash-fill"></i>
                                 </button>
-                                <div class="modal fade" id="modalDelete{{$news->id}}" tabindex="-1"
+                                <div class="modal fade" id="modalDelete{{$pages->id}}" tabindex="-1"
                                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                        <form action="{{route('admin.news.delete', $news->id)}}" method="post">
+                                        <form action="{{route('admin.pages.delete', $pages->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
                                             <div class="modal-content">
@@ -116,17 +99,17 @@
     <script>
         $(document).ready(function () {
             $('.toggleNews').on('click', function () {
-                let $newsID = $(this).data('id');
+                let $pagesID = $(this).data('id');
 
-                function setProduct($newsID) {
+                function setProduct($pagesID) {
                     $.ajax({
-                        url: '/admin/news/toggle/' + $newsID,
+                        url: '/admin/news/toggle/' + $pagesID,
                         method: 'POST',
                         data: {
                             _token: '{{ csrf_token() }}'
                         },
                         success: function (response) {
-                            let status = document.getElementById('newsStatus' + $newsID)
+                            let status = document.getElementById('newsStatus' + $pagesID)
                             status.innerText = response['status'];
                         },
                         error: function (exception) {
@@ -135,7 +118,7 @@
                     });
                 }
 
-                setProduct($newsID);
+                setProduct($pagesID);
             })
         });
     </script>

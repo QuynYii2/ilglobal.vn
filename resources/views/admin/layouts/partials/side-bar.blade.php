@@ -24,7 +24,7 @@
                     </a>
                 </li>
             </ul>
-        </li><!-- End Tables Nav -->
+        </li><!-- End News Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#menu-nav" data-bs-toggle="collapse" href="#">
@@ -42,7 +42,7 @@
                     </a>
                 </li>
             </ul>
-        </li><!-- End Tables Nav -->
+        </li><!-- End Menus Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#category-nav" data-bs-toggle="collapse" href="#">
@@ -60,16 +60,25 @@
                     </a>
                 </li>
             </ul>
-        </li><!-- End Tables Nav -->
-
-        <li class="nav-heading">Pages</li>
+        </li><!-- End Category Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{route('admin.configs.index')}}">
-                <i class="bi bi-person"></i>
-                <span>Profile</span>
+            <a class="nav-link collapsed" data-bs-target="#pages-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-file-earmark-fill"></i><span>Pages</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
-        </li><!-- End Icons Nav -->
+            <ul id="pages-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('admin.pages.create')}}">
+                        <i class="bi bi-circle"></i><span>Thêm mới Pages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('admin.pages.list')}}">
+                        <i class="bi bi-circle"></i><span>Danh sách Pages</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Pages Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#banner-nav" data-bs-toggle="collapse" href="#">
@@ -90,10 +99,17 @@
         </li><!-- End Banners Nav -->
 
         <li class="nav-item">
+            <a class="nav-link collapsed" href="{{route('admin.configs.index')}}">
+                <i class="bi bi-person"></i>
+                <span>Profile</span>
+            </a>
+        </li><!-- End Profile Nav -->
+
+        <li class="nav-item">
             <a class="nav-link collapsed" href="{{route('auth.logout')}}">
                 <i class="bi bi-box-arrow-in-right"></i>
                 <span>Logout</span>
             </a>
-        </li><!-- End Login Page Nav -->
+        </li><!-- End Logout Page Nav -->
     </ul>
 </aside><!-- End Sidebar-->

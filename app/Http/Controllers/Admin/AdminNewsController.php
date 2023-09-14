@@ -25,10 +25,10 @@ class AdminNewsController extends Controller
     public function create(Request $request)
     {
         try {
+            $category = $request->input('category');
             $title_vi = $request->input('title_vi');
             $title_en = $request->input('title_en');
             $thumbnail = $request->file('thumbnail');
-
             if ($thumbnail) {
                 $imageName = time() . '.' . $thumbnail->getClientOriginalExtension();
                 $destinationPath = public_path('upload/images');
@@ -37,6 +37,7 @@ class AdminNewsController extends Controller
             } else {
                 $imageURL = null;
             }
+            $listCategory = implode(',',$category);
             $news = [
                 'title_vi' => $title_vi,
                 'title_en' => $title_en,
@@ -47,6 +48,8 @@ class AdminNewsController extends Controller
                 'short_content_en' => $request->input('short_content_en'),
                 'status' => $request->input('status'),
                 'user_id' => Auth::user()->id,
+                'category_vi' => $listCategory,
+                'category_en' => $listCategory,
             ];
             $success = News::create($news);
             if ($success) {
@@ -96,6 +99,7 @@ class AdminNewsController extends Controller
                 return redirect(route('not.found'));
             }
 
+            $category = $request->input('category');
             $title_vi = $request->input('title_vi');
             $title_en = $request->input('title_en');
             $thumbnail = $request->file('thumbnail');
@@ -112,6 +116,7 @@ class AdminNewsController extends Controller
             $news->title_vi = $title_vi;
             $news->title_en = $title_en;
 
+            $listCategory = implode(',',$category);
             $news->thumbnail = $imageURL;
             $news->content_vi = $request->input('content_vi');
             $news->content_en = $request->input('content_en');
@@ -119,6 +124,8 @@ class AdminNewsController extends Controller
             $news->short_content_en = $request->input('short_content_en');
             $news->status = $request->input('status');
             $news->user_id = Auth::user()->id;
+            $news->category_vi = $listCategory;
+            $news->category_en = $listCategory;
 
             $success = $news->save();
             if ($success) {

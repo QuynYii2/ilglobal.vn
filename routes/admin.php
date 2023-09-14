@@ -5,14 +5,25 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('admin.homepage');
-    //Admin
-    Route::group(['prefix' => 'news'], function () {
-    Route::get('list', [\App\Http\Controllers\Admin\AdminNewsController::class, 'index'])->name('admin.news.list');
-    Route::get('edit/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'edit'])->name('admin.news.edit');
-    Route::put('update/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'update'])->name('admin.news.update');
-    Route::get('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'createProcess'])->name('admin.news.createProcess');
-    Route::post('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'create'])->name('admin.news.create');
-    Route::delete('delete/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'delete'])->name('admin.news.delete');
+
+//News
+Route::group(['prefix' => 'news'], function () {
+Route::get('list', [\App\Http\Controllers\Admin\AdminNewsController::class, 'index'])->name('admin.news.list');
+Route::get('edit/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'edit'])->name('admin.news.edit');
+Route::put('update/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'update'])->name('admin.news.update');
+Route::get('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'createProcess'])->name('admin.news.createProcess');
+Route::post('create',[\App\Http\Controllers\Admin\AdminNewsController::class, 'create'])->name('admin.news.create');
+Route::delete('delete/{id}',[\App\Http\Controllers\Admin\AdminNewsController::class, 'delete'])->name('admin.news.delete');
+});
+
+//News
+Route::group(['prefix' => 'pages'], function () {
+    Route::get('list', [\App\Http\Controllers\Admin\PagesController::class, 'index'])->name('admin.pages.list');
+    Route::get('edit/{id}',[\App\Http\Controllers\Admin\PagesController::class, 'edit'])->name('admin.pages.edit');
+    Route::put('update/{id}',[\App\Http\Controllers\Admin\PagesController::class, 'update'])->name('admin.pages.update');
+    Route::get('create',[\App\Http\Controllers\Admin\PagesController::class, 'createProcess'])->name('admin.pages.createProcess');
+    Route::post('create',[\App\Http\Controllers\Admin\PagesController::class, 'create'])->name('admin.pages.create');
+    Route::delete('delete/{id}',[\App\Http\Controllers\Admin\PagesController::class, 'delete'])->name('admin.pages.delete');
 });
 
 //Profile
