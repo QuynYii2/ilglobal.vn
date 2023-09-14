@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class News extends Model
+class Pages extends Model
 {
     use HasFactory;
 
@@ -13,15 +13,12 @@ class News extends Model
         'title_vi',
         'title_en',
         'user_id',
-        'thumbnail',
         'content_vi',
         'content_en',
         'short_content_vi',
         'short_content_en',
         'status',
-        'views',
-        'category_vi',
-        'category_en',
+        'views'
     ];
 
     public function user()

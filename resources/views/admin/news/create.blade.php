@@ -6,7 +6,7 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">Home</a></li>
                 <li class="breadcrumb-item active">Create News</li>
             </ol>
         </nav>
@@ -36,6 +36,37 @@
                             <option value="{{\App\Enums\NewsStatus::ACTIVE}}">ACTIVE</option>
                             <option value="{{\App\Enums\NewsStatus::INACTIVE}}">INACTIVE</option>
                         </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="name">Choose Category</label>
+                        @php
+                            $categories = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', null)->get();
+                        @endphp
+                        <div id="checkboxes">
+                            @foreach($categories as $category)
+                                <label class="category" for="category-{{$category->id}}">
+                                    <input type="checkbox" id="category-{{$category->id}}"
+                                           name="category[]"
+                                           value="{{$category->id}}"
+                                           class="inputCheckboxCategory mr-2 p-3"/>
+                                    <span class="labelCheckboxCategory">{{($category->name_vi)}}</span>
+                                </label>
+                                @if(!$categories->isEmpty())
+                                    @php
+                                        $categories = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', $category->id)->get();
+                                    @endphp
+                                    @foreach($categories as $child)
+                                        <label class="category-child" for="category-{{$child->id}}">
+                                            <input type="checkbox" id="category-{{$child->id}}"
+                                                   name="category[]"
+                                                   value="{{$child->id}}"
+                                                   class="inputCheckboxCategory mr-2 p-3"/>
+                                            <span class="labelCheckboxCategory">{{($child->name_vi)}}</span>
+                                        </label>
+                                    @endforeach
+                                @endif
+                            @endforeach
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
