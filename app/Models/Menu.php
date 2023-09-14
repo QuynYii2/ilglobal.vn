@@ -15,5 +15,7 @@ class Menu extends Model
         'user_id',
         'url',
         'status',
+        'key',
+        'location',
     ];
 }
