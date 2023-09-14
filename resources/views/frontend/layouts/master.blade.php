@@ -65,34 +65,53 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
-    $(document).ready(function() {
-        const swiper = new Swiper(".swiper", {
-            // Optional parameters
-            direction: "horizontal",
-            loop: true,
-            effect: "fade",
-            fadeEffect: {
-                crossFade: true
-            },
+    // $(document).ready(function() {
+    //     const swiper = new Swiper(".swiper", {
+    //         // Optional parameters
+    //         direction: "horizontal",
+    //         loop: true,
+    //         effect: "fade",
+    //         fadeEffect: {
+    //             crossFade: true
+    //         },
+    //
+    //         // If we need pagination
+    //         /*pagination: {
+    //         el: '.swiper-pagination',
+    //       },*/
+    //
+    //         // Navigation arrows
+    //         navigation: {
+    //             nextEl: ".swiper-button-next",
+    //             prevEl: ".swiper-button-prev"
+    //         }
+    //
+    //         // And if we need scrollbar
+    //         /*scrollbar: {
+    //         el: '.swiper-scrollbar',
+    //       },*/
+    //     });
+    //
+    // })
+    const showcaseSlider = new Swiper(".home-showcaseSlider", {
+        speed: 1000,
+        slidesPerView: 1,
+        parallax: true,
+        // centeredSlides: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".showcaseSlider-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.showcaseSlider-next',
+            prevEl: '.showcaseSlider-prev',
+        },
+    });
 
-            // If we need pagination
-            /*pagination: {
-            el: '.swiper-pagination',
-          },*/
-
-            // Navigation arrows
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            }
-
-            // And if we need scrollbar
-            /*scrollbar: {
-            el: '.swiper-scrollbar',
-          },*/
-        });
-
-    })
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
