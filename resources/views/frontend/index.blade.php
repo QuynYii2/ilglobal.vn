@@ -3,687 +3,143 @@
 @section('main-content')
     <div id="content">
         <article id="post-2" class="post-2 page type-page status-publish hentry">
-            <div class="container">
-{{--                <div class="row-fluid">--}}
-{{--                    <div class="column column_container col-sm-12">--}}
-{{--                        <div class="column-inner">--}}
-{{--                            <div class="wrapper">--}}
-{{--                                <rs-fullwidth-wrap id="rev_slider_1_1_forcefullwidth" class="style-HpEzl">--}}
-{{--                                    <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery"--}}
-{{--                                                    class="style-ziTZ5">--}}
-{{--                                        <rs-module id="rev_slider_1_1" data-version="6.5.5" data-idcheck="true"--}}
-{{--                                                   class="revslider-initialised rev_redraw_on_blurfocus style-j91o1"--}}
-{{--                                                   data-slideactive="rs-14">--}}
-{{--                                            <rs-loader class="spinner2  style-9Kn2g" id="style-9Kn2g">--}}
-{{--                                                <div class="dot1">--}}
-{{--                                                </div>--}}
-{{--                                                <div class="dot2">--}}
-{{--                                                </div>--}}
-{{--                                                <div class="bounce1">--}}
-{{--                                                </div>--}}
-{{--                                                <div class="bounce2">--}}
-{{--                                                </div>--}}
-{{--                                                <div class="bounce3">--}}
-{{--                                                </div>--}}
-{{--                                            </rs-loader>--}}
-{{--                                            <rs-progress id="style-sQbXU" class="style-sQbXU">--}}
-{{--                                                <rs-progress-bar id="style-SBe7n" class="style-SBe7n">--}}
-{{--                                                </rs-progress-bar>--}}
-{{--                                            </rs-progress>--}}
-{{--                                            <rs-slides id="style-759h9" class="style-759h9">--}}
-{{--                                                <rs-slide data-key="rs-14" data-title="Slide" data-in="prst:rndany;o:0;"--}}
-{{--                                                          data-out="a:false;" data-originalindex="1" data-origindex="0"--}}
-{{--                                                          data-description="" data-sba="" data-scroll-based="false"--}}
-{{--                                                          data-owidth="1920" data-oheight="900"--}}
-{{--                                                          data-rspausetimeronce="0" data-isactiveslide="true"--}}
-{{--                                                          id="style-2ph2s" class="style-2ph2s">--}}
-{{--                                                    <rs-sbg-px>--}}
-{{--                                                        <rs-sbg-wrap data-key="rs-14" data-owidth="1920"--}}
-{{--                                                                     data-oheight="900">--}}
-{{--                                                            <rs-sbg data-lazyload="//logistics.stylemixthemes.com/wp-content/uploads/2015/12/slider_1.jpg"--}}
-{{--                                                                    class="style-BJ7Ux" data-bgcolor="transparent"--}}
-{{--                                                                    data-src-rs-ref="//logistics.stylemixthemes.com/wp-content/uploads/2015/12/slider_1.jpg"--}}
-{{--                                                                    id="style-BJ7Ux">--}}
-{{--                                                                <canvas width="1903" height="900" id="style-JcgoL"--}}
-{{--                                                                        class="style-JcgoL">--}}
-{{--                                                                </canvas>--}}
-{{--                                                                <img data-reference="//logistics.stylemixthemes.com/wp-content/uploads/2015/12/slider_1.jpg"--}}
-{{--                                                                     src="https://logistics.stylemixthemes.com/wp-content/uploads/2015/12/slider_1.jpg"--}}
-{{--                                                                     width="1919" height="900" id="style-G1X2O"--}}
-{{--                                                                     class="style-G1X2O">--}}
-{{--                                                            </rs-sbg>--}}
-{{--                                                        </rs-sbg-wrap>--}}
-{{--                                                    </rs-sbg-px>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap style-JRDD2"--}}
-{{--                                                                   id="style-JRDD2">--}}
-{{--                                                        <rs-loop-wrap id="style-9FZU1" class="style-9FZU1">--}}
-{{--                                                            <rs-mask-wrap id="style-AUZrZ" class="style-AUZrZ">--}}
-{{--                                                                <rs-layer id="slider-1-slide-14-layer-9"--}}
-{{--                                                                          class="slider_text_bg tp-shape tp-shapewrapper rs-layer style-LXEm4"--}}
-{{--                                                                          data-type="shape" data-rsp_ch="on"--}}
-{{--                                                                          data-xy="x:15px;y:240px;"--}}
-{{--                                                                          data-dim="w:540px;h:380px;"--}}
-{{--                                                                          data-frame_0="tp:600;"--}}
-{{--                                                                          data-frame_1="tp:600;e:power2.inOut;st:1450;"--}}
-{{--                                                                          data-frame_999="o:0;tp:600;e:nothing;st:w;"--}}
-{{--                                                                          data-idcheck="true" data-stylerecorder="true"--}}
-{{--                                                                          data-initialised="true">--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap style-TBQL4"--}}
-{{--                                                                   id="style-TBQL4">--}}
-{{--                                                        <rs-loop-wrap id="style-XPUam" class="style-XPUam">--}}
-{{--                                                            <rs-mask-wrap id="style-nGMPo" class="style-nGMPo">--}}
-{{--                                                                <rs-layer id="slider-1-slide-14-layer-5"--}}
-{{--                                                                          class="slider_line tp-shape tp-shapewrapper rs-layer style-IgKYa"--}}
-{{--                                                                          data-type="shape" data-rsp_ch="on"--}}
-{{--                                                                          data-xy="x:80px;y:306px;" data-text="fw:900;"--}}
-{{--                                                                          data-dim="w:50px;h:3px;"--}}
-{{--                                                                          data-frame_0="x:-100%;o:1;tp:600;"--}}
-{{--                                                                          data-frame_0_mask="u:t;"--}}
-{{--                                                                          data-frame_1="tp:600;e:Strong.easeOut;st:1450;"--}}
-{{--                                                                          data-frame_1_mask="u:t;"--}}
-{{--                                                                          data-frame_999="x:-100%;tp:600;st:w;"--}}
-{{--                                                                          data-frame_999_mask="u:t;" data-idcheck="true"--}}
-{{--                                                                          data-stylerecorder="true"--}}
-{{--                                                                          data-initialised="true">--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap style-mzcj8"--}}
-{{--                                                                   id="style-mzcj8">--}}
-{{--                                                        <rs-loop-wrap id="style-yat7M" class="style-yat7M">--}}
-{{--                                                            <rs-mask-wrap id="style-zBNGr" class="style-zBNGr">--}}
-{{--                                                                <rs-layer id="slider-1-slide-14-layer-2"--}}
-{{--                                                                          class="STM-Title rs-layer style-RRkx8"--}}
-{{--                                                                          data-type="text"--}}
-{{--                                                                          data-color="rgba(255,255,255,1)"--}}
-{{--                                                                          data-rsp_ch="on" data-xy="x:80px;y:337px;"--}}
-{{--                                                                          data-text="s:48;l:54;"--}}
-{{--                                                                          data-frame_0="y:50px;tp:600;"--}}
-{{--                                                                          data-frame_1="tp:600;e:Strong.easeOut;st:700;sp:1000;"--}}
-{{--                                                                          data-frame_999="y:50px;o:0;tp:600;e:nothing;st:w;sp:400;"--}}
-{{--                                                                          data-idcheck="true" data-stylerecorder="true"--}}
-{{--                                                                          data-initialised="true">--}}
-{{--                                                                    <span data-stylerecorder="true" id="style-m2EsY"--}}
-{{--                                                                          class="style-m2EsY">--}}
-{{--                                                                        CONTINENTAL--}}
-{{--                                                                        <br>--}}
-{{--                                                                        TRANSPORTATION--}}
-{{--                                                                    </span>--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap style-cSmed"--}}
-{{--                                                                   id="style-cSmed">--}}
-{{--                                                        <rs-loop-wrap id="style-YxFbe" class="style-YxFbe">--}}
-{{--                                                            <rs-mask-wrap id="style-P1njg" class="style-P1njg">--}}
-{{--                                                                <p id="slider-1-slide-14-layer-6"--}}
-{{--                                                                   class="rs-layer STM-Text style-shp5U"--}}
-{{--                                                                   data-type="text" data-color="rgba(255,255,255,1)"--}}
-{{--                                                                   data-rsp_ch="on" data-xy="x:80px;y:472px;"--}}
-{{--                                                                   data-text="s:16;l:28;" data-frame_0="y:50px;tp:600;"--}}
-{{--                                                                   data-frame_1="tp:600;e:Strong.easeOut;st:900;sp:1000;"--}}
-{{--                                                                   data-frame_999="y:50px;o:0;tp:600;e:nothing;st:w;sp:400;"--}}
-{{--                                                                   data-idcheck="true" data-stylerecorder="true"--}}
-{{--                                                                   data-initialised="true">--}}
-{{--                                                                    To best support your ever-changing logistics--}}
-{{--                                                                    <br>--}}
-{{--                                                                    needs, we are continuously evolving our--}}
-{{--                                                                    <br>--}}
-{{--                                                                    transportation services.--}}
-{{--                                                                </p>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                </rs-slide>--}}
-{{--                                                <rs-slide data-key="rs-35" data-title="Slide"--}}
-{{--                                                          data-anim="d:20;p:dark;f:slidebased;"--}}
-{{--                                                          data-in="prst:rndany;o:0;x:(15%);sx:0.8;sy:0.8;e:power2.out;row:5;col:5;"--}}
-{{--                                                          data-out="o:0;x:(-15%);sx:0.8;sy:0.8;e:power2.in;row:5;col:5;"--}}
-{{--                                                          class="overlay style-GPXN7" data-originalindex="2"--}}
-{{--                                                          data-origindex="1" data-description="" data-sba=""--}}
-{{--                                                          data-scroll-based="false" data-owidth="1920"--}}
-{{--                                                          data-oheight="900" id="style-GPXN7">--}}
-{{--                                                    <rs-sbg-px>--}}
-{{--                                                        <rs-sbg-wrap data-key="rs-35" data-owidth="1920"--}}
-{{--                                                                     data-oheight="900">--}}
-{{--                                                            <rs-sbg data-lazyload="//logistics.stylemixthemes.com/wp-content/uploads/2015/11/slider_1.jpg"--}}
-{{--                                                                    class="style-KFRdI" data-bgcolor="transparent"--}}
-{{--                                                                    data-src-rs-ref="//logistics.stylemixthemes.com/wp-content/uploads/2015/11/slider_1.jpg"--}}
-{{--                                                                    id="style-KFRdI">--}}
-{{--                                                                <canvas id="style-FYkKl" class="style-FYkKl">--}}
-{{--                                                                </canvas>--}}
-{{--                                                            </rs-sbg>--}}
-{{--                                                        </rs-sbg-wrap>--}}
-{{--                                                    </rs-sbg-px>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-EDA6x"--}}
-{{--                                                                   id="style-EDA6x">--}}
-{{--                                                        <rs-loop-wrap id="style-TFMgX" class="style-TFMgX">--}}
-{{--                                                            <rs-mask-wrap id="style-74zle" class="style-74zle">--}}
-{{--                                                                <rs-layer id="slider-1-slide-35-layer-9"--}}
-{{--                                                                          class="slider_text_bg tp-shape tp-shapewrapper rs-layer style-73h3S"--}}
-{{--                                                                          data-type="shape" data-rsp_ch="on"--}}
-{{--                                                                          data-xy="x:15px;y:240px;"--}}
-{{--                                                                          data-dim="w:540px;h:380px;"--}}
-{{--                                                                          data-frame_0="tp:600;"--}}
-{{--                                                                          data-frame_1="tp:600;e:power2.inOut;st:1450;"--}}
-{{--                                                                          data-frame_999="o:0;tp:600;e:nothing;st:w;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-RUjiY"--}}
-{{--                                                                   id="style-RUjiY">--}}
-{{--                                                        <rs-loop-wrap id="style-wxntG" class="style-wxntG">--}}
-{{--                                                            <rs-mask-wrap id="style-mE9b9" class="style-mE9b9">--}}
-{{--                                                                <rs-layer id="slider-1-slide-35-layer-5"--}}
-{{--                                                                          class="slider_line tp-shape tp-shapewrapper rs-layer style-E2yGk"--}}
-{{--                                                                          data-type="shape" data-rsp_ch="on"--}}
-{{--                                                                          data-xy="x:80px;y:306px;" data-text="fw:900;"--}}
-{{--                                                                          data-dim="w:50px;h:3px;"--}}
-{{--                                                                          data-frame_0="x:-100%;o:1;tp:600;"--}}
-{{--                                                                          data-frame_0_mask="u:t;"--}}
-{{--                                                                          data-frame_1="tp:600;e:Strong.easeOut;st:1450;"--}}
-{{--                                                                          data-frame_1_mask="u:t;"--}}
-{{--                                                                          data-frame_999="x:-100%;tp:600;st:w;"--}}
-{{--                                                                          data-frame_999_mask="u:t;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-gCAcK"--}}
-{{--                                                                   id="style-gCAcK">--}}
-{{--                                                        <rs-loop-wrap id="style-oTN4p" class="style-oTN4p">--}}
-{{--                                                            <rs-mask-wrap id="style-cRpK2" class="style-cRpK2">--}}
-{{--                                                                <rs-layer id="slider-1-slide-35-layer-2"--}}
-{{--                                                                          class="STM-Title rs-layer style-MsHnM"--}}
-{{--                                                                          data-type="text"--}}
-{{--                                                                          data-color="rgba(255,255,255,1)"--}}
-{{--                                                                          data-rsp_ch="on" data-xy="x:80px;y:337px;"--}}
-{{--                                                                          data-text="s:48;l:54;"--}}
-{{--                                                                          data-frame_0="y:50px;tp:600;"--}}
-{{--                                                                          data-frame_1="tp:600;e:Strong.easeOut;st:700;sp:1000;"--}}
-{{--                                                                          data-frame_999="y:50px;o:0;tp:600;e:nothing;st:w;sp:400;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                    <span id="style-iH1oo" class="style-iH1oo">--}}
-{{--                                                                        TRANSATLANTIC--}}
-{{--                                                                        <br>--}}
-{{--                                                                        DELIVERY--}}
-{{--                                                                    </span>--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-Pvhbr"--}}
-{{--                                                                   id="style-Pvhbr">--}}
-{{--                                                        <rs-loop-wrap id="style-kwvpQ" class="style-kwvpQ">--}}
-{{--                                                            <rs-mask-wrap id="style-16O7V" class="style-16O7V">--}}
-{{--                                                                <p id="slider-1-slide-35-layer-6"--}}
-{{--                                                                   class="rs-layer STM-Text style-bBpHN"--}}
-{{--                                                                   data-type="text" data-color="rgba(255,255,255,1)"--}}
-{{--                                                                   data-rsp_ch="on" data-xy="x:80px;y:472px;"--}}
-{{--                                                                   data-text="s:16;l:28;" data-frame_0="y:50px;tp:600;"--}}
-{{--                                                                   data-frame_1="tp:600;e:Strong.easeOut;st:900;sp:1000;"--}}
-{{--                                                                   data-frame_999="y:50px;o:0;tp:600;e:nothing;st:w;sp:400;"--}}
-{{--                                                                   data-idcheck="true">--}}
-{{--                                                                    Combined rail road transport is particularly--}}
-{{--                                                                    <br>--}}
-{{--                                                                    well suited to the shipping of hazardous goods--}}
-{{--                                                                    <br>--}}
-{{--                                                                    since it reduces risk.--}}
-{{--                                                                </p>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                </rs-slide>--}}
-{{--                                                <rs-slide data-key="rs-34" data-title="Slide"--}}
-{{--                                                          data-anim="d:20;f:slidebased;"--}}
-{{--                                                          data-in="prst:rndany;o:-0.5;x:(15%);sx:0.8;sy:0.8;row:5;col:5;"--}}
-{{--                                                          class="overlay style-tXHBW" data-originalindex="3"--}}
-{{--                                                          data-origindex="2" data-description="" data-sba=""--}}
-{{--                                                          data-scroll-based="false" id="style-tXHBW">--}}
-{{--                                                    <rs-sbg-px>--}}
-{{--                                                        <rs-sbg-wrap data-key="rs-34">--}}
-{{--                                                            <rs-sbg data-lazyload="//logistics.stylemixthemes.com/wp-content/uploads/2015/12/slider_3.jpg"--}}
-{{--                                                                    class="style-SvohL" data-bgcolor="transparent"--}}
-{{--                                                                    id="style-SvohL">--}}
-{{--                                                                <canvas id="style-XibU9" class="style-XibU9">--}}
-{{--                                                                </canvas>--}}
-{{--                                                            </rs-sbg>--}}
-{{--                                                        </rs-sbg-wrap>--}}
-{{--                                                    </rs-sbg-px>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-75rkf"--}}
-{{--                                                                   id="style-75rkf">--}}
-{{--                                                        <rs-loop-wrap id="style-bdJXJ" class="style-bdJXJ">--}}
-{{--                                                            <rs-mask-wrap id="style-GtQ96" class="style-GtQ96">--}}
-{{--                                                                <rs-layer id="slider-1-slide-34-layer-9"--}}
-{{--                                                                          class="slider_text_bg tp-shape tp-shapewrapper rs-layer style-JoZEP"--}}
-{{--                                                                          data-type="shape" data-rsp_ch="on"--}}
-{{--                                                                          data-xy="x:15px;y:240px;"--}}
-{{--                                                                          data-dim="w:540px;h:380px;"--}}
-{{--                                                                          data-frame_0="tp:600;"--}}
-{{--                                                                          data-frame_1="tp:600;e:power2.inOut;st:1450;"--}}
-{{--                                                                          data-frame_999="o:0;tp:600;e:nothing;st:w;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-CsTyg"--}}
-{{--                                                                   id="style-CsTyg">--}}
-{{--                                                        <rs-loop-wrap id="style-osmCS" class="style-osmCS">--}}
-{{--                                                            <rs-mask-wrap id="style-3FOXn" class="style-3FOXn">--}}
-{{--                                                                <rs-layer id="slider-1-slide-34-layer-5"--}}
-{{--                                                                          class="slider_line tp-shape tp-shapewrapper rs-layer style-AiPRa"--}}
-{{--                                                                          data-type="shape" data-rsp_ch="on"--}}
-{{--                                                                          data-xy="x:80px;y:306px;" data-text="fw:900;"--}}
-{{--                                                                          data-dim="w:50px;h:3px;"--}}
-{{--                                                                          data-frame_0="x:-100%;o:1;tp:600;"--}}
-{{--                                                                          data-frame_0_mask="u:t;"--}}
-{{--                                                                          data-frame_1="tp:600;e:Strong.easeOut;st:1450;"--}}
-{{--                                                                          data-frame_1_mask="u:t;"--}}
-{{--                                                                          data-frame_999="x:-100%;tp:600;st:w;"--}}
-{{--                                                                          data-frame_999_mask="u:t;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-hM3LE"--}}
-{{--                                                                   id="style-hM3LE">--}}
-{{--                                                        <rs-loop-wrap id="style-nUqEX" class="style-nUqEX">--}}
-{{--                                                            <rs-mask-wrap id="style-41iGX" class="style-41iGX">--}}
-{{--                                                                <rs-layer id="slider-1-slide-34-layer-2"--}}
-{{--                                                                          class="STM-Title rs-layer style-WV93o"--}}
-{{--                                                                          data-type="text"--}}
-{{--                                                                          data-color="rgba(255,255,255,1)"--}}
-{{--                                                                          data-rsp_ch="on" data-xy="x:80px;y:337px;"--}}
-{{--                                                                          data-text="s:48;l:54;"--}}
-{{--                                                                          data-frame_0="y:50px;tp:600;"--}}
-{{--                                                                          data-frame_1="tp:600;e:Strong.easeOut;st:700;sp:1000;"--}}
-{{--                                                                          data-frame_999="y:50px;o:0;tp:600;e:nothing;st:w;sp:400;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                    <span id="style-vfnBU" class="style-vfnBU">--}}
-{{--                                                                        SEA &amp; OCEAN--}}
-{{--                                                                        <br>--}}
-{{--                                                                        DELIVERY--}}
-{{--                                                                    </span>--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-pI1wl"--}}
-{{--                                                                   id="style-pI1wl">--}}
-{{--                                                        <rs-loop-wrap id="style-MDlsp" class="style-MDlsp">--}}
-{{--                                                            <rs-mask-wrap id="style-Xff6J" class="style-Xff6J">--}}
-{{--                                                                <p id="slider-1-slide-34-layer-6"--}}
-{{--                                                                   class="rs-layer STM-Text style-3EJXU"--}}
-{{--                                                                   data-type="text" data-color="rgba(255,255,255,1)"--}}
-{{--                                                                   data-rsp_ch="on" data-xy="x:80px;y:472px;"--}}
-{{--                                                                   data-text="s:16;l:28;" data-frame_0="y:50px;tp:600;"--}}
-{{--                                                                   data-frame_1="tp:600;e:Strong.easeOut;st:900;sp:1000;"--}}
-{{--                                                                   data-frame_999="y:50px;o:0;tp:600;e:nothing;st:w;sp:400;"--}}
-{{--                                                                   data-idcheck="true">--}}
-{{--                                                                    Sea-Air cargo is the last to be loaded--}}
-{{--                                                                    <br>--}}
-{{--                                                                    and the first to be unloaded, reducing--}}
-{{--                                                                    <br>--}}
-{{--                                                                    transshipment times and risk.--}}
-{{--                                                                </p>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                </rs-slide>--}}
-{{--                                                <rs-slide data-key="rs-33" data-title="Slide" data-anim="p:transparent;"--}}
-{{--                                                          data-in="prst:rndany;o:0;" data-out="o:0;"--}}
-{{--                                                          class="overlay style-ZxTEj" data-originalindex="4"--}}
-{{--                                                          data-origindex="3" data-description="" data-sba=""--}}
-{{--                                                          data-scroll-based="false" data-owidth="1920"--}}
-{{--                                                          data-oheight="900" id="style-ZxTEj">--}}
-{{--                                                    <rs-sbg-px>--}}
-{{--                                                        <rs-sbg-wrap data-key="rs-33" data-owidth="1920"--}}
-{{--                                                                     data-oheight="900">--}}
-{{--                                                            <rs-sbg data-lazyload="//logistics.stylemixthemes.com/wp-content/uploads/2015/12/slider_4.jpg"--}}
-{{--                                                                    class="style-wVEoE" data-bgcolor="transparent"--}}
-{{--                                                                    data-src-rs-ref="//logistics.stylemixthemes.com/wp-content/uploads/2015/12/slider_4.jpg"--}}
-{{--                                                                    id="style-wVEoE">--}}
-{{--                                                                <canvas id="style-NtgOj" class="style-NtgOj">--}}
-{{--                                                                </canvas>--}}
-{{--                                                            </rs-sbg>--}}
-{{--                                                        </rs-sbg-wrap>--}}
-{{--                                                    </rs-sbg-px>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-Y2hWg"--}}
-{{--                                                                   id="style-Y2hWg">--}}
-{{--                                                        <rs-loop-wrap id="style-UNote" class="style-UNote">--}}
-{{--                                                            <rs-mask-wrap id="style-SEkYO" class="style-SEkYO">--}}
-{{--                                                                <rs-layer id="slider-1-slide-33-layer-9"--}}
-{{--                                                                          class="slider_text_bg tp-shape tp-shapewrapper rs-layer style-S8MUP"--}}
-{{--                                                                          data-type="shape" data-rsp_ch="on"--}}
-{{--                                                                          data-xy="x:15px;y:240px;"--}}
-{{--                                                                          data-dim="w:540px;h:380px;"--}}
-{{--                                                                          data-frame_0="tp:600;"--}}
-{{--                                                                          data-frame_1="tp:600;e:power2.inOut;st:1450;"--}}
-{{--                                                                          data-frame_999="o:0;tp:600;e:nothing;st:w;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-Lcqj3"--}}
-{{--                                                                   id="style-Lcqj3">--}}
-{{--                                                        <rs-loop-wrap id="style-oVjaY" class="style-oVjaY">--}}
-{{--                                                            <rs-mask-wrap id="style-nmVsw" class="style-nmVsw">--}}
-{{--                                                                <rs-layer id="slider-1-slide-33-layer-5"--}}
-{{--                                                                          class="slider_line tp-shape tp-shapewrapper rs-layer style-NeYvZ"--}}
-{{--                                                                          data-type="shape" data-rsp_ch="on"--}}
-{{--                                                                          data-xy="x:80px;y:306px;" data-text="fw:900;"--}}
-{{--                                                                          data-dim="w:50px;h:3px;"--}}
-{{--                                                                          data-frame_0="x:-100%;o:1;tp:600;"--}}
-{{--                                                                          data-frame_0_mask="u:t;"--}}
-{{--                                                                          data-frame_1="tp:600;e:Strong.easeOut;st:1450;"--}}
-{{--                                                                          data-frame_1_mask="u:t;"--}}
-{{--                                                                          data-frame_999="x:-100%;tp:600;st:w;"--}}
-{{--                                                                          data-frame_999_mask="u:t;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-vjaee"--}}
-{{--                                                                   id="style-vjaee">--}}
-{{--                                                        <rs-loop-wrap id="style-NOtHz" class="style-NOtHz">--}}
-{{--                                                            <rs-mask-wrap id="style-GyeUx" class="style-GyeUx">--}}
-{{--                                                                <rs-layer id="slider-1-slide-33-layer-2"--}}
-{{--                                                                          class="STM-Title rs-layer style-fTiDy"--}}
-{{--                                                                          data-type="text"--}}
-{{--                                                                          data-color="rgba(255,255,255,1)"--}}
-{{--                                                                          data-rsp_ch="on" data-xy="x:80px;y:337px;"--}}
-{{--                                                                          data-text="s:48;l:54;"--}}
-{{--                                                                          data-frame_0="y:50px;tp:600;"--}}
-{{--                                                                          data-frame_1="tp:600;e:Strong.easeOut;st:700;sp:1000;"--}}
-{{--                                                                          data-frame_999="y:50px;o:0;tp:600;e:nothing;st:w;sp:400;"--}}
-{{--                                                                          data-idcheck="true">--}}
-{{--                                                                    <span id="style-bSIki" class="style-bSIki">--}}
-{{--                                                                        WAREHOUSING--}}
-{{--                                                                        <br>--}}
-{{--                                                                        STORAGE--}}
-{{--                                                                    </span>--}}
-{{--                                                                </rs-layer>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                    <rs-layer-wrap class="rs-parallax-wrap  style-aZWAh"--}}
-{{--                                                                   id="style-aZWAh">--}}
-{{--                                                        <rs-loop-wrap id="style-YopmD" class="style-YopmD">--}}
-{{--                                                            <rs-mask-wrap id="style-odDZk" class="style-odDZk">--}}
-{{--                                                                <p id="slider-1-slide-33-layer-6"--}}
-{{--                                                                   class="rs-layer STM-Text style-jZL1r"--}}
-{{--                                                                   data-type="text" data-color="rgba(255,255,255,1)"--}}
-{{--                                                                   data-rsp_ch="on" data-xy="x:80px;y:472px;"--}}
-{{--                                                                   data-text="s:16;l:28;" data-frame_0="y:50px;tp:600;"--}}
-{{--                                                                   data-frame_1="tp:600;e:Strong.easeOut;st:900;sp:1000;"--}}
-{{--                                                                   data-frame_999="y:50px;o:0;tp:600;e:nothing;st:w;sp:400;"--}}
-{{--                                                                   data-idcheck="true">--}}
-{{--                                                                    You can opt for dedicated platforms from--}}
-{{--                                                                    <br>--}}
-{{--                                                                    the advantages related to shared surfaces,--}}
-{{--                                                                    <br>--}}
-{{--                                                                    resources and equipment.--}}
-{{--                                                                </p>--}}
-{{--                                                            </rs-mask-wrap>--}}
-{{--                                                        </rs-loop-wrap>--}}
-{{--                                                    </rs-layer-wrap>--}}
-{{--                                                </rs-slide>--}}
-{{--                                            </rs-slides>--}}
-{{--                                        </rs-module>--}}
-{{--                                    </rs-module-wrap>--}}
-{{--                                    <rs-fw-forcer style="height:900px">--}}
-{{--                                    </rs-fw-forcer>--}}
-{{--                                </rs-fullwidth-wrap>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div data-full-width="true" data-full-width-init="true"--}}
-{{--                     class="row-fluid base_bg_color custom_1448432556856 style-XZQHV" id="style-XZQHV">--}}
-{{--                    <div class="column column_container col-sm-3 hidden-xs">--}}
-{{--                        <div class="column-inner">--}}
-{{--                            <div class="wrapper">--}}
-{{--                                <a href="#" onclick="revapi1.revshowslide(1);"--}}
-{{--                                   class="rev_slider_nav rev_slider_1 rev_slide_1 active">--}}
-{{--                                    <span style="" class="icon">--}}
-{{--                                        <i class="stm-transport842">--}}
-
-{{--                                        </i>--}}
-{{--                                    </span>--}}
-{{--                                    <span class="title">--}}
-{{--                                        Road Freight--}}
-{{--                                    </span>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="column column_container col-sm-3 hidden-xs">--}}
-{{--                        <div class="column-inner">--}}
-{{--                            <div class="wrapper">--}}
-{{--                                <a href="#" onclick="revapi1.revshowslide(2);"--}}
-{{--                                   class="rev_slider_nav rev_slider_1 rev_slide_2">--}}
-{{--                                    <span style="" class="icon">--}}
-{{--                                        <i class="stm-transport839">--}}
-
-{{--                                        </i>--}}
-{{--                                    </span>--}}
-{{--                                    <span class="title">--}}
-{{--                                        Air Freight--}}
-{{--                                    </span>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="column column_container col-sm-3 hidden-xs">--}}
-{{--                        <div class="column-inner">--}}
-{{--                            <div class="wrapper">--}}
-{{--                                <a href="#" onclick="revapi1.revshowslide(3);"--}}
-{{--                                   class="rev_slider_nav rev_slider_1 rev_slide_3">--}}
-{{--                                    <span style="" class="icon">--}}
-{{--                                        <i class="stm-ship">--}}
-
-{{--                                        </i>--}}
-{{--                                    </span>--}}
-{{--                                    <span class="title">--}}
-{{--                                        Sea Freight--}}
-{{--                                    </span>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="column column_container col-sm-3 hidden-xs">--}}
-{{--                        <div class="column-inner">--}}
-{{--                            <div class="wrapper">--}}
-{{--                                <a href="#" onclick="revapi1.revshowslide(4);"--}}
-{{--                                   class="rev_slider_nav rev_slider_1 rev_slide_4">--}}
-{{--                                    <span style="" class="icon">--}}
-{{--                                        <i class="stm-warehouse">--}}
-
-{{--                                        </i>--}}
-{{--                                    </span>--}}
-{{--                                    <span class="title">--}}
-{{--                                        Warehousing--}}
-{{--                                    </span>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <section class="home-showcase">--}}
-{{--                    <div class="swiper home-showcaseSlider">--}}
-{{--                        <div class="swiper-wrapper">--}}
-{{--                            <div class="swiper-slide">--}}
-{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=42)">--}}
-{{--                                    <div class="text-container">--}}
-{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
-{{--                                        <div class="container-arrow-button">--}}
-{{--                                            <a class="cta arrow-button" href="#">--}}
-{{--                                                an example of link--}}
-{{--                                                <svg viewBox="0 0 76.922 65">--}}
-{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
-{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
-{{--                                                </svg>--}}
-{{--                                            </a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="filter"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="swiper-slide">--}}
-{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=43)">--}}
-{{--                                    <div class="text-container">--}}
-{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
-{{--                                        <div class="container-arrow-button">--}}
-{{--                                            <a class="cta arrow-button" href="#">--}}
-{{--                                                an example of link--}}
-{{--                                                <svg viewBox="0 0 76.922 65">--}}
-{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
-{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
-{{--                                                </svg>--}}
-{{--                                            </a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="filter"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="swiper-slide">--}}
-{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=44)">--}}
-{{--                                    <div class="text-container">--}}
-{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
-{{--                                        <div class="container-arrow-button">--}}
-{{--                                            <a class="cta arrow-button" href="#">--}}
-{{--                                                an example of link--}}
-{{--                                                <svg viewBox="0 0 76.922 65">--}}
-{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
-{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
-{{--                                                </svg>--}}
-{{--                                            </a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="filter"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="swiper-slide">--}}
-{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=45)">--}}
-{{--                                    <div class="text-container">--}}
-{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
-{{--                                        <div class="container-arrow-button">--}}
-{{--                                            <a class="cta arrow-button" href="#">--}}
-{{--                                                an example of link--}}
-{{--                                                <svg viewBox="0 0 76.922 65">--}}
-{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
-{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
-{{--                                                </svg>--}}
-{{--                                            </a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="filter"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="swiper-slide">--}}
-{{--                                <div class="swiper-image" data-swiper-parallax-x="3%" style="background-image:url(https://source.unsplash.com/random?sig=46)">--}}
-{{--                                    <div class="text-container">--}}
-{{--                                        <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet <span class="orangeIcon"></span> <br> Consectetur <span class="orangeIcon"></span></h1>--}}
-{{--                                        <div class="container-arrow-button">--}}
-{{--                                            <a class="cta arrow-button" href="#">--}}
-{{--                                                an example of link--}}
-{{--                                                <svg viewBox="0 0 76.922 65">--}}
-{{--                                                    <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)" fill="none" stroke="#8c97d0" stroke-width="1"></circle>--}}
-{{--                                                    <path id="Union_1" data-name="Union 1" d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z" transform="translate(6111 10)" fill="#10112b"></path>--}}
-{{--                                                </svg>--}}
-{{--                                            </a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="filter"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-
-{{--                        <!-- pagination -->--}}
-{{--                        <div class="swiper-pagination showcaseSlider-pagination"></div>--}}
-
-{{--                        <!-- navigation buttons -->--}}
-{{--                        <div class="showcaseSlider-nav">--}}
-{{--                            <div class="swiper-button-prev showcaseSlider-prev"></div>--}}
-{{--                            <div class="swiper-button-next showcaseSlider-next"></div>--}}
-{{--                        </div>--}}
-
-{{--                    </div>--}}
-{{--                    <a href="#scroll1" class="scrollSliderButton">Scroll <div class="line"></div></a>--}}
-{{--                </section>--}}
-
-                <div class="swiper">
+{{--     start hero slide       --}}
+            <section class="home-showcase">
+                <div class="swiper home-showcaseSlider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="swiper-image" style="background: url('https://road.cc/sites/default/files/2022-orbea-terra-2.jpeg') no-repeat center center; background-size:cover;"></div>
-                            <div class="overlay"></div>
-                            <div class="content-wrapper content-right">
-                                <div class="content">
-                                    <div class="kicker">ORBEA TERRA</div>
-                                    <h1>GRAVEL FROM THE GROUND UP</h1>
-                                    <p>Designed from the ground up for gravel, Terra isn't a repurposed road bike or a slimmed down mountain bike. Terra IS gravel. Add comfort to your road adventures, finally discover where that dirt trail leads or let your trips spread overnight. There is a wide world out there and Terra is ready to explore it with you.</p>
-                                    <a href="" class="button">LEARN MORE</a>
+                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                 style="background-image:url(https://source.unsplash.com/random?sig=42)">
+                                <div class="text-container">
+                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                class="orangeIcon"></span></h1>
+                                    <div class="container-arrow-button">
+                                        <a class="cta arrow-button" href="#">
+                                            an example of link
+                                            <svg viewBox="0 0 76.922 65">
+                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                <path id="Union_1" data-name="Union 1"
+                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
+                                <div class="filter"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper-image" style="background: url('https://d1mo5ln9tjltxq.cloudfront.net/-/media/images/my20/bikes/road/gravel/topstone-carbon/topstonecarbon17qa22.ashx?mh=2560&mw=1920&hash=323C6729182132F3B74F4998B12A676E') no-repeat center center; background-size:cover;"></div>
-                            <div class="overlay"></div>
-                            <div class="content-wrapper">
-                                <div class="content">
-                                    <div class="kicker">CANNONDALE TOPSTONE</div>
-                                    <h1>POSITION TO PLAY</h1>
-                                    <p>Relaxed enough to go long, sporty enough to shred, Topstone Carbon offers a riding position that brings comfort and control on all-day adventures and confidence for singletrack sessions.</p>
-                                    <a href="" class="button">LEARN MORE</a>
+                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                 style="background-image:url(https://source.unsplash.com/random?sig=43)">
+                                <div class="text-container">
+                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                class="orangeIcon"></span></h1>
+                                    <div class="container-arrow-button">
+                                        <a class="cta arrow-button" href="#">
+                                            an example of link
+                                            <svg viewBox="0 0 76.922 65">
+                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                <path id="Union_1" data-name="Union 1"
+                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
+                                <div class="filter"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper-image" style="background: url('https://i.shgcdn.com/6589b327-5a10-47c1-b7bd-441ca22c75e1/-/format/auto/-/preview/3000x3000/-/quality/lighter/') no-repeat center center; background-size:cover;"></div>
-                            <div class="overlay"></div>
-                            <div class="content-wrapper content-right">
-                                <div class="content">
-                                    <div class="kicker">OTSO WAHEELA C</div>
-                                    <h1>VERSATILITY MEETS PERFORMANCE</h1>
-                                    <p>The Waheela C is a carbon-framed drop bar bike with an adjustable geometry, unrivaled ride quality, and enormous tire clearance for 700c x 54mm, 650b x 54mm, or 29" x 2.1" tires.</p>
-                                    <a href="" class="button">LEARN MORE</a>
+                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                 style="background-image:url(https://source.unsplash.com/random?sig=44)">
+                                <div class="text-container">
+                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                class="orangeIcon"></span></h1>
+                                    <div class="container-arrow-button">
+                                        <a class="cta arrow-button" href="#">
+                                            an example of link
+                                            <svg viewBox="0 0 76.922 65">
+                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                <path id="Union_1" data-name="Union 1"
+                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
+                                <div class="filter"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="swiper-image" style="background: url('https://www.specialized.com/medias/09-ROAD-3212-Gravel-Lander-Diverge-Hero-2880x1620.jpg?context=bWFzdGVyfGltYWdlc3w3ODEyMDd8aW1hZ2UvanBlZ3xpbWFnZXMvaDY5L2g3Yy85MTMxMDk4MDQ2NDk0LmpwZ3wxYTQ2YWQxNmUyNWYzNjIwZjI5NTJmOWRiZDYyYTZjNWEzZDg2N2RhZDhiNDc0ZjEwOGNmYWNkZTVhNTE0MTJl') no-repeat center center; background-size:cover;"></div>
-                            <div class="overlay"></div>
-                            <div class="content-wrapper content-right">
-                                <div class="content">
-                                    <div class="kicker">SPECIALIZED DIVERGE</div>
-                                    <h1>THE ULTIMATE GETAWAY VEHICLE</h1>
-                                    <p>When the road ahead is long and challenging, a smooth ride that delivers confidence, speed, and comfort is mandatory. Meet the Future Shock. It delivers a smooth and confident ride over any terrain, while keeping the frame stiff and nimble for efficient power transfer and precise handling.</p>
-                                    <a href="" class="button">LEARN MORE</a>
+                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                 style="background-image:url(https://source.unsplash.com/random?sig=45)">
+                                <div class="text-container">
+                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                class="orangeIcon"></span></h1>
+                                    <div class="container-arrow-button">
+                                        <a class="cta arrow-button" href="#">
+                                            an example of link
+                                            <svg viewBox="0 0 76.922 65">
+                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                <path id="Union_1" data-name="Union 1"
+                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
+                                <div class="filter"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                 style="background-image:url(https://source.unsplash.com/random?sig=46)">
+                                <div class="text-container">
+                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                class="orangeIcon"></span></h1>
+                                    <div class="container-arrow-button">
+                                        <a class="cta arrow-button" href="#">
+                                            an example of link
+                                            <svg viewBox="0 0 76.922 65">
+                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                <path id="Union_1" data-name="Union 1"
+                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="filter"></div>
                             </div>
                         </div>
                     </div>
+
                     <!-- pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-nav-wrapper">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination showcaseSlider-pagination"></div>
+
+                    <!-- navigation buttons -->
+                    <div class="showcaseSlider-nav">
+                        <div class="swiper-button-prev showcaseSlider-prev"></div>
+                        <div class="swiper-button-next showcaseSlider-next"></div>
                     </div>
+
                 </div>
+                <a href="#scroll1" class="scrollSliderButton">
+                    <div class=""></div>
+                </a>
+            </section>
+{{--     end hero slide       --}}
+            <article class="container">
                 <div class="row-full-width">
                 </div>
                 <div class="row-fluid hidden-lg hidden-md hidden-sm custom_1449213766351 row-has-fill row-o-full-height row-o-columns-middle row-flex style-oIZzi"
@@ -714,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row-fluid custom_1450264294682">
+                <div class="row row-fluid custom_1450264294682">
                     <div class="column column_container col-sm-12 col-lg-6 col-md-6">
                         <div class="column-inner">
                             <div class="wrapper">
@@ -795,11 +251,11 @@
                         </div>
                     </div>
                 </div>
-                <div data-full-width="true" data-full-width-init="true"
-                     class="row-fluid secondary_bg_color custom_1450270522171 style-fIR6j" id="style-fIR6j">
+            </article>
+                <div class="row-fluid secondary_bg_color custom_row-content row-content" id="row-content">
                     <div class="column column_container col-sm-6 col-lg-3 col-md-3">
                         <div class="column-inner custom_1449142338264">
-                            <div class="wrapper">
+                            <div class="wrappers">
                                 <div class="stm_counter">
                                     <div class="icon style-hHUs9" id="style-hHUs9">
                                         <i class="stm-projects-done">
@@ -819,7 +275,7 @@
                     </div>
                     <div class="column column_container col-sm-6 col-lg-3 col-md-3">
                         <div class="column-inner custom_1449142329000">
-                            <div class="wrapper">
+                            <div class="wrappers">
                                 <div class="stm_counter">
                                     <div class="icon style-5S2Ko" id="style-5S2Ko">
                                         <i class="stm-clients-worldwide">
@@ -839,7 +295,7 @@
                     </div>
                     <div class="column column_container col-sm-6 col-lg-3 col-md-3">
                         <div class="column-inner custom_1449142343672">
-                            <div class="wrapper">
+                            <div class="wrappers">
                                 <div class="stm_counter">
                                     <div class="icon style-o84ii" id="style-o84ii">
                                         <i class="stm-owned-vehicles">
@@ -859,7 +315,7 @@
                     </div>
                     <div class="column column_container col-sm-6 col-lg-3 col-md-3">
                         <div class="column-inner custom_1449142350247">
-                            <div class="wrapper">
+                            <div class="wrappers">
                                 <div class="stm_counter">
                                     <div class="icon style-gSSvD" id="style-gSSvD">
                                         <i class="stm-people-in-team">
@@ -1015,6 +471,7 @@
                         </div>
                     </div>
                 </div>
+            <article class="container">
                 <div class="row-full-width">
                 </div>
                 <div data-full-width="true" data-full-width-init="true" data-parallax="3"
@@ -1399,205 +856,206 @@
                         </div>
                     </div>
                 </div>
-                <div data-full-width="true" data-full-width-init="true" data-stretch-content="true"
-                     class="row-fluid custom_1450356826637 row-no-padding style-n2hfi" id="style-n2hfi">
-                    <div class="column column_container col-sm-12">
-                        <div class="column-inner">
-                            <div class="wrapper">
-                                <div class="testimonials style_2 style-EIzLa" id="owl_wr_6501623c64086">
-                                    <div class="container">
-                                        <div class="testimonials_carousel_wr">
-                                            <div class="testimonials_carousel owl-carousel owl-theme owl-loaded"
-                                                 id="owl_6501623c64087">
-                                                <div class="owl-stage-outer owl-height style-ZqVVw" id="style-ZqVVw">
-                                                    <div class="owl-stage style-zCUQF" id="style-zCUQF">
-                                                        <div class="owl-item cloned style-2jAql" id="style-2jAql">
-                                                            <div class="item"
-                                                                 data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
-                                                                <p>
-                                                                    I’ve been happy with the services provided by
-                                                                    TransCargo LLC. Samantha Culligan has been
-                                                                    wonderful! She has returned my calls quickly, and
-                                                                    she answered all my questions!
-                                                                </p>
-                                                                <div class="sep">
-                                                                    <i class="stm-testimonials-new-2">
-                                                                    </i>
-                                                                </div>
-                                                                <div class="testimonial_info">
-                                                                    <h6>
-                                                                        Anna Briggs
-                                                                    </h6>
-                                                                    <div class="position">
-                                                                        CEO, Smart Move Ltd.
-                                                                    </div>
-                                                                </div>
+            </article>
+{{--     start hero slide 2    --}}
+            <div data-full-width="true" data-full-width-init="true" data-stretch-content="true"
+                 class="row-fluid custom_1450356826637 row-no-padding style-n2hfi" id="style-n2hfi">
+                <div class="column column_container col-sm-12">
+                    <div class="column-inner">
+                        <div class="wrapper">
+                            <div class="testimonials style_2 style-EIzLa" id="owl_wr_6501623c64086">
+                                <div class="container">
+                                    <div class="testimonials_carousel_wr">
+                                        <div class="testimonials_carousel owl-carousel owl-theme owl-loaded"
+                                             id="owl_6501623c64087">
+                                            <div class="owl-stage-outer owl-height style-ZqVVw" id="style-ZqVVw">
+                                                <div class="owl-stage style-zCUQF" id="style-zCUQF">
+                                                    <div class="owl-item cloned style-2jAql" id="style-2jAql">
+                                                        <div class="item"
+                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
+                                                            <p>
+                                                                I’ve been happy with the services provided by
+                                                                TransCargo LLC. Samantha Culligan has been
+                                                                wonderful! She has returned my calls quickly, and
+                                                                she answered all my questions!
+                                                            </p>
+                                                            <div class="sep">
+                                                                <i class="stm-testimonials-new-2">
+                                                                </i>
                                                             </div>
-                                                        </div>
-                                                        <div class="owl-item cloned style-dXGlZ" id="style-dXGlZ">
-                                                            <div class="item"
-                                                                 data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_3.jpg">
-                                                                <p>
-                                                                    This is due to their excellent service, competitive
-                                                                    pricing and customer support. That’s becoming so
-                                                                    distant and digital, it’s throughly refreshing to
-                                                                    get such a personal touch.
-                                                                </p>
-                                                                <div class="sep">
-                                                                    <i class="stm-testimonials-new-2">
-                                                                    </i>
-                                                                </div>
-                                                                <div class="testimonial_info">
-                                                                    <h6>
-                                                                        Jonathan Adams
-                                                                    </h6>
-                                                                    <div class="position">
-                                                                        Founder, Great Wall Ltd.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item style-YFe2A" id="style-YFe2A">
-                                                            <div class="item"
-                                                                 data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image.jpg">
-                                                                <p>
-                                                                    We were previously using an unreliable company with
-                                                                    a very complicated registration and transfer
-                                                                    process. Then we found TransCargo and the control
-                                                                    came back to us.
-                                                                </p>
-                                                                <div class="sep">
-                                                                    <i class="stm-testimonials-new-2">
-                                                                    </i>
-                                                                </div>
-                                                                <div class="testimonial_info">
-                                                                    <h6>
-                                                                        Steve McDonald
-                                                                    </h6>
-                                                                    <div class="position">
-                                                                        Manager, Tesla Motors Ltd.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item active style-wm7pi" id="style-wm7pi">
-                                                            <div class="item"
-                                                                 data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
-                                                                <p>
-                                                                    I’ve been happy with the services provided by
-                                                                    TransCargo LLC. Samantha Culligan has been
-                                                                    wonderful! She has returned my calls quickly, and
-                                                                    she answered all my questions!
-                                                                </p>
-                                                                <div class="sep">
-                                                                    <i class="stm-testimonials-new-2">
-                                                                    </i>
-                                                                </div>
-                                                                <div class="testimonial_info">
-                                                                    <h6>
-                                                                        Anna Briggs
-                                                                    </h6>
-                                                                    <div class="position">
-                                                                        CEO, Smart Move Ltd.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item style-Pbxkd" id="style-Pbxkd">
-                                                            <div class="item"
-                                                                 data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_3.jpg">
-                                                                <p>
-                                                                    This is due to their excellent service, competitive
-                                                                    pricing and customer support. That’s becoming so
-                                                                    distant and digital, it’s throughly refreshing to
-                                                                    get such a personal touch.
-                                                                </p>
-                                                                <div class="sep">
-                                                                    <i class="stm-testimonials-new-2">
-                                                                    </i>
-                                                                </div>
-                                                                <div class="testimonial_info">
-                                                                    <h6>
-                                                                        Jonathan Adams
-                                                                    </h6>
-                                                                    <div class="position">
-                                                                        Founder, Great Wall Ltd.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item cloned style-8kzzA" id="style-8kzzA">
-                                                            <div class="item"
-                                                                 data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image.jpg">
-                                                                <p>
-                                                                    We were previously using an unreliable company with
-                                                                    a very complicated registration and transfer
-                                                                    process. Then we found TransCargo and the control
-                                                                    came back to us.
-                                                                </p>
-                                                                <div class="sep">
-                                                                    <i class="stm-testimonials-new-2">
-                                                                    </i>
-                                                                </div>
-                                                                <div class="testimonial_info">
-                                                                    <h6>
-                                                                        Steve McDonald
-                                                                    </h6>
-                                                                    <div class="position">
-                                                                        Manager, Tesla Motors Ltd.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item cloned style-8yyYj" id="style-8yyYj">
-                                                            <div class="item"
-                                                                 data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
-                                                                <p>
-                                                                    I’ve been happy with the services provided by
-                                                                    TransCargo LLC. Samantha Culligan has been
-                                                                    wonderful! She has returned my calls quickly, and
-                                                                    she answered all my questions!
-                                                                </p>
-                                                                <div class="sep">
-                                                                    <i class="stm-testimonials-new-2">
-                                                                    </i>
-                                                                </div>
-                                                                <div class="testimonial_info">
-                                                                    <h6>
-                                                                        Anna Briggs
-                                                                    </h6>
-                                                                    <div class="position">
-                                                                        CEO, Smart Move Ltd.
-                                                                    </div>
+                                                            <div class="testimonial_info">
+                                                                <h6>
+                                                                    Anna Briggs
+                                                                </h6>
+                                                                <div class="position">
+                                                                    CEO, Smart Move Ltd.
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="owl-controls">
-                                                    <div class="owl-nav">
-                                                        <div class="owl-prev style-k8heS" id="style-k8heS">
-                                                            prev
+                                                    <div class="owl-item cloned style-dXGlZ" id="style-dXGlZ">
+                                                        <div class="item"
+                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_3.jpg">
+                                                            <p>
+                                                                This is due to their excellent service, competitive
+                                                                pricing and customer support. That’s becoming so
+                                                                distant and digital, it’s throughly refreshing to
+                                                                get such a personal touch.
+                                                            </p>
+                                                            <div class="sep">
+                                                                <i class="stm-testimonials-new-2">
+                                                                </i>
+                                                            </div>
+                                                            <div class="testimonial_info">
+                                                                <h6>
+                                                                    Jonathan Adams
+                                                                </h6>
+                                                                <div class="position">
+                                                                    Founder, Great Wall Ltd.
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="owl-next style-8EI21" id="style-8EI21">
-                                                            next
+                                                    </div>
+                                                    <div class="owl-item style-YFe2A" id="style-YFe2A">
+                                                        <div class="item"
+                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image.jpg">
+                                                            <p>
+                                                                We were previously using an unreliable company with
+                                                                a very complicated registration and transfer
+                                                                process. Then we found TransCargo and the control
+                                                                came back to us.
+                                                            </p>
+                                                            <div class="sep">
+                                                                <i class="stm-testimonials-new-2">
+                                                                </i>
+                                                            </div>
+                                                            <div class="testimonial_info">
+                                                                <h6>
+                                                                    Steve McDonald
+                                                                </h6>
+                                                                <div class="position">
+                                                                    Manager, Tesla Motors Ltd.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="owl-item active style-wm7pi" id="style-wm7pi">
+                                                        <div class="item"
+                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
+                                                            <p>
+                                                                I’ve been happy with the services provided by
+                                                                TransCargo LLC. Samantha Culligan has been
+                                                                wonderful! She has returned my calls quickly, and
+                                                                she answered all my questions!
+                                                            </p>
+                                                            <div class="sep">
+                                                                <i class="stm-testimonials-new-2">
+                                                                </i>
+                                                            </div>
+                                                            <div class="testimonial_info">
+                                                                <h6>
+                                                                    Anna Briggs
+                                                                </h6>
+                                                                <div class="position">
+                                                                    CEO, Smart Move Ltd.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="owl-item style-Pbxkd" id="style-Pbxkd">
+                                                        <div class="item"
+                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_3.jpg">
+                                                            <p>
+                                                                This is due to their excellent service, competitive
+                                                                pricing and customer support. That’s becoming so
+                                                                distant and digital, it’s throughly refreshing to
+                                                                get such a personal touch.
+                                                            </p>
+                                                            <div class="sep">
+                                                                <i class="stm-testimonials-new-2">
+                                                                </i>
+                                                            </div>
+                                                            <div class="testimonial_info">
+                                                                <h6>
+                                                                    Jonathan Adams
+                                                                </h6>
+                                                                <div class="position">
+                                                                    Founder, Great Wall Ltd.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="owl-item cloned style-8kzzA" id="style-8kzzA">
+                                                        <div class="item"
+                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image.jpg">
+                                                            <p>
+                                                                We were previously using an unreliable company with
+                                                                a very complicated registration and transfer
+                                                                process. Then we found TransCargo and the control
+                                                                came back to us.
+                                                            </p>
+                                                            <div class="sep">
+                                                                <i class="stm-testimonials-new-2">
+                                                                </i>
+                                                            </div>
+                                                            <div class="testimonial_info">
+                                                                <h6>
+                                                                    Steve McDonald
+                                                                </h6>
+                                                                <div class="position">
+                                                                    Manager, Tesla Motors Ltd.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="owl-item cloned style-8yyYj" id="style-8yyYj">
+                                                        <div class="item"
+                                                             data-image="https://logistics.stylemixthemes.com/wp-content/uploads/2015/11/testimonial_bg_image_2.jpg">
+                                                            <p>
+                                                                I’ve been happy with the services provided by
+                                                                TransCargo LLC. Samantha Culligan has been
+                                                                wonderful! She has returned my calls quickly, and
+                                                                she answered all my questions!
+                                                            </p>
+                                                            <div class="sep">
+                                                                <i class="stm-testimonials-new-2">
+                                                                </i>
+                                                            </div>
+                                                            <div class="testimonial_info">
+                                                                <h6>
+                                                                    Anna Briggs
+                                                                </h6>
+                                                                <div class="position">
+                                                                    CEO, Smart Move Ltd.
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="owl-dots" id="owl-nav-6501623c64088">
-                                                <div class="owl-dot">
+                                            <div class="owl-controls">
+                                                <div class="owl-nav">
+                                                    <div class="owl-prev style-k8heS" id="style-k8heS">
+                                                        prev
+                                                    </div>
+                                                    <div class="owl-next style-8EI21" id="style-8EI21">
+                                                        next
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-dots" id="owl-nav-6501623c64088">
+                                            <div class="owl-dot">
                                                     <span>
                                                     </span>
-                                                </div>
-                                                <div class="owl-dot active">
+                                            </div>
+                                            <div class="owl-dot active">
                                                     <span>
                                                     </span>
-                                                </div>
-                                                <div class="owl-dot">
+                                            </div>
+                                            <div class="owl-dot">
                                                     <span>
                                                     </span>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1606,6 +1064,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+{{--     end hero slide 2      --}}
+            <article class="container">
                 <div class="row-full-width">
                 </div>
                 <div class="row-fluid custom_1450356867512">
@@ -2060,13 +1521,14 @@
                 </div>
                 <div class="row-full-width">
                 </div>
-                <div class="row-full-width">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7450.9429371919005!2d105.75678!3d20.97373!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1694508342108!5m2!1svi!2s"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            </article>
             </div>
         </article>
+    <div class="row-full-width">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7450.9429371919005!2d105.75678!3d20.97373!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1694508342108!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     </div>
 @endsection
 
