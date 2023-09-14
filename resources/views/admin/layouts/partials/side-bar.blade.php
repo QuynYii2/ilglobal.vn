@@ -72,13 +72,18 @@
         </li><!-- End Icons Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#banners-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-images"></i><span>Banner</span><i class="bi bi-chevron-down ms-auto"></i>
+            <a class="nav-link collapsed" data-bs-target="#banner-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-images"></i><span>Banners</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
-            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <ul id="banner-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="{{route('admin.banner.create')}}">
-                        <i class="bi bi-circle"></i><span>Thêm mới</span>
+                    <a href="{{route('admin.banner.createBannerProcess')}}">
+                        <i class="bi bi-circle"></i><span>Thêm mới banner</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('admin.banner.list')}}">
+                        <i class="bi bi-circle"></i><span>Danh sách banner</span>
                     </a>
                 </li>
             </ul>
