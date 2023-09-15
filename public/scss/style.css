@@ -257,6 +257,7 @@
 @media (min-width: 1024px) {
   .home-showcase {
     margin: 2rem 0 7.9vw;
+    margin-bottom: 0;
   }
   .home-showcase .home-showcaseSlider {
     display: block;
