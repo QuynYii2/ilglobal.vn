@@ -284,6 +284,7 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
 
     @include screen-min(1024px) {
         margin: 2rem 0 7.9vw;
+        margin-bottom: 0;
         .home-showcaseSlider {
             display: block;
             .swiper-wrapper {

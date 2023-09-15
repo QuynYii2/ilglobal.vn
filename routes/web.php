@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('frontend/index');
 })->name('index');
 Route::get('/', [\App\Http\Controllers\frontend\HomeIndexController::class, 'index'])->name('index');
+Route::get('about', [\App\Http\Controllers\frontend\AboutController::class, 'index'])->name('about');
+Route::get('pricing', [\App\Http\Controllers\frontend\PricingController::class, 'index'])->name('pricing');
+Route::get('contact', [\App\Http\Controllers\frontend\ContactController::class, 'index'])->name('contact');
+Route::get('services', [\App\Http\Controllers\frontend\ServicesController::class, 'index'])->name('services');
 
 
 // Auth
