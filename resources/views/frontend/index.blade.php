@@ -173,121 +173,21 @@
                             <section class="home-showcase">
                                 <div class="swiper home-showcaseSlider">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="swiper-image" data-swiper-parallax-x="3%"
-                                                 style="background-image:url(https://source.unsplash.com/random?sig=42)">
-                                                <div class="text-container">
-                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
-                                                        <span class="orangeIcon"></span> <br> Consectetur <span
-                                                                class="orangeIcon"></span></h1>
-                                                    <div class="container-arrow-button">
-                                                        <a class="cta arrow-button" href="#">
-                                                            an example of link
-                                                            <svg viewBox="0 0 76.922 65">
-                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
-                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                                <path id="Union_1" data-name="Union 1"
-                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
-                                                                      transform="translate(6111 10)" fill="#10112b"></path>
-                                                            </svg>
-                                                        </a>
+                                        @foreach($products as $product)
+                                            <div class="swiper-slide">
+                                                <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                                                    <div class="card">
+                                                        <div class="card-img">
+                                                            <img src="{{$product->thumbnail}}" alt="" class="img-fluid">
+                                                        </div>
+                                                        <h3><a href="service-details.html"
+                                                               class="stretched-link">{{strip_tags($product->title_vi)}}</a>
+                                                        </h3>
+                                                        <p>{{strip_tags($product->short_content_vi)}}</p>
                                                     </div>
                                                 </div>
-                                                <div class="filter"></div>
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="swiper-image" data-swiper-parallax-x="3%"
-                                                 style="background-image:url(https://source.unsplash.com/random?sig=43)">
-                                                <div class="text-container">
-                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
-                                                        <span class="orangeIcon"></span> <br> Consectetur <span
-                                                                class="orangeIcon"></span></h1>
-                                                    <div class="container-arrow-button">
-                                                        <a class="cta arrow-button" href="#">
-                                                            an example of link
-                                                            <svg viewBox="0 0 76.922 65">
-                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
-                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                                <path id="Union_1" data-name="Union 1"
-                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
-                                                                      transform="translate(6111 10)" fill="#10112b"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="filter"></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="swiper-image" data-swiper-parallax-x="3%"
-                                                 style="background-image:url(https://source.unsplash.com/random?sig=44)">
-                                                <div class="text-container">
-                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
-                                                        <span class="orangeIcon"></span> <br> Consectetur <span
-                                                                class="orangeIcon"></span></h1>
-                                                    <div class="container-arrow-button">
-                                                        <a class="cta arrow-button" href="#">
-                                                            an example of link
-                                                            <svg viewBox="0 0 76.922 65">
-                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
-                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                                <path id="Union_1" data-name="Union 1"
-                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
-                                                                      transform="translate(6111 10)" fill="#10112b"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="filter"></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="swiper-image" data-swiper-parallax-x="3%"
-                                                 style="background-image:url(https://source.unsplash.com/random?sig=45)">
-                                                <div class="text-container">
-                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
-                                                        <span class="orangeIcon"></span> <br> Consectetur <span
-                                                                class="orangeIcon"></span></h1>
-                                                    <div class="container-arrow-button">
-                                                        <a class="cta arrow-button" href="#">
-                                                            an example of link
-                                                            <svg viewBox="0 0 76.922 65">
-                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
-                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                                <path id="Union_1" data-name="Union 1"
-                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
-                                                                      transform="translate(6111 10)" fill="#10112b"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="filter"></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="swiper-image" data-swiper-parallax-x="3%"
-                                                 style="background-image:url(https://source.unsplash.com/random?sig=46)">
-                                                <div class="text-container">
-                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
-                                                        <span class="orangeIcon"></span> <br> Consectetur <span
-                                                                class="orangeIcon"></span></h1>
-                                                    <div class="container-arrow-button">
-                                                        <a class="cta arrow-button" href="#">
-                                                            an example of link
-                                                            <svg viewBox="0 0 76.922 65">
-                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
-                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
-                                                                <path id="Union_1" data-name="Union 1"
-                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
-                                                                      transform="translate(6111 10)" fill="#10112b"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="filter"></div>
-                                            </div>
-                                        </div>
+                                        @endforeach
                                     </div>
 
                                     <!-- pagination -->
@@ -304,18 +204,6 @@
                                     <div class=""></div>
                                 </a>
                             </section>
-                            @foreach($products as $product)
-                                <div class="col-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img src="{{$product->thumbnail}}" alt="" class="img-fluid">
-                                        </div>
-                                        <h3><a href="service-details.html"
-                                               class="stretched-link">{{strip_tags($product->title_vi)}}</a></h3>
-                                        <p>{{strip_tags($product->short_content_vi)}}</p>
-                                    </div>
-                                </div><!-- End Card Item -->
-                            @endforeach
                         </div>
 
                     </div>

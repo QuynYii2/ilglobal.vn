@@ -40,15 +40,15 @@
           <div class="col-lg-4">
 
             <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <i class="fa-solid fa-location-dot"></i>
               <div>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Công ty TNHH IL Việt Nam, Khu đô thị An Hưng, La Khê, Hà Đông, Hà Nội, Việt Nam</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
+              <i class="fa-solid fa-envelope"></i>
               <div>
                 <h4>Email:</h4>
                 <p>info@example.com</p>
@@ -56,10 +56,10 @@
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex">
-              <i class="bi bi-phone flex-shrink-0"></i>
+              <i class="fa-solid fa-phone-volume"></i>
               <div>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55</p>
+                <p>+84 904 685 358</p>
               </div>
             </div><!-- End Info Item -->
 

@@ -1959,7 +1959,10 @@ button {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.button:hover {
+    color: #fff;
+    background: #34ccff;
+}
 
 .request_quote .button  {
     color: #fff;
@@ -2229,4 +2232,8 @@ button {
 }
 section#pricing {
     padding-bottom: 0px;
+}
+section.home-showcase {
+    padding-right: 0;
+    padding-left: 0;
 }
