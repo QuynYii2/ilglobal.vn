@@ -157,34 +157,286 @@
 
             </div>
         </section><!-- End About Us Section -->
+        <div class="container">
+            <div class="row gy-4">
+                <!-- ======= Services Section ======= -->
+                <section id="service" class="services pt-0 col-6">
+                    <div class="container" data-aos="fade-up">
 
-        <!-- ======= Services Section ======= -->
-        <section id="service" class="services pt-0">
-            <div class="container" data-aos="fade-up">
+                        <div class="section-header">
+                            <span>Our Services</span>
+                            <h2>Our Services</h2>
 
-                <div class="section-header">
-                    <span>Our Services</span>
-                    <h2>Our Services</h2>
+                        </div>
 
-                </div>
+                        <div class="row gy-4 d-flex">
+                            <section class="home-showcase">
+                                <div class="swiper home-showcaseSlider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                                 style="background-image:url(https://source.unsplash.com/random?sig=42)">
+                                                <div class="text-container">
+                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                                class="orangeIcon"></span></h1>
+                                                    <div class="container-arrow-button">
+                                                        <a class="cta arrow-button" href="#">
+                                                            an example of link
+                                                            <svg viewBox="0 0 76.922 65">
+                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                                <path id="Union_1" data-name="Union 1"
+                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="filter"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                                 style="background-image:url(https://source.unsplash.com/random?sig=43)">
+                                                <div class="text-container">
+                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                                class="orangeIcon"></span></h1>
+                                                    <div class="container-arrow-button">
+                                                        <a class="cta arrow-button" href="#">
+                                                            an example of link
+                                                            <svg viewBox="0 0 76.922 65">
+                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                                <path id="Union_1" data-name="Union 1"
+                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="filter"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                                 style="background-image:url(https://source.unsplash.com/random?sig=44)">
+                                                <div class="text-container">
+                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                                class="orangeIcon"></span></h1>
+                                                    <div class="container-arrow-button">
+                                                        <a class="cta arrow-button" href="#">
+                                                            an example of link
+                                                            <svg viewBox="0 0 76.922 65">
+                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                                <path id="Union_1" data-name="Union 1"
+                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="filter"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                                 style="background-image:url(https://source.unsplash.com/random?sig=45)">
+                                                <div class="text-container">
+                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                                class="orangeIcon"></span></h1>
+                                                    <div class="container-arrow-button">
+                                                        <a class="cta arrow-button" href="#">
+                                                            an example of link
+                                                            <svg viewBox="0 0 76.922 65">
+                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                                <path id="Union_1" data-name="Union 1"
+                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="filter"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-image" data-swiper-parallax-x="3%"
+                                                 style="background-image:url(https://source.unsplash.com/random?sig=46)">
+                                                <div class="text-container">
+                                                    <h1 class="bigTitle">Lorem ipsum dolor<span class="orangeIcon"></span> <br> Sit amet
+                                                        <span class="orangeIcon"></span> <br> Consectetur <span
+                                                                class="orangeIcon"></span></h1>
+                                                    <div class="container-arrow-button">
+                                                        <a class="cta arrow-button" href="#">
+                                                            an example of link
+                                                            <svg viewBox="0 0 76.922 65">
+                                                                <circle cx="32.5" cy="32.5" r="32" transform="translate(11.922)"
+                                                                        fill="none" stroke="#8c97d0" stroke-width="1"></circle>
+                                                                <path id="Union_1" data-name="Union 1"
+                                                                      d="M-6071.353,33.349l9.643-9.642H-6111v-2h48.941l-9.293-9.294,1.414-1.414,11.881,11.883-11.881,11.881Z"
+                                                                      transform="translate(6111 10)" fill="#10112b"></path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="filter"></div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                <div class="row gy-4">
-                    @foreach($products as $product)
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="{{$product->thumbnail}}" alt="" class="img-fluid">
+                                    <!-- pagination -->
+                                    <div class="swiper-pagination showcaseSlider-pagination"></div>
+
+                                    <!-- navigation buttons -->
+                                    <div class="showcaseSlider-nav">
+                                        <div class="swiper-button-prev showcaseSlider-prev"></div>
+                                        <div class="swiper-button-next showcaseSlider-next"></div>
+                                    </div>
+
                                 </div>
-                                <h3><a href="service-details.html"
-                                       class="stretched-link">{{strip_tags($product->title_vi)}}</a></h3>
-                                <p>{{strip_tags($product->short_content_vi)}}</p>
-                            </div>
-                        </div><!-- End Card Item -->
-                    @endforeach
-                </div>
+                                <a href="#scroll1" class="scrollSliderButton">
+                                    <div class=""></div>
+                                </a>
+                            </section>
+                            @foreach($products as $product)
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="{{$product->thumbnail}}" alt="" class="img-fluid">
+                                        </div>
+                                        <h3><a href="service-details.html"
+                                               class="stretched-link">{{strip_tags($product->title_vi)}}</a></h3>
+                                        <p>{{strip_tags($product->short_content_vi)}}</p>
+                                    </div>
+                                </div><!-- End Card Item -->
+                            @endforeach
+                        </div>
 
+                    </div>
+                </section>
+
+                <!-- End Services Section -->
+                <!-- ======= Frequently Asked Questions Section ======= -->
+                <section id="faq" class="faq col-6">
+                    <div class="container" data-aos="fade-up">
+
+                        <div class="section-header">
+                            <span>Frequently Asked Questions</span>
+                            <h2>Frequently Asked Questions</h2>
+
+                        </div>
+
+                        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-lg-10">
+
+                                <div class="accordion accordion-flush" id="faqlist">
+
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-content-1">
+                                                <i class="bi bi-question-circle question-icon"></i>
+                                                Non consectetur a erat nam at lectus urna duis?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                            <div class="accordion-body">
+                                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                                laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                                                rhoncus dolor purus non.
+                                            </div>
+                                        </div>
+                                    </div><!-- # Faq item-->
+
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-content-2">
+                                                <i class="bi bi-question-circle question-icon"></i>
+                                                Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                            <div class="accordion-body">
+                                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                                interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                                Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                            </div>
+                                        </div>
+                                    </div><!-- # Faq item-->
+
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-content-3">
+                                                <i class="bi bi-question-circle question-icon"></i>
+                                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                            <div class="accordion-body">
+                                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                                Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
+                                                suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                                                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                            </div>
+                                        </div>
+                                    </div><!-- # Faq item-->
+
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-content-4">
+                                                <i class="bi bi-question-circle question-icon"></i>
+                                                Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                            <div class="accordion-body">
+                                                <i class="bi bi-question-circle question-icon"></i>
+                                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                                interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                                Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                            </div>
+                                        </div>
+                                    </div><!-- # Faq item-->
+
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq-content-5">
+                                                <i class="bi bi-question-circle question-icon"></i>
+                                                Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                                            </button>
+                                        </h3>
+                                        <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                            <div class="accordion-body">
+                                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                                                suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
+                                                Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
+                                                turpis cursus in
+                                            </div>
+                                        </div>
+                                    </div><!-- # Faq item-->
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Frequently Asked Questions Section -->
             </div>
-        </section><!-- End Services Section -->
+
+        </div>
 
         <!-- ======= Call To Action Section ======= -->
         <section id="call-to-action" class="call-to-action">
@@ -298,289 +550,493 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
-                    <span>Pricing</span>
-                    <h2>Pricing</h2>
+                    <span>Contact</span>
+                    <h2>Contact</h2>
 
                 </div>
 
-                <div class="row gy-4">
+                <div class="row gy-4 contact-main">
+                    <div data-full-width="true" data-full-width-init="true"
+                         class="row-fluid d-flex" id="style-o1DoH">
+                        <div class="contact-sp column column_container col-sm-12 col-lg-5 col-md-6">
+                            <div class="column-inner custom_contact">
+                                <div class="wrapper">
+                                    <h2 style="text-align: left" class="custom_heading">
+                                        What makes us special?
+                                    </h2>
+                                    <div class="text_column content_element ">
+                                        <div class="wrapper">
+                                            <p style="color: #808080;">
+                                                Over 42,000 dedicated employees, working in 17 regional clusters around the globe, deliver operational excellence.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row row inner row-fluid reset-sm-paddings custom_1449127190171">
+                                        <div class="column column_container col-sm-6 col-xs-12">
+                                            <div class="column-inner custom_1450423994691">
+                                                <div class="wrapper">
+                                                    <div class="stm_icon left icon_position_left">
+                                                        <div class="icon style-BYmKN" id="style-BYmKN">
+                                                            <i class="stm-packaging-and-storage">
+                                                            </i>
+                                                        </div>
+                                                        <div class="icon_text">
+                                                            <div class="title style-Nrjq5" id="style-Nrjq5">
+                                                                Packaging
+                                                                <br>
+                                                                and Storage
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column column_container col-sm-6 col-xs-12">
+                                            <div class="column-inner custom_1450423999162">
+                                                <div class="wrapper">
+                                                    <div class="stm_icon left icon_position_left">
+                                                        <div class="icon style-Pwssa" id="style-Pwssa">
+                                                            <i class="stm-warehousing-service">
+                                                            </i>
+                                                        </div>
+                                                        <div class="icon_text">
+                                                            <div class="title style-DrSyI" id="style-DrSyI">
+                                                                Warehousing
+                                                                <br>
+                                                                service
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row inner row-fluid reset-sm-paddings custom_1449127193884">
+                                        <div class="column column_container col-sm-6 col-xs-12">
+                                            <div class="column-inner custom_1450424067703">
+                                                <div class="wrapper">
+                                                    <div class="stm_icon left icon_position_left">
+                                                        <div class="icon style-X5dlM" id="style-X5dlM">
+                                                            <i class="stm-ground-transport">
+                                                            </i>
+                                                        </div>
+                                                        <div class="icon_text">
+                                                            <div class="title style-ogrzR" id="style-ogrzR">
+                                                                Ground
+                                                                <br>
+                                                                Transport
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column column_container col-sm-6 col-xs-12">
+                                            <div class="column-inner custom_1450424075450">
+                                                <div class="wrapper">
+                                                    <div class="stm_icon left icon_position_left">
+                                                        <div class="icon style-aHDoS" id="style-aHDoS">
+                                                            <i class="stm-logistic-services">
+                                                            </i>
+                                                        </div>
+                                                        <div class="icon_text">
+                                                            <div class="title style-8JXwZ" id="style-8JXwZ">
+                                                                Logistic
+                                                                <br>
+                                                                Services
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="pricing-item">
-                            <h3>Free Plan</h3>
-                            <h4><sup>$</sup>0<span> / month</span></h4>
-                            <ul>
-                                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span>
-                                </li>
-                            </ul>
-                            <a href="#" class="buy-btn">Buy Now</a>
+                            </div>
                         </div>
-                    </div><!-- End Pricing Item -->
+                        <div class="contact-bg column column_container col-sm-12 col-lg-7 col-md-6">
+                            <div class="column-inner custom_1451973486237">
+                                <div class="wrapper-h">
+                                    <div class="row inner row-fluid reset-sm-paddings">
+                                        <div class="base_bg_color column column_container col-sm-12">
+                                            <div class="column-inner">
+                                                <div class="wrapper">
+                                                    <h2 class="custom_heading style-wVWEd" id="style-wVWEd">
+                                                        Request a Free Quote
+                                                    </h2>
+                                                    <div class="wpcf7 js" id="f1322-p2-o1" lang="en-US" dir="ltr">
+                                                        <div class="screen-reader-response">
+                                                            <p role="status" aria-live="polite" aria-atomic="true">
+                                                            </p>
+                                                            <ul>
+                                                            </ul>
+                                                        </div>
+                                                        <form action="/#f1322-p2-o1" method="post" class="form init"
+                                                              aria-label="Contact form" novalidate="novalidate"
+                                                              data-status="init">
+                                                            <div id="style-kPXLN" class="style-kPXLN">
+                                                                <input type="hidden" name="wpcf7" value="1322">
+                                                                <input type="hidden" name="version" value="5.7.2">
+                                                                <input type="hidden" name="locale" value="en_US">
+                                                                <input type="hidden" name="unit_tag" value="f1322-p2-o1">
+                                                                <input type="hidden" name="container_post" value="2">
+                                                                <input type="hidden" name="posted_data_hash" value="">
+                                                            </div>
+                                                            <div class="request_quote">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <span class="form-control-wrap"
+                                                                                      data-name="freight_type">
+                                                                                    <select class="form-control select select2-hidden-accessible"
+                                                                                            aria-invalid="false"
+                                                                                            name="freight_type"
+                                                                                            tabindex="-1"
+                                                                                            aria-hidden="true">
+                                                                                        <option class="select2-option" value="">
+                                                                                            Freight Type
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="Road Transportation">
+                                                                                            Road Transportation
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="Air Transportation">
+                                                                                            Air Transportation
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="Sea Transportation">
+                                                                                            Sea Transportation
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="Warehousing">
+                                                                                            Warehousing
+                                                                                        </option>
+                                                                                    </select>
+                                                                                    <span class="select2 select2-container select2-container--default style-OPJMU"
+                                                                                          dir="ltr" id="style-OPJMU">
+                                                                                        <span class="selection">
+                                                                                            <span class="select2-selection select2-selection--single"
+                                                                                                  role="combobox"
+                                                                                                  aria-autocomplete="list"
+                                                                                                  aria-haspopup="true"
+                                                                                                  aria-expanded="false"
+                                                                                                  tabindex="0"
+                                                                                                  aria-labelledby="select2-freight_type-1p-container">
+                                                                                                <span class="select2-selection__rendered"
+                                                                                                      id="select2-freight_type-1p-container"
+                                                                                                      title="Freight Type" hidden="">
+                                                                                                    Freight Type
+                                                                                                </span>
+                                                                                                <span class="select2-selection__arrow"
+                                                                                                      role="presentation">
+                                                                                                    <b role="presentation">
+                                                                                                    </b>
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                        <span class="dropdown-wrapper"
+                                                                                              aria-hidden="true">
+                                                                                        </span>
+                                                                                    </span>
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <span class="form-control-wrap"
+                                                                                      data-name="departure_city">
+                                                                                    <input size="40"
+                                                                                           class="form-control text validates-as-required"
+                                                                                           aria-required="true"
+                                                                                           aria-invalid="false"
+                                                                                           placeholder="City of departure"
+                                                                                           value="" type="text"
+                                                                                           name="departure_city">
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <span class="form-control-wrap"
+                                                                                      data-name="delivery_city">
+                                                                                    <input size="40"
+                                                                                           class="form-control text"
+                                                                                           aria-invalid="false"
+                                                                                           placeholder="Delivery city"
+                                                                                           value="" type="text"
+                                                                                           name="delivery_city">
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <span class="form-control-wrap"
+                                                                                      data-name="incoterms">
+                                                                                    <select class="form-control select select2-hidden-accessible"
+                                                                                            aria-invalid="false"
+                                                                                            name="incoterms" tabindex="-1"
+                                                                                            aria-hidden="true">
+                                                                                        <option class="select2-option" value="">
+                                                                                            Incoterms
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="EXW">
+                                                                                            EXW
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="FCA">
+                                                                                            FCA
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="CPT">
+                                                                                            CPT
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="CIP">
+                                                                                            CIP
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="DAT">
+                                                                                            DAT
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="DAP">
+                                                                                            DAP
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="DDP">
+                                                                                            DDP
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="FAS">
+                                                                                            FAS
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="FOB">
+                                                                                            FOB
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="CFR">
+                                                                                            CFR
+                                                                                        </option>
+                                                                                        <option class="select2-option" value="CIF">
+                                                                                            CIF
+                                                                                        </option>
+                                                                                    </select>
+                                                                                    <span class="select2 select2-container select2-container--default style-zDTBc"
+                                                                                          dir="ltr" id="style-zDTBc">
+                                                                                        <span class="selection">
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="pricing-item featured">
-                            <h3>Business Plan</h3>
-                            <h4><sup>$</sup>29<span> / month</span></h4>
-                            <ul>
-                                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                                <li><i class="bi bi-check"></i> Pharetra massa massa ultricies</li>
-                                <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
-                            </ul>
-                            <a href="#" class="buy-btn">Buy Now</a>
+                                                                                            <span class="select2-selection select2-selection--single"
+                                                                                                  role="combobox"
+                                                                                                  aria-autocomplete="list"
+                                                                                                  aria-haspopup="true"
+                                                                                                  aria-expanded="false"
+                                                                                                  tabindex="0"
+                                                                                                  aria-labelledby="select2-incoterms-jv-container">
+                                                                                                <span class="select2-selection__rendered"
+                                                                                                      id="select2-incoterms-jv-container"
+                                                                                                      title="Incoterms" hidden="">
+                                                                                                    Incoterms
+                                                                                                </span>
+                                                                                                <span class="select2-selection__arrow"
+                                                                                                      role="presentation">
+                                                                                                    <b role="presentation">
+                                                                                                    </b>
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                        <span class="dropdown-wrapper"
+                                                                                              aria-hidden="true">
+                                                                                        </span>
+                                                                                    </span>
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <span class="form-control-wrap"
+                                                                                      data-name="total_weight">
+                                                                                    <input size="40"
+                                                                                           class="form-control text"
+                                                                                           aria-invalid="false"
+                                                                                           placeholder="Total gross weight (KG)"
+                                                                                           value="" type="text"
+                                                                                           name="total_weight">
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <span class="form-control-wrap"
+                                                                                      data-name="dimension">
+                                                                                    <input size="40"
+                                                                                           class="form-control text"
+                                                                                           aria-invalid="false"
+                                                                                           placeholder="Dimension" value=""
+                                                                                           type="text" name="dimension">
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <span class="form-control-wrap"
+                                                                                      data-name="email">
+                                                                                    <input size="40"
+                                                                                           class="form-control text email validates-as-required validates-as-email"
+                                                                                           aria-required="true"
+                                                                                           aria-invalid="false"
+                                                                                           placeholder="Email" value=""
+                                                                                           type="email" name="email">
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <span class="form-control-wrap"
+                                                                                      data-name="message">
+                                                                                    <textarea cols="40" rows="10"
+                                                                                              class="form-control textarea"
+                                                                                              aria-invalid="false"
+                                                                                              placeholder="Message"
+                                                                                              name="message">
+                                                                                    </textarea>
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="input-group">
+                                                                            <p>
+                                                                                <button class="button size-sm fullwidth theme-submit">
+                                                                                    Submit
+                                                                                    <i class="stm-arrow-next">
+                                                                                    </i>
+                                                                                </button>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="response-output" aria-hidden="true">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- End Pricing Item -->
-
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="pricing-item">
-                            <h3>Developer Plan</h3>
-                            <h4><sup>$</sup>49<span> / month</span></h4>
-                            <ul>
-                                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
-                                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
-                                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
-                                <li><i class="bi bi-check"></i> Pharetra massa massa ultricies</li>
-                                <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
-                            </ul>
-                            <a href="#" class="buy-btn">Buy Now</a>
-                        </div>
-                    </div><!-- End Pricing Item -->
-
+                    </div>
                 </div>
 
             </div>
         </section><!-- End Pricing Section -->
 
-        <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials">
-            <div class="container">
+{{--        <!-- ======= Testimonials Section ======= -->--}}
+{{--        <section id="testimonials" class="testimonials">--}}
+{{--            <div class="container">--}}
 
-                <div class="slides-1 swiper" data-aos="fade-up">
-                    <div class="swiper-wrapper">
+{{--                <div class="slides-1 swiper" data-aos="fade-up">--}}
+{{--                    <div class="swiper-wrapper">--}}
+{{--                        <div class="swiper-slide">--}}
+{{--                            <div class="testimonial-item">--}}
+{{--                                <img src="scss/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">--}}
+{{--                                <h3>Saul Goodman</h3>--}}
+{{--                                <h4>Ceo &amp; Founder</h4>--}}
+{{--                                <div class="stars">--}}
+{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i>--}}
+{{--                                </div>--}}
+{{--                                <p>--}}
+{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+{{--                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit--}}
+{{--                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,--}}
+{{--                                    risus at semper.--}}
+{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div><!-- End testimonial item -->--}}
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="scss/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                    risus at semper.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
+{{--                        <div class="swiper-slide">--}}
+{{--                            <div class="testimonial-item">--}}
+{{--                                <img src="scss/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">--}}
+{{--                                <h3>Sara Wilsson</h3>--}}
+{{--                                <h4>Designer</h4>--}}
+{{--                                <div class="stars">--}}
+{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i>--}}
+{{--                                </div>--}}
+{{--                                <p>--}}
+{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+{{--                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid--}}
+{{--                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet--}}
+{{--                                    legam anim culpa.--}}
+{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div><!-- End testimonial item -->--}}
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="scss/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                                    legam anim culpa.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
+{{--                        <div class="swiper-slide">--}}
+{{--                            <div class="testimonial-item">--}}
+{{--                                <img src="scss/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">--}}
+{{--                                <h3>Jena Karlis</h3>--}}
+{{--                                <h4>Store Owner</h4>--}}
+{{--                                <div class="stars">--}}
+{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i>--}}
+{{--                                </div>--}}
+{{--                                <p>--}}
+{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+{{--                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem--}}
+{{--                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint--}}
+{{--                                    minim.--}}
+{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div><!-- End testimonial item -->--}}
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="scss/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
-                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
-                                    minim.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
+{{--                        <div class="swiper-slide">--}}
+{{--                            <div class="testimonial-item">--}}
+{{--                                <img src="scss/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">--}}
+{{--                                <h3>Matt Brandon</h3>--}}
+{{--                                <h4>Freelancer</h4>--}}
+{{--                                <div class="stars">--}}
+{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i>--}}
+{{--                                </div>--}}
+{{--                                <p>--}}
+{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+{{--                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim--}}
+{{--                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem--}}
+{{--                                    dolore labore illum veniam.--}}
+{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div><!-- End testimonial item -->--}}
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="scss/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
-                                    dolore labore illum veniam.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
+{{--                        <div class="swiper-slide">--}}
+{{--                            <div class="testimonial-item">--}}
+{{--                                <img src="scss/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">--}}
+{{--                                <h3>John Larson</h3>--}}
+{{--                                <h4>Entrepreneur</h4>--}}
+{{--                                <div class="stars">--}}
+{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+{{--                                            class="bi bi-star-fill"></i>--}}
+{{--                                </div>--}}
+{{--                                <p>--}}
+{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+{{--                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster--}}
+{{--                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam--}}
+{{--                                    culpa fore nisi cillum quid.--}}
+{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div><!-- End testimonial item -->--}}
 
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="scss/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                    culpa fore nisi cillum quid.
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
+{{--                    </div>--}}
+{{--                    <div class="swiper-pagination"></div>--}}
+{{--                </div>--}}
 
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+{{--            </div>--}}
+{{--        </section><!-- End Testimonials Section -->--}}
 
-            </div>
-        </section><!-- End Testimonials Section -->
-
-        <!-- ======= Frequently Asked Questions Section ======= -->
-        <section id="faq" class="faq">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header">
-                    <span>Frequently Asked Questions</span>
-                    <h2>Frequently Asked Questions</h2>
-
-                </div>
-
-                <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="col-lg-10">
-
-                        <div class="accordion accordion-flush" id="faqlist">
-
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#faq-content-1">
-                                        <i class="bi bi-question-circle question-icon"></i>
-                                        Non consectetur a erat nam at lectus urna duis?
-                                    </button>
-                                </h3>
-                                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                    <div class="accordion-body">
-                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                        rhoncus dolor purus non.
-                                    </div>
-                                </div>
-                            </div><!-- # Faq item-->
-
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#faq-content-2">
-                                        <i class="bi bi-question-circle question-icon"></i>
-                                        Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                                    </button>
-                                </h3>
-                                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                    <div class="accordion-body">
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                                    </div>
-                                </div>
-                            </div><!-- # Faq item-->
-
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#faq-content-3">
-                                        <i class="bi bi-question-circle question-icon"></i>
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-                                    </button>
-                                </h3>
-                                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                    <div class="accordion-body">
-                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                    </div>
-                                </div>
-                            </div><!-- # Faq item-->
-
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#faq-content-4">
-                                        <i class="bi bi-question-circle question-icon"></i>
-                                        Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                                    </button>
-                                </h3>
-                                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                    <div class="accordion-body">
-                                        <i class="bi bi-question-circle question-icon"></i>
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                                    </div>
-                                </div>
-                            </div><!-- # Faq item-->
-
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#faq-content-5">
-                                        <i class="bi bi-question-circle question-icon"></i>
-                                        Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                                    </button>
-                                </h3>
-                                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                    <div class="accordion-body">
-                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
-                                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
-                                        Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
-                                        turpis cursus in
-                                    </div>
-                                </div>
-                            </div><!-- # Faq item-->
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section><!-- End Frequently Asked Questions Section -->
         <section class="home-showcase">
             <div class="swiper home-showcaseSlider">
                 <div class="swiper-wrapper">
@@ -718,7 +1174,7 @@
 
     </main>
     <!-- End #main -->
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
     {{--    <div id="content">--}}
     {{--        <article id="post-2" class="post-2 page type-page status-publish hentry">--}}
     {{--     start hero slide       --}}
@@ -1587,19 +2043,19 @@
     {{--                                                                                        name="freight_type"--}}
     {{--                                                                                        tabindex="-1"--}}
     {{--                                                                                        aria-hidden="true">--}}
-    {{--                                                                                    <option value="">--}}
+    {{--                                                                                    <option class="select2-option" value="">--}}
     {{--                                                                                        Freight Type--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="Road Transportation">--}}
+    {{--                                                                                    <option class="select2-option" value="Road Transportation">--}}
     {{--                                                                                        Road Transportation--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="Air Transportation">--}}
+    {{--                                                                                    <option class="select2-option" value="Air Transportation">--}}
     {{--                                                                                        Air Transportation--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="Sea Transportation">--}}
+    {{--                                                                                    <option class="select2-option" value="Sea Transportation">--}}
     {{--                                                                                        Sea Transportation--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="Warehousing">--}}
+    {{--                                                                                    <option class="select2-option" value="Warehousing">--}}
     {{--                                                                                        Warehousing--}}
     {{--                                                                                    </option>--}}
     {{--                                                                                </select>--}}
@@ -1667,40 +2123,40 @@
     {{--                                                                                        aria-invalid="false"--}}
     {{--                                                                                        name="incoterms" tabindex="-1"--}}
     {{--                                                                                        aria-hidden="true">--}}
-    {{--                                                                                    <option value="">--}}
+    {{--                                                                                    <option class="select2-option" value="">--}}
     {{--                                                                                        Incoterms--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="EXW">--}}
+    {{--                                                                                    <option class="select2-option" value="EXW">--}}
     {{--                                                                                        EXW--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="FCA">--}}
+    {{--                                                                                    <option class="select2-option" value="FCA">--}}
     {{--                                                                                        FCA--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="CPT">--}}
+    {{--                                                                                    <option class="select2-option" value="CPT">--}}
     {{--                                                                                        CPT--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="CIP">--}}
+    {{--                                                                                    <option class="select2-option" value="CIP">--}}
     {{--                                                                                        CIP--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="DAT">--}}
+    {{--                                                                                    <option class="select2-option" value="DAT">--}}
     {{--                                                                                        DAT--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="DAP">--}}
+    {{--                                                                                    <option class="select2-option" value="DAP">--}}
     {{--                                                                                        DAP--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="DDP">--}}
+    {{--                                                                                    <option class="select2-option" value="DDP">--}}
     {{--                                                                                        DDP--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="FAS">--}}
+    {{--                                                                                    <option class="select2-option" value="FAS">--}}
     {{--                                                                                        FAS--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="FOB">--}}
+    {{--                                                                                    <option class="select2-option" value="FOB">--}}
     {{--                                                                                        FOB--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="CFR">--}}
+    {{--                                                                                    <option class="select2-option" value="CFR">--}}
     {{--                                                                                        CFR--}}
     {{--                                                                                    </option>--}}
-    {{--                                                                                    <option value="CIF">--}}
+    {{--                                                                                    <option class="select2-option" value="CIF">--}}
     {{--                                                                                        CIF--}}
     {{--                                                                                    </option>--}}
     {{--                                                                                </select>--}}

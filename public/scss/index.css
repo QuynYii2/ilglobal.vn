@@ -1010,7 +1010,7 @@ section {
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
 .faq {
-    padding-top: 80px;
+    padding-top: 0;
 }
 
 .faq .accordion-item {
@@ -1912,4 +1912,321 @@ section {
 
 .footer .credits a {
     color: #fff;
+}
+
+
+button {
+    overflow: visible;
+}
+
+button {
+    text-transform: none;
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.button {
+    background: transparent;
+    position: relative;
+    color: #183650;
+    border: 2px solid #34ccff;
+    padding: 15px 30px 15px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 16px;
+    text-decoration: none !important;
+    transition: all .3s ease !important;
+    outline: none !important;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.button.fullwidth {
+    width: 100%;
+}
+
+.button.size-sm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.request_quote .button  {
+    color: #fff;
+}
+/*////////////////////////////////////*/
+
+.contact-bg {
+    background-color: #0e1d34;
+}
+.wrapper-h {
+    margin: 50px;
+}
+.wrapper-h .input-group {
+    margin: 0 0 20px;
+}
+.wrapper-h .input-group textarea {
+    min-height: 111px;
+    height: 100px;
+}
+.wrapper-h .input-group p {
+    width: 100%;
+}
+.wrapper-h .form-control {
+    border-radius: 0;
+}
+.custom_heading {
+    color: white;
+    text-align: left;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.select2-selection__arrow:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin: -20px 0 0;
+    color: #15253c;
+}
+.form-control.select.select2-hidden-accessible {
+    color: #6f7880;
+}
+.select2-option:hover {
+    background-color: #34ccff;
+    color: #f7f7f7;
+    border-radius: 0;
+}
+.contact-sp .custom_heading {
+    color: #0a0d13;
+}
+/*..............................*/
+
+.vc_custom_1449127190171 {
+    margin-bottom: 0px !important;
+}
+
+@media all{
+    .vc_row:after,.vc_row:before {
+        content: " ";
+        display: table;
+    }
+
+    .vc_row:after {
+        clear: both;
+    }
+}
+
+.vc_custom_1449127193884 {
+    margin-bottom: 0px !important;
+}
+
+@media all{
+    .wpb_row:last-child {
+        margin-bottom: 100px;
+    }
+
+    body .wpb_column > .vc_column-inner > .wpb_wrapper > :last-child  {
+        margin-bottom: 0;
+    }
+
+    .wpb_text_column :last-child  {
+        margin-bottom: 0;
+    }
+
+    .vc_col-sm-6,.vc_col-xs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .vc_col-xs-12 {
+        float: left;
+    }
+
+    .vc_col-xs-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .vc_col-sm-6 {
+        float: left;
+    }
+
+    .vc_col-sm-6 {
+        width: 50%;
+    }
+}
+
+@media all{
+    p {
+        margin: 0 0 10px;
+    }
+
+    p {
+        line-height: 26px;
+        margin: 0 0 26px;
+    }
+
+    .wpb_text_column :last-child ,.wpb_text_column p:last-child  {
+        margin-bottom: 0;
+    }
+}
+
+.vc_custom_1450423994691 {
+    margin-bottom: 44px !important;
+}
+
+@media all{
+    .vc_column-inner:after,.vc_column-inner:before {
+        content: " ";
+        display: table;
+    }
+
+    .vc_column-inner:after {
+        clear: both;
+    }
+}
+
+.vc_custom_1450423999162 {
+    margin-bottom: 44px !important;
+}
+
+.vc_custom_1450424067703 {
+    margin-bottom: 44px !important;
+}
+
+.vc_custom_1450424075450 {
+    margin-bottom: 44px !important;
+}
+
+@media all{
+    .stm_icon {
+        position: relative;
+        color: #fff;
+    }
+
+    .stm_icon.icon_position_left:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .stm_icon .icon  {
+        font-size: 71px;
+        margin: 0 0 19px;
+        color: #34ccff;
+    }
+
+    .stm_icon.icon_position_left .icon  {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .stm_icon.icon_position_left .icon_text  {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    [class^="stm-"] {
+        font-family: 'stm' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .stm-packaging-and-storage:before {
+        content: "\e945";
+    }
+
+    .stm_icon .title  {
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 20px;
+        font-weight: 500;
+        color: #183650;
+    }
+
+    .stm_icon.icon_position_left .icon_text .title  {
+        font-weight: 600;
+    }
+
+    .stm-warehousing-service:before {
+        content: "\e947";
+    }
+
+    .stm-ground-transport:before {
+        content: "\e943";
+    }
+
+    .stm-logistic-services:before {
+        content: "\e941";
+    }
+}
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-BYmKN.style-BYmKN {
+    font-size: 71px;
+    width: 95px;
+}
+#style-Nrjq5.style-Nrjq5 {
+    font-size: 14px;
+    font-weight: 500;
+}
+#style-Pwssa.style-Pwssa {
+    font-size: 64px;
+    width: 95px;
+}
+#style-DrSyI.style-DrSyI {
+    font-size: 14px;
+    font-weight: 500;
+}
+#style-X5dlM.style-X5dlM {
+    font-size: 51px;
+    width: 95px;
+}
+#style-ogrzR.style-ogrzR {
+    font-size: 14px;
+    font-weight: 500;
+}
+#style-aHDoS.style-aHDoS {
+    font-size: 50px;
+    width: 95px;
+}
+#style-8JXwZ.style-8JXwZ {
+    font-size: 14px;
+    font-weight: 500;
+}
+section#pricing {
+    padding-bottom: 0px;
 }

@@ -1,9 +1,4 @@
-// Main color
-$color__purple-blue: #8c97d0;
-$color__night-blue: #10112b;
-$color__orange: #f7970e;
-$color__dark-gray: #8f9397;
-
+// hero slide //
 @font-face {
     font-family: 'CabinetGrotesk-light';
     src: url('http://lucasroussy.com/fonts/cabinet-grotesk/CabinetGrotesk-Light.woff2') format('woff2');
@@ -31,7 +26,7 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
     width: 10px;
     height: 10px;
     transform: rotate(45deg);
-    background-color: $color__orange;
+    background-color: #f7970e;
     @include screen-min(768px) {
         width: 13px;
         height: 13px;
@@ -95,7 +90,7 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
             padding-left: 20px;
             svg {
                 circle {
-                    fill: $color__purple-blue;
+                    fill: #8c97d0;
                 }
             }
         }
@@ -130,9 +125,10 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
                 height: 72vh;
                 overflow: hidden;
                 .swiper-image {
+                    width: 100%;
                     padding: 5vw;
-                    width: calc(100% - (5vw*2));
-                    height: calc(100% - (5vw*2));
+                    //width: calc(100% - (5vw*2));
+                    height: 100%;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -167,7 +163,7 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
                             &:hover {
                                 svg {
                                     circle {
-                                        stroke: $color__purple-blue;
+                                        stroke: #8c97d0;
                                     }
                                 }
                             }
@@ -176,7 +172,7 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
                     .filter {
                         width: 100%;
                         height: 100%;
-                        background-color: $color__night-blue;
+                        background-color: #10112b;
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -209,13 +205,13 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
                 width: 4vw;
                 border-radius: 50px;
                 height: 2px;
-                background-color: $color__dark-gray;
+                background-color: #8f9397;
                 opacity: 1;
                 transition: width .8s ease-in-out, .4s ease-in-out;
                 margin: 0 4px !important;
 
                 &-active {
-                    background-color: $color__orange;
+                    background-color: #f7970e;
                     width: 8vw;
                 }
             }
@@ -236,12 +232,12 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
                 &.swiper-button-disabled {
                     opacity: 1;
                     &:after {
-                        color: $color__dark-gray;
+                        color: #8f9397;
                     }
                 }
                 &::after {
                     font-size: 4vw;
-                    color: $color__orange;
+                    color: #f7970e;
                 }
             }
         }
@@ -283,7 +279,7 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
     }
 
     @include screen-min(1024px) {
-        margin: 2rem 0 7.9vw;
+        margin: 0rem 0 7.9vw;
         margin-bottom: 0;
         .home-showcaseSlider {
             display: block;
@@ -292,6 +288,7 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
                     height: clamp(45rem, 75vh, 5000px);
                     .swiper-image {
                         align-items: center;
+                        width: 100%;
                         .text-container {
                             max-width: 75%;
                             margin: 0;
@@ -353,11 +350,124 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
             .line {
                 height: 4.8vw;
                 width: 2px;
-                background: $color__purple-blue;
+                background: #8c97d0;
                 margin-top: 5px;
                 animation: scroll-anim 1.6s cubic-bezier(.62,.01,.71,.47) 0s infinite normal forwards;
             }
         }
     }
 
+}
+
+// slide products news //
+
+
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    //background: linear-gradient(to right, #101c81, #2a6ba3);
+    min-height: 100vh;
+}
+
+.owl-carousel .owl-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item .card {
+    padding: 30px;
+    position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow-y: auto !important;
+    padding-bottom: 40px;
+}
+
+.owl-carousel .owl-item img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.owl-carousel .owl-item .card .name {
+    position: absolute;
+    bottom: -20px;
+    left: 33%;
+    color: #101c81;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: aquamarine;
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+    box-shadow: 2px 3px 15px #3c405a;
+}
+
+.owl-carousel .owl-item .card {
+    opacity: 0.2;
+    transform: scale3d(0.8, 0.8, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item.active.center .card {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 20px;
+    background: #2a6ba3 !important;
+    border-radius: 2px !important;
+    opacity: 0.8;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    height: 13px;
+    width: 13px;
+    opacity: 1;
+    transform: translateY(2px);
+    background: #83b8e7 !important;
+}
+
+@media(min-width: 480.6px) and (max-width: 575.5px) {
+    .owl-carousel .owl-item .card .name {
+        left: 24%;
+    }
+}
+
+@media(max-width: 360px) {
+    .owl-carousel .owl-item .card .name {
+        left: 30%;
+    }
+}
+iframe {
+    width: 100%;
+}
+
+.contact-main {
+    position: relative;
+    box-sizing: border-box;
+    .contact-sp {
+        .custom_contact {
+            box-sizing: border-box;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+        }
+    }
 }
