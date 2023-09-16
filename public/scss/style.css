@@ -7,7 +7,6 @@
 }
 @font-face {
   font-family: "CabinetGrotesk-extrabold";
-  src: url("assets/fonts/cabinet-grotesk/CabinetGrotesk-Extrabold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -105,7 +104,6 @@
 }
 
 .home-showcase {
-  padding: 0 var(--columnExt) 0;
   position: relative;
   margin: 2rem 0 20vw;
   background-color: #0e1d34;
