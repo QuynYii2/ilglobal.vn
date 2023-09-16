@@ -1,6 +1,6 @@
 <!-- ======= Header ======= -->
-<header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-desktop container-fluid container-xl d-flex align-items-center justify-content-between">
+<header id="header" class="header align-items-center fixed-top">
+    <div class="header-desktop container-fluid container-xl align-items-center justify-content-between">
         <a href="{{route('index')}}" class="logo d-flex align-items-center">
             <h1>Logis</h1>
         </a>
@@ -11,10 +11,10 @@
                 <li><a href="{{route('index')}}" class="active">Home</a></li>
                 <li><a href="{{route('about')}}">About</a></li>
                 <li><a href="{{route('services')}}">Services</a></li>
-                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="fa-solid fa-caret-down"></i></i></a>
+                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="fa-solid fa-caret-down"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span><i class="fa-solid fa-caret-down"></i></i></a>
+                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span><i class="fa-solid fa-caret-down"></i></a>
                             <ul>
                                 <li><a href="#">Deep Drop Down 1</a></li>
                                 <li><a href="#">Deep Drop Down 2</a></li>
@@ -32,33 +32,18 @@
                 <li><a class="get-a-quote" href="#">Get a Quote</a></li>
             </ul>
         </nav><!-- .navbar -->
+        <<<<<<< HEAD
 
     </div>
     <div class="header-mobile row">
-        <div class="row header-mobile--top">
-            <div class="col-5 hd-desktop--left">
-                <a href="index.html">
-                    <img class="logo" src="img/logo.png" alt="">
+        <div class="d-flex justify-content-between header-mobile--top">
+            <div class="hd-desktop--left">
+                <a href="{{route('index')}}" class="logo d-flex align-items-center">
+                    <h1>Logis</h1>
                 </a>
             </div>
-            <div class="col-7 hd-desktop--right d-flex justify-content-end">
-                <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <a href=""><i class="fa-regular fa-bell"></i></a>
+            <div class="hd-desktop--right d-flex justify-content-end">
                 <button onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
-            </div>
-        </div>
-        <div class="col-12 hd-desktop--between">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide menu-item text-center"><a href="markets.html"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
-                    <div class="swiper-slide menu-item text-center"><a href="mentors.html"><i class="fa-solid fa-laptop-medical"></i><p>Mentoring</p></a></div>
-                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
-                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>Clinic</p></a></div>
-                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i><p>Recruitment</p></a></div>
-                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Selling buying</p></a></div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
         </div>
         <div class="nav_menu" id="demo">
@@ -67,21 +52,17 @@
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div class="header-right">
-                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
                 </div>
             </div>
             <div class="nav_menu--body">
-                <div class="loginbox text-center">
-                    <a href="#">Log in now</a>
-                    <span> and connect to the worldwide Korean network > </span>
-                </div>
-                <div class="list-menu row">
-                    <div class="menu-item text-center col-3"><a href="markets.html"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
-                    <div class="menu-item text-center col-3"><a href="mentors.html"><i class="fa-solid fa-laptop-medical"></i><p>Mentoring</p></a></div>
-                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
-                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>Clinic</p></a></div>
-                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-headset"></i><p>Recruitment</p></a></div>
-                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Selling buying</p></a></div>
+                <div class="list-menu">
+                    <div class="menu-item"><a href="#"><p>News</p></a></div>
+                    <div class="menu-item"><a href="#"><p>Mentoring</p></a></div>
+                    <div class="menu-item"><a href="#"><p>Education Training</p></a></div>
+                    <div class="menu-item"><a href="#"><p>Clinic</p></a></div>
+                    <div class="menu-item"><a href="#"><p>Recruitment</p></a></div>
+                    <div class="menu-item"><a href="#"><p>Selling buying</p></a></div>
                 </div>
             </div>
         </div>
@@ -104,6 +85,8 @@
                 </div>
             </div>
         </div>
+        =======
+        >>>>>>> 603da42146955fef5e22b66428bf8381d8d29940
     </div>
 </header><!-- End Header -->
 
