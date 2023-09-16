@@ -32,10 +32,8 @@
                 <li><a class="get-a-quote" href="#">Get a Quote</a></li>
             </ul>
         </nav><!-- .navbar -->
-        <<<<<<< HEAD
-
     </div>
-    <div class="header-mobile row">
+    <div class="header-mobile">
         <div class="d-flex justify-content-between header-mobile--top">
             <div class="hd-desktop--left">
                 <a href="{{route('index')}}" class="logo d-flex align-items-center">
@@ -52,7 +50,7 @@
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div class="header-right">
-                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href=""><i class="fa-solid fa-house"></i></a>
                 </div>
             </div>
             <div class="nav_menu--body">
@@ -85,8 +83,6 @@
                 </div>
             </div>
         </div>
-        =======
-        >>>>>>> 603da42146955fef5e22b66428bf8381d8d29940
     </div>
 </header><!-- End Header -->
 
