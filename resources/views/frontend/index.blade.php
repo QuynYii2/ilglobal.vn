@@ -160,7 +160,7 @@
         <div class="container">
             <div class="row gy-4">
                 <!-- ======= Services Section ======= -->
-                <section id="service" class="services pt-0 col-6">
+                <section id="service" class="services pt-0 col-md-6 col-12">
                     <div class="container" data-aos="fade-up">
 
                         <div class="section-header">
@@ -180,7 +180,7 @@
                                                         <div class="card-img">
                                                             <img src="{{$product->thumbnail}}" alt="" class="img-fluid">
                                                         </div>
-                                                        <h3><a href="service-details.html"
+                                                        <h3><a href="/service-details/{{ $product->id}}"
                                                                class="stretched-link">{{strip_tags($product->title_vi)}}</a>
                                                         </h3>
                                                         <p>{{strip_tags($product->short_content_vi)}}</p>
@@ -211,7 +211,7 @@
 
                 <!-- End Services Section -->
                 <!-- ======= Frequently Asked Questions Section ======= -->
-                <section id="faq" class="faq col-6">
+                <section id="faq" class="faq col-md-6 col-12">
                     <div class="container" data-aos="fade-up">
 
                         <div class="section-header">
@@ -433,7 +433,7 @@
             </div>
         </section><!-- End Features Section -->
 
-        <!-- ======= Pricing Section ======= -->
+        <!-- ======= Contact Section ======= -->
         <section id="pricing" class="pricing pt-0">
             <div class="container" data-aos="fade-up">
 
@@ -445,8 +445,8 @@
 
                 <div class="row gy-4 contact-main">
                     <div data-full-width="true" data-full-width-init="true"
-                         class="row-fluid d-flex" id="style-o1DoH">
-                        <div class="contact-sp column column_container col-sm-12 col-lg-5 col-md-6">
+                         class="row-fluid d-flex d-flex_min" id="style-o1DoH">
+                        <div class="contact-sp column column_container col-sm-12 col-lg-5 col-md-6 col-12">
                             <div class="column-inner custom_contact">
                                 <div class="wrapper">
                                     <h2 style="text-align: left" class="custom_heading">
@@ -543,7 +543,7 @@
 
                             </div>
                         </div>
-                        <div class="contact-bg column column_container col-sm-12 col-lg-7 col-md-6">
+                        <div class="contact-bg column column_container col-sm-12 col-lg-7 col-md-6 col-12">
                             <div class="column-inner custom_1451973486237">
                                 <div class="wrapper-h">
                                     <div class="row inner row-fluid reset-sm-paddings">
