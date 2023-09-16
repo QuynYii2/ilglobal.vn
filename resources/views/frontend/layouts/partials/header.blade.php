@@ -1,22 +1,20 @@
 <!-- ======= Header ======= -->
-<header id="header" class="header align-items-center fixed-top">
-    <div class="header-desktop container-fluid container-xl align-items-center justify-content-between">
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-desktop container-fluid container-xl d-flex align-items-center justify-content-between">
         <a href="{{route('index')}}" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
             <h1>Logis</h1>
         </a>
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <i class="mobile-nav-toggle mobile-nav-show fa-solid fa-bars"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none fa-solid fa-xmark"></i>
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="{{route('index')}}" class="active">Home</a></li>
                 <li><a href="{{route('about')}}">About</a></li>
                 <li><a href="{{route('services')}}">Services</a></li>
-                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="fa-solid fa-caret-down"></i></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span><i class="fa-solid fa-caret-down"></i></i></a>
                             <ul>
                                 <li><a href="#">Deep Drop Down 1</a></li>
                                 <li><a href="#">Deep Drop Down 2</a></li>
@@ -31,20 +29,36 @@
                     </ul>
                 </li>
                 <li><a href="{{route('contact')}}">Contact</a></li>
-                <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li>
+                <li><a class="get-a-quote" href="#">Get a Quote</a></li>
             </ul>
         </nav><!-- .navbar -->
 
     </div>
     <div class="header-mobile row">
-        <div class="d-flex justify-content-between header-mobile--top">
-            <div class="hd-desktop--left">
-                <a href="{{route('index')}}" class="logo d-flex align-items-center">
-                    <h1>Logis</h1>
+        <div class="row header-mobile--top">
+            <div class="col-5 hd-desktop--left">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="">
                 </a>
             </div>
-            <div class="hd-desktop--right d-flex justify-content-end">
+            <div class="col-7 hd-desktop--right d-flex justify-content-end">
+                <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href=""><i class="fa-regular fa-bell"></i></a>
                 <button onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="col-12 hd-desktop--between">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide menu-item text-center"><a href="markets.html"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="mentors.html"><i class="fa-solid fa-laptop-medical"></i><p>Mentoring</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>Clinic</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-headset"></i><p>Recruitment</p></a></div>
+                    <div class="swiper-slide menu-item text-center"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Selling buying</p></a></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
         <div class="nav_menu" id="demo">
@@ -57,13 +71,17 @@
                 </div>
             </div>
             <div class="nav_menu--body">
-                <div class="list-menu">
-                    <div class="menu-item"><a href="#"><p>News</p></a></div>
-                    <div class="menu-item"><a href="#"><p>Mentoring</p></a></div>
-                    <div class="menu-item"><a href="#"><p>Education Training</p></a></div>
-                    <div class="menu-item"><a href="#"><p>Clinic</p></a></div>
-                    <div class="menu-item"><a href="#"><p>Recruitment</p></a></div>
-                    <div class="menu-item"><a href="#"><p>Selling buying</p></a></div>
+                <div class="loginbox text-center">
+                    <a href="#">Log in now</a>
+                    <span> and connect to the worldwide Korean network > </span>
+                </div>
+                <div class="list-menu row">
+                    <div class="menu-item text-center col-3"><a href="markets.html"><i class="fa-regular fa-newspaper"></i><p>News</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="mentors.html"><i class="fa-solid fa-laptop-medical"></i><p>Mentoring</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-school"></i><p>Education Training</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i><p>Clinic</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-headset"></i><p>Recruitment</p></a></div>
+                    <div class="menu-item text-center col-3"><a href="#"><i class="fa-solid fa-calendar-days"></i><p>Selling buying</p></a></div>
                 </div>
             </div>
         </div>

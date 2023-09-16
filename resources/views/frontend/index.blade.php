@@ -20,7 +20,7 @@
                     <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
 
                         <div class="col-lg-3 col-6">
-                            <div class="stats-item text-center w-100 h-100">
+                            <div class="stats-item text-center w-100">
                                 <span data-purecounter-start="0" data-purecounter-end="232"
                                       data-purecounter-duration="1" class="purecounter"></span>
                                 <p>Clients</p>
@@ -28,7 +28,7 @@
                         </div><!-- End Stats Item -->
 
                         <div class="col-lg-3 col-6">
-                            <div class="stats-item text-center w-100 h-100">
+                            <div class="stats-item text-center w-100">
                                 <span data-purecounter-start="0" data-purecounter-end="521"
                                       data-purecounter-duration="1" class="purecounter"></span>
                                 <p>Projects</p>
@@ -36,7 +36,7 @@
                         </div><!-- End Stats Item -->
 
                         <div class="col-lg-3 col-6">
-                            <div class="stats-item text-center w-100 h-100">
+                            <div class="stats-item text-center w-100">
                                 <span data-purecounter-start="0" data-purecounter-end="1453"
                                       data-purecounter-duration="1" class="purecounter"></span>
                                 <p>Support</p>
@@ -44,7 +44,7 @@
                         </div><!-- End Stats Item -->
 
                         <div class="col-lg-3 col-6">
-                            <div class="stats-item text-center w-100 h-100">
+                            <div class="stats-item text-center w-100">
                                 <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
                                       class="purecounter"></span>
                                 <p>Workers</p>
@@ -445,7 +445,7 @@
 
                 <div class="row gy-4 contact-main">
                     <div data-full-width="true" data-full-width-init="true"
-                         class="row-fluid d-flex d-flex_min" id="style-o1DoH">
+                         class="row-fluid d-flex_min" id="style-o1DoH">
                         <div class="contact-sp column column_container col-sm-12 col-lg-5 col-md-6 col-12">
                             <div class="column-inner custom_contact">
                                 <div class="wrapper">
