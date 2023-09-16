@@ -270,6 +270,9 @@
     max-width: 60%;
     margin: 0 auto 30px auto;
   }
+  #header .header-desktop{
+     display: none;
+  }
 }
 @media (max-width: 767px) {
   .pricing .box {
@@ -289,6 +292,9 @@
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
+  }
+  #header .header-mobile{
+    display: none;
   }
 }
 /*--------------------------------------------------------------
