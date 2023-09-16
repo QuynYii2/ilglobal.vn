@@ -150,3 +150,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+function openMenu() {
+  document.getElementById("demo").classList.add('active');
+  document.getElementsByClassName("header-left")[0].classList.add('active');
+}
+
+function closeMenu() {
+  document.getElementById("demo").classList.remove('active');
+  document.getElementsByClassName("header-left")[0].classList.remove('active');
+}
