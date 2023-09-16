@@ -15,7 +15,6 @@
                 <li><a href="{{route('index')}}" class="active">Home</a></li>
                 <li><a href="{{route('about')}}">About</a></li>
                 <li><a href="{{route('services')}}">Services</a></li>
-                <li><a href="{{route('pricing')}}">Pricing</a></li>
                 <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>

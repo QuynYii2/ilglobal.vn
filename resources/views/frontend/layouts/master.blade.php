@@ -36,6 +36,7 @@
     <!-- Các custom style của frontend -->
     <link rel="stylesheet" href="{{asset('scss/index.css')}}">
     <link rel="stylesheet" href="{{asset('scss/style.css')}}">
+    <link rel="stylesheet" href="{{asset('scss/responsive.css')}}">
     <link rel="stylesheet" href="{{asset('scss/js/main.js')}}">
 
 
