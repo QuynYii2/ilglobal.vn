@@ -157,7 +157,7 @@
 
   .mobile-nav-show,
   .mobile-nav-hide {
-    display: none;
+    //display: none;
   }
 }
 
@@ -185,6 +185,8 @@
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    height: 400px;
+
   }
 
   .navbar a,
@@ -312,10 +314,19 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .pricing .box {
     max-width: 80%;
     margin: 0 auto 30px auto;
+  }
+  .d-flex_min {
+    display: block;
+  }
+  .home-showcase {
+    margin: 0;
+  }
+  .services {
+    padding-bottom: 0;
   }
 }
 
@@ -354,7 +365,7 @@
     font-size: 30px;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .d-flex_min {
     display: flex;
   }
