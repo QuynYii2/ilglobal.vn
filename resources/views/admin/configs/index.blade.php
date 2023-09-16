@@ -6,8 +6,8 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">Home</a></li>
-                <li class="breadcrumb-item active">Create Logo</li>
+                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">{{ __('Home.Home') }}</a></li>
+                <li class="breadcrumb-item active">{{ __('Home.Create Logo') }}</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -18,7 +18,7 @@
                 @csrf
                 <div class="row">
                     <div class="form-group col-md-3">
-                        <label for="thumbnail">Choose logo</label>
+                        <label for="thumbnail">{{ __('Home.Choose logo') }}</label>
                         <input class="form-control" type="file" id="logo" name="logo" required
                                accept="image/*">
                         @if($config)
@@ -26,7 +26,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="email">Email</label>
+                        <label for="email">{{ __('Home.Email') }}</label>
                         @if($config)
                             <input class="form-control" type="email" id="email" name="email" value="{{$config->email}}" required>
                         @else
@@ -34,7 +34,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="phone_number">PhoneNumber</label>
+                        <label for="phone_number">{{ __('Home.PhoneNumber') }}</label>
                         @if($config)
                             <input class="form-control" type="number" id="phone" name="phone" value="{{$config->phone}}" required>
                         @else
@@ -42,7 +42,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="cskh">CSKH</label>
+                        <label for="cskh">{{ __('Home.CSKH') }}</label>
                         @if($config)
                             <input class="form-control" type="text" id="cskh" name="cskh" value="{{$config->cskh}}" required>
                         @else
@@ -66,7 +66,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="address">Address</label>
+                        <label for="address">{{ __('Home.Address') }}</label>
                         @if($config)
                             <input class="form-control" type="text" id="address" name="address" value="{{$config->address}}" required>
                         @else
@@ -74,14 +74,14 @@
                         @endif
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="selectStatus">Select status</label>
+                        <label for="selectStatus">{{ __('Home.Select status') }}</label>
                         <select class="form-select" id="selectStatus" name="status">
-                            <option value="{{\App\Enums\NewsStatus::ACTIVE}}">ACTIVE</option>
-                            <option value="{{\App\Enums\NewsStatus::INACTIVE}}">INACTIVE</option>
+                            <option value="{{\App\Enums\NewsStatus::ACTIVE}}">{{ __('Home.ACTIVE')}}</option>
+                            <option value="{{\App\Enums\NewsStatus::INACTIVE}}">{{ __('Home.INACTIVE') }}</option>
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Create</button>
+                <button type="submit" class="btn btn-primary mt-3">{{ __('Home.Create') }}</button>
             </form>
         </div>
     </section>

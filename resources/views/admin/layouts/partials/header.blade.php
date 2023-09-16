@@ -20,13 +20,13 @@
             <li class="nav-item dropdown">
                 <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
                     <i class="bi bi-globe"></i>
-                    <span class="language">Language</span>
+                    <span class="language">{{ __('Home.Language') }}</span>
                 </a>
                 <!-- End Messages Icon -->
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
 
                     <li class="message-item">
-                        <a href="#">
+                        <a href="{{route('language','vi')}}">
                             <img src="" alt="" class="rounded-circle">
                             <div>
                                 <h4>Vietnamese</h4>
@@ -38,14 +38,13 @@
                     </li>
 
                     <li class="message-item">
-                        <a href="#">
+                        <a href="{{route('language','en')}}">
                             <img src="" alt="" class="rounded-circle">
                             <div>
                                 <h4>English</h4>
                             </div>
                         </a>
                     </li>
-
                 </ul><!-- End Messages Dropdown Items -->
 
             </li><!-- End Messages Nav -->
@@ -67,39 +66,9 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                            <i class="bi bi-person"></i>
-                            <span>My Profile</span>
-                        </a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                            <i class="bi bi-gear"></i>
-                            <span>Account Settings</span>
-                        </a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                            <i class="bi bi-question-circle"></i>
-                            <span>Need Help?</span>
-                        </a>
-                    </li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-
-                    <li>
                         <a class="dropdown-item d-flex align-items-center" href="{{route('auth.logout')}}">
                             <i class="bi bi-box-arrow-right"></i>
-                            <span>Sign Out</span>
+                            <span>{{ __('Home.Sign Out') }}</span>
                         </a>
                     </li>
 
