@@ -6,8 +6,8 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">Home</a></li>
-                <li class="breadcrumb-item active">Detail News</li>
+                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">{{ __('Home.Home') }}</a></li>
+                <li class="breadcrumb-item active">{{ __('Home.Edit News') }}</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -19,16 +19,16 @@
                 @method('PUT')
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="title">News Title (VI)</label>
+                        <label for="title">{{ __('Home.News Title') }} (VI)</label>
                         <input type="text" class="form-control" name="title_vi" id="title" value="{{$news->title_vi}}"
                                required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="title">News Title (EN)</label>
+                        <label for="title">{{ __('Home.News Title') }} (EN)</label>
                         <input type="text" class="form-control" name="title_en" id="title" value="{{$news->title_en}}">
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="thumbnail">Choose thumbnail</label>
+                        <label for="thumbnail">{{ __('Home.Choose thumbnail') }}il</label>
                         <input class="form-control" type="file" id="thumbnail" name="thumbnail"
                                accept="image/*">
                         <img src="{{$news->thumbnail}}" alt="" width="60px" height="60px">
@@ -37,16 +37,16 @@
                         <label for="selectStatus">Select status</label>
                         <select class="form-select" id="selectStatus" name="status">
                             @if($news->status == \App\Enums\NewsStatus::ACTIVE)
-                                <option value="{{\App\Enums\NewsStatus::ACTIVE}}">ACTIVE</option>
-                                <option value="{{\App\Enums\NewsStatus::INACTIVE}}">INACTIVE</option>
+                                <option value="{{\App\Enums\NewsStatus::ACTIVE}}">{{ __('Home.ACTIVE') }}</option>
+                                <option value="{{\App\Enums\NewsStatus::INACTIVE}}">{{ __('Home.INACTIVE') }}</option>
                             @else
-                                <option value="{{\App\Enums\NewsStatus::INACTIVE}}">INACTIVE</option>
-                                <option value="{{\App\Enums\NewsStatus::ACTIVE}}">ACTIVE</option>
+                                <option value="{{\App\Enums\NewsStatus::INACTIVE}}">{{ __('Home.INACTIVE') }}</option>
+                                <option value="{{\App\Enums\NewsStatus::ACTIVE}}">{{ __('Home.ACTIVE') }}</option>
                             @endif
                         </select>
                     </div>
                     <div class="form-group col-md-6">
-                        <label class="name">Choose Category</label>
+                        <label class="name">{{ __('Home.Choose Category') }}</label>
                         @php
                             $categories = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', null)->get();
                         @endphp
@@ -99,28 +99,28 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="short_content">Short Content (VI)</label>
+                    <label for="short_content">{{ __('Home.Short Content') }} (VI)</label>
                     <textarea type="text" class="form-control description" name="short_content_vi"
                               id="short_content"
                               placeholder="Enter short description" required>{{$news->short_content_vi}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="short_content">Short Content (EN)</label>
+                    <label for="short_content">{{ __('Home.Short Content') }} (EN)</label>
                     <textarea type="text" class="form-control description" name="short_content_en"
                               id="short_content"
                               placeholder="Enter short description">{{$news->short_content_en}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="content">Content (VI)</label>
+                    <label for="content">{{ __('Home.Content') }} (VI)</label>
                     <textarea type="text" class="form-control description" name="content_vi" id="content"
                               placeholder="Enter description" required>{{$news->content_vi}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="content">Content (EN)</label>
+                    <label for="content">{{ __('Home.Content') }} (EN)</label>
                     <textarea type="text" class="form-control description" name="content_en" id="content"
                               placeholder="Enter description">{{$news->content_en}}</textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Save</button>
+                <button type="submit" class="btn btn-primary mt-3">{{ __('Home.Save') }}</button>
             </form>
         </div>
     </section>

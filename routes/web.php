@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/lang/{locale}', function ($locale) {
+    session()->put('locale', $locale);
+    return redirect()->back();
+})->name('language');
 
 Route::get('/', function () {
     return view('frontend/index');
@@ -40,8 +44,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'role.admin'], function () {
     require_once __DIR__ . '/admin.php';
 });
 
-Route::group(['prefix' => 'banner'], function (){
-    Route::get('create_banner', [\App\Http\Controllers\Admin\AdminBannersController::class ,'createBannerProcess'])->name('admin.banner.createBannerProcess');
+Route::group(['prefix' => 'banner'], function () {
+    Route::get('create_banner', [\App\Http\Controllers\Admin\AdminBannersController::class, 'createBannerProcess'])->name('admin.banner.createBannerProcess');
     Route::post('create_banner', [\App\Http\Controllers\Admin\AdminBannersController::class, 'create'])->name('admin.banner.create');
     Route::get('list_banner', [\App\Http\Controllers\Admin\AdminBannersController::class, 'showListBanner'])->name('admin.banner.list');
 });
