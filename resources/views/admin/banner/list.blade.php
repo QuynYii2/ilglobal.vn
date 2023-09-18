@@ -36,6 +36,17 @@
                         <td>{{$bannerImage -> bannerImage}}</td>
                         <td>{{$bannerImage -> created_at}}</td>
                         <td>{{$bannerImage -> updated_at}}</td>
+                        <td>
+                            <!-- Nút Sửa -->
+                            <a href="{{ route('admin.banner.edit', $bannerImage->id) }}" class="btn btn-primary">Sửa</a>
+
+                            <!-- Nút Xóa -->
+                            <form action="{{route('delete.banner', $bannerImage->id)}}" method="post" style="display: inline;">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Xóa</button>
+                            </form>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>
