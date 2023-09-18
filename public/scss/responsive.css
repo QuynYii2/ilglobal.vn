@@ -280,6 +280,12 @@
   .services {
     padding-bottom: 0;
   }
+  div#style-o1DoH {
+    padding: 0;
+  }
+  .swiper-slide {
+    height: 0;
+  }
 }
 @media (max-width: 420px) {
   .pricing .box {
