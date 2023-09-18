@@ -1771,8 +1771,7 @@ section#pricing {
     padding-bottom: 0px;
 }
 section.home-showcase {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
 }
 
 .fa-xmark:before, .fa-bars:before
@@ -1785,4 +1784,7 @@ section.home-showcase {
     vertical-align: -0.125em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+div#style-o1DoH {
+    padding-bottom: 100px;
 }
