@@ -5,16 +5,6 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('scss/img/page-header.jpg');">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center">
-              <h2>Services</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <nav>
         <div class="container">
           <ol>
@@ -24,7 +14,6 @@
         </div>
       </nav>
     </div><!-- End Breadcrumbs -->
-
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container">
@@ -75,15 +64,15 @@
         </div>
 
         <div class="row gy-4">
-          @foreach($products as $product)
+          @foreach($news as $new)
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
               <div class="card-img">
-                <img src="{{$product->thumbnail}}" alt="" class="img-fluid">
+                <img src="{{$new->thumbnail}}" alt="" class="img-fluid">
               </div>
-              <h3><a href="/service-details/{{ $product->id}}"
-                     class="stretched-link">{{strip_tags($product->title_vi)}}</a></h3>
-              <p>{{strip_tags($product->short_content_vi)}}</p>
+              <h3><a href="/service-details/{{ $new->id}}"
+                     class="stretched-link">{{strip_tags($new->title_vi)}}</a></h3>
+              <p>{{strip_tags($new->short_content_vi)}}</p>
             </div>
           </div>
           @endforeach<!-- End Card Item -->

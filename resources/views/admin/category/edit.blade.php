@@ -19,11 +19,11 @@
                 @method('PUT')
                 <div class="row">
                     <div class="form-group col-md-3">
-                        <label for="name_vi">{{ __('Home.Category Title (VI)') }}</label>
+                        <label for="name_vi">{{ __('Home.Category Title') }} (VI)</label>
                         <input class="form-control" type="text" id="name_vi" name="name_vi" value="{{$cate->name_vi}}" required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="name_en">{{ __('Home.Category Title (EN)') }}</label>
+                        <label for="name_en">{{ __('Home.Category Title') }} (EN)</label>
                         <input class="form-control" type="text" id="name_en" name="name_en" value="{{$cate->name_en}}" >
                     </div>
                     <div class="form-group col-md-3">
@@ -58,6 +58,22 @@
                             </select>
                         </div>
                     @endif
+                    <div class="form-group col-md-3">
+                            <label for="thumbnail">{{ __('Home.Choose thumbnail') }}</label>
+                            <input class="form-control" type="file" id="thumbnail" name="thumbnail"
+                                   accept="image/*">
+                            @if($cate->thumbnail)
+                            <img src="{{$cate->thumbnail}}" alt="" width="60px" height="60px">
+                            @endif
+                        </div>
+                    <div class="form-group">
+                        <label for="check_box">Check</label>
+                        @if($cate->check == 1)
+                            <input type="checkbox" id="check" name="check" value="1" checked/>
+                        @else
+                            <input type="checkbox" id="check" name="check" value="1" />
+                        @endif
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">{{ __('Home.Save') }}</button>
             </form>

@@ -30,16 +30,32 @@ class CategoryController extends Controller
             $name_vi = $request->input('name_vi');
             $name_en = $request->input('name_en');
             $parent_id = $request->input('parent_id');
+            $thumbnail = $request->file('thumbnail');
+            $check = $request->input('check');
+            $status = $request->input('status');
+
+            if ($thumbnail) {
+                $imageName = time() . '.' . $thumbnail->getClientOriginalExtension();
+                $destinationPath = public_path('upload/images');
+                $thumbnail->move($destinationPath, $imageName);
+                $imageURL = asset('upload/images/' . $imageName);
+            } else {
+                $imageURL = null;
+            }
             if ($parent_id == '0'){
                 $parent_id = null;
             }
-            $status = $request->input('status');
+            if (!$check){
+                $check=0;
+            }
 
             $category = [
                 'name_vi' => $name_vi,
                 'name_en' => $name_en,
                 'parent_id' => $parent_id,
                 'status' => $status,
+                'thumbnail' => $imageURL,
+                'check' => $check,
                 'user_id' => Auth::user()->id,
             ];
 
@@ -75,6 +91,9 @@ class CategoryController extends Controller
             $name_en = $request->input('name_en');
             $status = $request->input('status');
             $parent_id = $request->input('parent_id');
+            $thumbnail = $request->file('thumbnail');
+            $check = $request->input('check');
+
             if ($parent_id == '0'){
                 $parent_id = null;
             }
@@ -82,10 +101,22 @@ class CategoryController extends Controller
             if ($cate->parent_id != $parent_id){
                 $cate->parent_id = $parent_id;
             }
-
+            if (!$check){
+                $check=0;
+            }
+            if ($thumbnail) {
+                $imageName = time() . '.' . $thumbnail->getClientOriginalExtension();
+                $destinationPath = public_path('upload/images');
+                $thumbnail->move($destinationPath, $imageName);
+                $imageURL = asset('upload/images/' . $imageName);
+            } else {
+                $imageURL = $cate->thumbnail;
+            }
+            $cate->thumbnail = $imageURL;
             $cate->name_vi = $name_vi;
             $cate->name_en = $name_en;
             $cate->status = $status;
+            $cate->check = $check;
             $success = $cate->save();
             if ($success) {
                 alert()->success('Success', 'Update news success!');

@@ -4,10 +4,12 @@
     <div class="container">
         <div class="row gy-4">
             <div class="col-lg-5 col-md-12 footer-info">
-                <a href="index.html" class="logo d-flex align-items-center">
-                    <span>Logis</span>
-                </a>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                @if($configs)
+                    <a href="index.html" class="logo d-flex align-items-center">
+                            <span><img src="{{asset($configs->logo)}}" alt=""></span>
+                    </a>
+                    <p>{{$configs->short_introduction_vi}}</p>
+                @endif
                 <div class="social-links d-flex mt-4">
                     <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>

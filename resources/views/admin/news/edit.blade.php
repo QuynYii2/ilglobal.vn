@@ -28,7 +28,7 @@
                         <input type="text" class="form-control" name="title_en" id="title" value="{{$news->title_en}}">
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="thumbnail">{{ __('Home.Choose thumbnail') }}il</label>
+                        <label for="thumbnail">{{ __('Home.Choose thumbnail') }}</label>
                         <input class="form-control" type="file" id="thumbnail" name="thumbnail"
                                accept="image/*">
                         <img src="{{$news->thumbnail}}" alt="" width="60px" height="60px">

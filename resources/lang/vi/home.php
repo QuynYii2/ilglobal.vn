@@ -95,4 +95,8 @@ return [
     'Pages Title' => 'Tên Pages',
     'Choose avatar' => 'Chọn ảnh đại diện',
     'Name company' => 'Tên công ty',
- ];
+    'About Us' => 'Về chúng tôi',
+    'Service' => 'Dịch vụ',
+    'Show' => 'Hiện',
+    'Hidden' => 'Ẩn',
+];

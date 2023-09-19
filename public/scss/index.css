@@ -42,6 +42,7 @@ a {
     text-decoration: none !important;
 }
 
+
 a:hover {
     color: #406aff;
     text-decoration: none;
@@ -64,6 +65,14 @@ h6 {
 section {
     padding-top: 80px;
     overflow: hidden;
+}
+
+section h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #001f8d;
 }
 
 .section-header {
@@ -300,33 +309,30 @@ section {
 .featured-services .service-item {
     position: relative;
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .featured-services .service-item .icon {
-    margin-right: 20px;
+    margin: 0 auto 30px;
+    text-align: center;
+    height: 70px;
+    width: 70px;
 }
 
-.featured-services .service-item .icon i {
-    color: #001f8d;
-    font-size: 48px;
-    transition: 0.3s;
+.featured-services .service-item .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.featured-services .service-item:hover .icon {
-    background: #fff;
-}
-
-.featured-services .service-item:hover .icon i {
-    color: var(--color-primary);
-}
 
 .featured-services .service-item .title {
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 20px;
-    color: var(--color-secondary);
+    color: #0a0d13;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 .featured-services .service-item .description {
@@ -1276,7 +1282,6 @@ section {
 .hero {
     width: 100%;
     height: 70vh;
-    color: rgba(255, 255, 255, 0.8);
 }
 
 .hero h2 {
@@ -1305,8 +1310,6 @@ section {
     padding-bottom: 18px;
     padding-left: 20px;
     padding-right: 20px;
-    border: none;
-    margin-right: 10px;
     border: none !important;
     background: none !important;
 }
@@ -1378,11 +1381,11 @@ section {
 
 .footer .footer-info .logo {
     line-height: 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .footer .footer-info .logo img {
-    max-height: 40px;
+    height: 70px;
     margin-right: 6px;
 }
 
@@ -1679,10 +1682,13 @@ div#style-o1DoH {
 
 .bannerList{
     position: relative;
+    background-color: black;
 }
+
 
 .bannerList .introduction{
     position: absolute;
+    transform: translate(8%, 40%);
     top: 0;
     left: 0;
 

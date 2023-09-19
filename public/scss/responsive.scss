@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 30px;
+    padding: 10px 20px 10px 10px;
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 400;
@@ -58,6 +58,7 @@
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
+    margin-right: 5px;
   }
 
   .navbar a:hover,
@@ -66,7 +67,6 @@
   .navbar li:hover>a {
     color: #fff;
   }
-
 
   .navbar .dropdown ul {
     display: block;
@@ -85,7 +85,8 @@
   }
 
   .navbar .dropdown ul li {
-    min-width: 200px;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .navbar .dropdown ul a {

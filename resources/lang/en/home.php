@@ -98,4 +98,8 @@ return [
     'Pages Title' => 'Pages Title',
     'Choose avatar' => 'Choose avatar',
     'Name company' => 'Name company',
+    'About Us' => 'About Us',
+    'Service' => 'Service',
+    'Show' => 'Show',
+    'Hidden' => 'Hidden',
 ];

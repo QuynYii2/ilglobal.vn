@@ -23,9 +23,10 @@
                 <thead>
                 <tr>
                     <th scope="col">#</th>
+                    <th scope="col">Image</th>
                     <th scope="col">{{ __('Home.Name') }}</th>
                     <th scope="col">{{ __('Home.Category Parent') }}</th>
-                    <th scope="col">{{ __('Home.Active') }}</th>
+                    <th scope="col">Check</th>
                     <th scope="col">{{ __('Home.Status') }}</th>
                     <th scope="col">{{ __('Home.Action') }}</th>
                 </tr>
@@ -35,6 +36,11 @@
                     @foreach($listCategory as $cate)
                         <tr>
                             <th scope="row">{{$loop->index + 1}}</th>
+                            <td>
+                                @if($cate->thumbnail)
+                                    <img src="{{$cate->thumbnail}}" alt="" width="60px" height="60px">
+                                @endif
+                            </td>
                             <td>{{$cate->name_vi}}</td>
                             @if($cate->parent_id)
                                 @php
@@ -44,19 +50,15 @@
                             @else
                                 <td>--</td>
                             @endif
-                            <td class="text-center">
-                                @php
-                                    $isChecked = false;
-                                    if ($cate->status == \App\Enums\CategoryStatus::ACTIVE){
-                                        $isChecked = true;
-                                    }
-                                @endphp
-                                <input data-id="{{$cate->id}}" type="checkbox"
-                                       class="form-check-input toggleNews"
-                                       id="exampleCheck{{$cate->id}}" {{ $isChecked ? 'checked' : '' }}>
+                            <td>
+                                @if($cate->check == 1)
+                                    {{ __('Home.Show') }}
+                                @else
+                                    {{ __('Home.Hidden') }}
+                                @endif
                             </td>
                             <td id="newsStatus{{$cate->id}}">{{$cate->status}}</td>
-                            <td class="text-center">
+                            <td>
                                 <a href="{{route('admin.category.edit', $cate->id)}}">
                                     <i style="color: black" class="bi bi-pencil-square"></i>
                                 </a>
