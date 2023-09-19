@@ -28,8 +28,8 @@ Route::group(['prefix' => 'pages'], function () {
 
 //Profile
 Route::group(['prefix' => 'configs'], function (){
-    Route::get('configs', [\App\Http\Controllers\Admin\ConfigsController::class, 'index'])->name('admin.configs.index');
-    Route::post('createLogo', [\App\Http\Controllers\Admin\ConfigsController::class, 'create'])->name('admin.configs.create');
+    Route::get('/', [\App\Http\Controllers\Admin\ConfigsController::class, 'index'])->name('admin.configs.index');
+    Route::post('/', [\App\Http\Controllers\Admin\ConfigsController::class, 'create'])->name('admin.configs.create');
 });
 
 //Menu
@@ -52,4 +52,14 @@ Route::group(['prefix' => 'category'], function (){
     Route::put('update/{id}', [\App\Http\Controllers\Admin\CategoryController::class, 'update'])->name('admin.category.update');
     Route::delete('delete/{id}',[\App\Http\Controllers\Admin\CategoryController::class, 'delete'])->name('admin.category.delete');
 
+});
+
+//Banner
+Route::group(['prefix' => 'banner'], function () {
+    Route::get('create_banner', [\App\Http\Controllers\Admin\AdminBannersController::class, 'createBannerProcess'])->name('admin.banner.createBannerProcess');
+    Route::post('create_banner', [\App\Http\Controllers\Admin\AdminBannersController::class, 'create'])->name('admin.banner.create');
+    Route::get('list_banner', [\App\Http\Controllers\Admin\AdminBannersController::class, 'showListBanner'])->name('admin.banner.list');
+    Route::get('bannerImage/{id}/edit', [\App\Http\Controllers\Admin\AdminBannersController::class, 'bannerEdit'])->name('admin.banner.edit');
+    Route::put('bannerImage/{id}', [\App\Http\Controllers\Admin\AdminBannersController::class, 'bannerUpdate'])->name('update.banner');
+    Route::delete('delete_banner/{id}', [\App\Http\Controllers\Admin\AdminBannersController::class, 'deleteBanner'])->name('delete.banner');
 });

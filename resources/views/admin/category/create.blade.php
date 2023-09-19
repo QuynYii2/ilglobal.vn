@@ -45,6 +45,15 @@
                             </select>
                         </div>
                     @endif
+                    <div class="form-group col-md-3">
+                        <label for="thumbnail">{{ __('Home.Choose thumbnail') }}</label>
+                        <input class="form-control" type="file" id="thumbnail" name="thumbnail"
+                               accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="check_box">Check</label>
+                        <input type="checkbox" id="check" name="check" value="1"/>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">{{ __('Home.Create') }}</button>
             </form>

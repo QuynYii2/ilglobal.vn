@@ -15,6 +15,8 @@ class Category extends Model
         'parent_id',
         'user_id',
         'status',
+        'thumbnail',
+        'check',
     ];
 
     public function cate()

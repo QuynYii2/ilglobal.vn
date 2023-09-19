@@ -25,19 +25,32 @@ class ConfigsController extends Controller
             $logo = $request->file('logo');
             $email = $request->input('email');
             $cskh = $request->input('cskh');
+            $name_company = $request->input('name_company');
             $phone = $request->input('phone');
             $address = $request->input('address');
             $zalo = $request->input('zalo');
             $facebook = $request->input('facebook');
             $status = $request->input('status');
+            $short_introduction_vi = $request->input('short_introduction_vi');
+            $short_introduction_en = $request->input('short_introduction_en');
+            $introduce_vi = $request->input('introduce_vi');
+            $introduce_en = $request->input('introduce_en');
+            $avatar = $request->file('avatar');
 
             if ($request->has('logo')) {
-                $imageName = time() . '.' . $logo->getClientOriginalExtension();
+                $imageName = 'logo' . time() . '.' . $logo->getClientOriginalExtension();
                 $destinationPath = public_path('upload/images');
                 $logo->move($destinationPath, $imageName);
                 $imageURL = asset('upload/images/' . $imageName);
             } else {
                 $imageURL = null;
+            }
+
+            if ($request->has('avatar')) {
+                $imagePath = $avatar->store('avatar', 'public');
+                $avatarURL = asset('storage/' . $imagePath);
+            } else {
+                $avatarURL = null;
             }
             if (!$config){
                 $configs = [
@@ -48,7 +61,13 @@ class ConfigsController extends Controller
                     'facebook' => $facebook,
                     'address' => $address,
                     'cskh' => $cskh,
+                    'name_company' => $name_company,
                     'status' => $status,
+                    'short_introduction_vi' => $short_introduction_vi,
+                    'short_introduction_en' => $short_introduction_en,
+                    'introduce_vi' => $introduce_vi,
+                    'introduce_en' => $introduce_en,
+                    'avatar' => $avatarURL,
 //                'user_id' => Auth::user()->id,
                 ];
 
@@ -61,7 +80,13 @@ class ConfigsController extends Controller
                 $config->facebook = $facebook;
                 $config->address = $address;
                 $config->cskh = $cskh;
+                $config->name_company = $name_company;
                 $config->status = $status;
+                $config->short_introduction_vi = $short_introduction_vi;
+                $config->short_introduction_en = $short_introduction_en;
+                $config->introduce_vi = $introduce_vi;
+                $config->introduce_en = $introduce_en;
+                $config->avatar = $avatarURL;
 
                 $success = $config->save();
             }
@@ -74,6 +99,7 @@ class ConfigsController extends Controller
             return back();
         } catch (\Exception $exception) {
             alert()->error('Error', 'Please try again!');
+            dd($exception);
             return back();
         }
     }

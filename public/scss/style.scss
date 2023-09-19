@@ -8,7 +8,6 @@
 
 @font-face {
     font-family: 'CabinetGrotesk-extrabold';
-    src: url('assets/fonts/cabinet-grotesk/CabinetGrotesk-Extrabold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -36,8 +35,6 @@ $grotesk-extrabold: 'CabinetGrotesk-extrabold', sans-serif;
         height: 16px;
     }
 };
-
-
 
 .bigTitle {
     font-family: $grotesk-extrabold;
