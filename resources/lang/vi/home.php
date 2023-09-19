@@ -30,7 +30,7 @@ return [
     'Are you sure you want to delete it?' => 'Bạn có chắc chắn muốn xóa nó?',
     'Close' => 'Đóng',
     'Delete' => 'Xóa',
-    'Create Logo' => 'Tạo mới Logo',
+    'Company Profile' => 'Hồ sơ công ty',
     'Choose logo' => 'Chọn logo',
     'Email' => 'Email',
     'PhoneNumber' => 'PhoneNumber',
@@ -92,4 +92,7 @@ return [
     'Create At' => 'Ngày tạo',
     'Choose location...' => 'Chọn vị trí...',
     'Login' => 'Đăng nhập',
+    'Pages Title' => 'Tên Pages',
+    'Choose avatar' => 'Chọn ảnh đại diện',
+    'Name company' => 'Tên công ty',
  ];

@@ -30,7 +30,7 @@ return [
     'Are you sure you want to delete it?' => 'Are you sure you want to delete it?',
     'Close' => 'Close',
     'Delete' => 'Delete',
-    'Create Logo' => 'Create Logo',
+    'Company Profile' => 'Company Profile',
     'Choose logo' => 'Choose logo',
     'Email' => 'Email',
     'PhoneNumber' => 'PhoneNumber',
@@ -95,4 +95,7 @@ return [
     'Create At' => 'Create At',
     'Choose location...'=> 'Choose location...',
     'Login' => 'Login',
+    'Pages Title' => 'Pages Title',
+    'Choose avatar' => 'Choose avatar',
+    'Name company' => 'Name company',
 ];

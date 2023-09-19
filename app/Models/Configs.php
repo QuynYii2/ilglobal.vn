@@ -18,5 +18,11 @@ class Configs extends Model
         'cskh',
         'facebook',
         'zalo',
+        'short_introduction_vi',
+        'short_introduction_en',
+        'introduce_vi',
+        'introduce_en',
+        'avatar',
+        'name_company',
     ];
 }

@@ -100,9 +100,9 @@
                 </div>
                 <div class="form-group">
                     <label for="short_content">{{ __('Home.Short Content') }} (VI)</label>
-                    <textarea type="text" class="form-control description" name="short_content_vi"
+                    <textarea type="text" class="form-control" name="short_content_vi"
                               id="short_content"
-                              placeholder="Enter short description" required>{{$news->short_content_vi}}</textarea>
+                              placeholder="Enter short" required>{{$news->short_content_vi}}</textarea>
                 </div>
                 <div class="form-group">
                     <label for="short_content">{{ __('Home.Short Content') }} (EN)</label>

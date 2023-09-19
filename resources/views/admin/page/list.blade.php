@@ -6,8 +6,8 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">Home</a></li>
-                <li class="breadcrumb-item active">List Pages</li>
+                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">{{ __('Home.Home') }}</a></li>
+                <li class="breadcrumb-item active">{{ __('Home.List Pages') }}</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -16,20 +16,20 @@
         <div class="row">
             <div class="mb-3">
                 <h5>Search Pages</h5>
-                <input class="form-control" id="inputSearchNews" type="text" placeholder="Search..">
+                <input class="form-control" id="inputSearchNews" type="text" placeholder="{{ __('Home.Search') }}..">
                 <br>
             </div>
             <table class="table table-bordered" id="tableNews">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">News Title</th>
-                    <th scope="col">Views</th>
-                    <th scope="col">Create By</th>
-                    <th scope="col">Create At</th>
-                    <th scope="col">Active</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">{{ __('Home.News Title') }}</th>
+                    <th scope="col">{{ __('Home.Views') }}</th>
+                    <th scope="col">{{ __('Home.Create By') }}</th>
+                    <th scope="col">{{ __('Home.Create At') }}</th>
+                    <th scope="col">{{ __('Home.Active') }}</th>
+                    <th scope="col">{{ __('Home.Status') }}</th>
+                    <th scope="col">{{ __('Home.Action') }}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -68,19 +68,19 @@
                                             @method('DELETE')
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Confirm Delete</h5>
+                                                    <h5 class="modal-title" id="exampleModalLabel">{{ __('Home.Confirm Delete') }}</h5>
                                                     <button type="button" class="btn-close"
                                                             data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    Are you sure you want to delete it?
+                                                    {{ __('Home.Are you sure you want to delete it?') }}
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close
+                                                            data-bs-dismiss="modal">{{ __('Home.Close') }}
                                                     </button>
-                                                    <button type="submit" class="btn btn-danger">Delete
+                                                    <button type="submit" class="btn btn-danger">{{ __('Home.Delete') }}
                                                     </button>
                                                 </div>
                                             </div>

@@ -115,6 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Init swiper slider with 1 slide at once in desktop view
    */
+
+
   new Swiper('.slides-1', {
     speed: 600,
     loop: true,
@@ -149,6 +151,13 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+});
+
+new Swiper(".bannerSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
 });
 
 function openMenu() {

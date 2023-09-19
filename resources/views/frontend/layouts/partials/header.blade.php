@@ -1,8 +1,12 @@
 <!-- ======= Header ======= -->
 <header id="header" class="header align-items-center fixed-top">
-    <div class="header-desktop container-fluid align-items-center justify-content-between">
+    <div class="header-desktop container-fluid align-items-center justify-content-between d-flex">
         <a href="{{route('index')}}" class="logo d-flex align-items-center">
-            <h1>Logis</h1>
+            @if($configs)
+                <img src="{{asset($configs->logo)}}" alt="">
+            @else
+                <h1>Logis</h1>
+            @endif
         </a>
         <i class="mobile-nav-toggle mobile-nav-show fa-solid fa-bars"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none fa-solid fa-xmark"></i>
@@ -29,7 +33,6 @@
                     </ul>
                 </li>
                 <li><a href="{{route('contact')}}">Contact</a></li>
-                <li><a class="get-a-quote" href="#">Get a Quote</a></li>
             </ul>
         </nav><!-- .navbar -->
     </div>

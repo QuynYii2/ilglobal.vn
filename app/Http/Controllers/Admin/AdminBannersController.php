@@ -28,7 +28,7 @@ class AdminBannersController extends Controller
             $banner->bannerImage = 'images/' . $bannerImageName;
             $banner->save();
         }
-        return redirect()->back()->with('success', 'Ảnh đã được tải lên và lưu vào cơ sở dữ liệu thành công.');
+        return redirect()->back()->with('Success', 'Banner được tải lên thành công.');
 
     }
 
@@ -65,7 +65,7 @@ class AdminBannersController extends Controller
             $bannerImage->bannerImage = 'image' . $bannerImageName;
         }
         $bannerImage->save();
-        return redirect()->back()->with('success', 'Cập nhật ảnh của bạn thành công');
+        return redirect()->back()->with('success', 'Cập nhật banner thành công');
     }
 
     public function deleteBanner($id){

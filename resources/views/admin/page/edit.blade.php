@@ -19,51 +19,51 @@
                 @method('PUT')
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="title">Pages Title (VI)</label>
+                        <label for="title">{{ __('Home.Pages Title') }} (VI)</label>
                         <input type="text" class="form-control" name="title_vi" id="title" value="{{$pages->title_vi}}"
                                required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="title">Pages Title (EN)</label>
+                        <label for="title">{{ __('Home.Pages Title') }} (EN)</label>
                         <input type="text" class="form-control" name="title_en" id="title" value="{{$pages->title_en}}"
                                required>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="selectStatus">Select status</label>
+                        <label for="selectStatus">{{ __('Select status') }}</label>
                         <select class="form-select" id="selectStatus" name="status">
                             @if($pages->status == \App\Enums\PagesStatus::ACTIVE)
-                                <option value="{{\App\Enums\PagesStatus::ACTIVE}}">ACTIVE</option>
-                                <option value="{{\App\Enums\PagesStatus::INACTIVE}}">INACTIVE</option>
+                                <option value="{{\App\Enums\PagesStatus::ACTIVE}}">{{ __('Home.ACTIVE') }}</option>
+                                <option value="{{\App\Enums\PagesStatus::INACTIVE}}">{{ __('Home.INACTIVE') }}</option>
                             @else
-                                <option value="{{\App\Enums\PagesStatus::INACTIVE}}">INACTIVE</option>
-                                <option value="{{\App\Enums\PagesStatus::ACTIVE}}">ACTIVE</option>
+                                <option value="{{\App\Enums\PagesStatus::INACTIVE}}">{{ __('Home.INACTIVE') }}</option>
+                                <option value="{{\App\Enums\PagesStatus::ACTIVE}}">{{ __('Home.ACTIVE') }}</option>
                             @endif
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="short_content">Short Content (VI)</label>
-                    <textarea type="text" class="form-control description" name="short_content_vi"
+                    <label for="short_content">{{ __('Home.Short Content') }} (VI)</label>
+                    <textarea type="text" class="form-control" name="short_content_vi"
                               id="short_content"
                               placeholder="Enter short description" required>{{$pages->short_content_vi}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="short_content">Short Content (EN)</label>
-                    <textarea type="text" class="form-control description" name="short_content_en"
+                    <label for="short_content">{{ __('Home.Short Content') }} (EN)</label>
+                    <textarea type="text" class="form-control" name="short_content_en"
                               id="short_content"
                               placeholder="Enter short description" required>{{$pages->short_content_en}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="content">Content (VI)</label>
+                    <label for="content">{{ __('Home.Content') }} (VI)</label>
                     <textarea type="text" class="form-control description" name="content_vi" id="content"
                               placeholder="Enter description" required>{{$pages->content_vi}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="content">Content (EN)</label>
+                    <label for="content">{{ __('Home.Content') }} (EN)</label>
                     <textarea type="text" class="form-control description" name="content_en" id="content"
                               placeholder="Enter description" required>{{$pages->content_en}}</textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Save</button>
+                <button type="submit" class="btn btn-primary mt-3">{{ __('Home.Save') }}</button>
             </form>
         </div>
     </section>

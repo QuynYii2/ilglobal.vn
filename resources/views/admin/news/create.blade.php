@@ -71,13 +71,13 @@
                 </div>
                 <div class="form-group">
                     <label for="short_content">{{ __('Home.Short Content') }} (VI)</label>
-                    <textarea type="text" class="form-control description" name="short_content_vi"
+                    <textarea type="text" class="form-control" name="short_content_vi"
                               id="short_content_vi"
                               placeholder="{{ __('Home.Enter short description') }}" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="short_content">{{ __('Home.Short Content') }} (EN)</label>
-                    <textarea type="text" class="form-control description" name="short_content_en"
+                    <textarea type="text" class="form-control" name="short_content_en"
                               id="short_content_en"
                               placeholder="{{ __('Home.Enter short description') }}" ></textarea>
                 </div>

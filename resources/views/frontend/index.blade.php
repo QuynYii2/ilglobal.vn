@@ -3,56 +3,32 @@
 @section('main-content')
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero d-flex align-items-center">
-        <div class="container">
-            <div class="row gy-4 d-flex justify-content-between">
-                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
-                    <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat
-                        non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum
-                        voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
-                    <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
-
-                        <div class="col-lg-3 col-6">
-                            <div class="stats-item text-center w-100">
-                                <span data-purecounter-start="0" data-purecounter-end="232"
-                                      data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Clients</p>
+        <div class="swiper bannerSwiper">
+            <div class="swiper-wrapper ">
+                @if($banners)
+                    @foreach($banners as $banner)
+                        <div class="swiper-slide bannerList">
+                            <img src="{{asset($banner->bannerImage)}}" alt="">
+                            <div class="container introduction">
+                                <div class="row gy-4 d-flex justify-content-between">
+                                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                                        @if($configs)
+                                            <h2 data-aos="fade-up">IL VIETNAM CO, LTD</h2>
+                                            <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat
+                                                non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum
+                                                voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+                                        @endif
+                                    </div>
+                                </div>
                             </div>
-                        </div><!-- End Stats Item -->
-
-                        <div class="col-lg-3 col-6">
-                            <div class="stats-item text-center w-100">
-                                <span data-purecounter-start="0" data-purecounter-end="521"
-                                      data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Projects</p>
-                            </div>
-                        </div><!-- End Stats Item -->
-
-                        <div class="col-lg-3 col-6">
-                            <div class="stats-item text-center w-100">
-                                <span data-purecounter-start="0" data-purecounter-end="1453"
-                                      data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Support</p>
-                            </div>
-                        </div><!-- End Stats Item -->
-
-                        <div class="col-lg-3 col-6">
-                            <div class="stats-item text-center w-100">
-                                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                                      class="purecounter"></span>
-                                <p>Workers</p>
-                            </div>
-                        </div><!-- End Stats Item -->
-
-                    </div>
-                </div>
-
-                <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                    <img src="scss/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
-                </div>
-
+                        </div>
+                    @endforeach
+                @endif
             </div>
+            <!-- pagination -->
+            <div class="swiper-pagination showcaseSlider-pagination"></div>
         </div>
+
     </section>
     <!-- End Hero Section -->
     <!-- #main -->
@@ -166,7 +142,7 @@
                             <section class="home-showcase">
                                 <div class="swiper home-showcaseSlider">
                                     <div class="swiper-wrapper">
-                                        @foreach($products as $product)
+                                        @foreach($news as $product)
                                             <div class="swiper-slide">
                                                 <div class="col-12" data-aos="fade-up" data-aos-delay="100">
                                                     <div class="card">
@@ -220,16 +196,20 @@
 
                                     <div class="accordion-item">
                                         <h3 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
                                                     data-bs-target="#faq-content-1">
                                                 <i class="bi bi-question-circle question-icon"></i>
                                                 Non consectetur a erat nam at lectus urna duis?
                                             </button>
                                         </h3>
-                                        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                        <div id="faq-content-1" class="accordion-collapse collapse"
+                                             data-bs-parent="#faqlist">
                                             <div class="accordion-body">
-                                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                                laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat
+                                                lacus
+                                                laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                                                porttitor
                                                 rhoncus dolor purus non.
                                             </div>
                                         </div>
@@ -237,17 +217,21 @@
 
                                     <div class="accordion-item">
                                         <h3 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
                                                     data-bs-target="#faq-content-2">
                                                 <i class="bi bi-question-circle question-icon"></i>
                                                 Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
                                             </button>
                                         </h3>
-                                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                        <div id="faq-content-2" class="accordion-collapse collapse"
+                                             data-bs-parent="#faqlist">
                                             <div class="accordion-body">
-                                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi.
+                                                Id
                                                 interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+                                                dignissim.
                                                 Mauris ultrices eros in cursus turpis massa tincidunt dui.
                                             </div>
                                         </div>
@@ -255,36 +239,46 @@
 
                                     <div class="accordion-item">
                                         <h3 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
                                                     data-bs-target="#faq-content-3">
                                                 <i class="bi bi-question-circle question-icon"></i>
                                                 Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
                                             </button>
                                         </h3>
-                                        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                        <div id="faq-content-3" class="accordion-collapse collapse"
+                                             data-bs-parent="#faqlist">
                                             <div class="accordion-body">
-                                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                                Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                                suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis
+                                                orci.
+                                                Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
+                                                amet nisl
+                                                suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis
+                                                convallis
+                                                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi
+                                                quis
                                             </div>
                                         </div>
                                     </div><!-- # Faq item-->
 
                                     <div class="accordion-item">
                                         <h3 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
                                                     data-bs-target="#faq-content-4">
                                                 <i class="bi bi-question-circle question-icon"></i>
                                                 Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
                                             </button>
                                         </h3>
-                                        <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                        <div id="faq-content-4" class="accordion-collapse collapse"
+                                             data-bs-parent="#faqlist">
                                             <div class="accordion-body">
                                                 <i class="bi bi-question-circle question-icon"></i>
-                                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi.
+                                                Id
                                                 interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+                                                dignissim.
                                                 Mauris ultrices eros in cursus turpis massa tincidunt dui.
                                             </div>
                                         </div>
@@ -292,17 +286,21 @@
 
                                     <div class="accordion-item">
                                         <h3 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
                                                     data-bs-target="#faq-content-5">
                                                 <i class="bi bi-question-circle question-icon"></i>
                                                 Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
                                             </button>
                                         </h3>
-                                        <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                        <div id="faq-content-5" class="accordion-collapse collapse"
+                                             data-bs-parent="#faqlist">
                                             <div class="accordion-body">
                                                 Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
-                                                suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
-                                                Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
+                                                suspendisse in est ante in. Nunc vel risus commodo viverra maecenas
+                                                accumsan.
+                                                Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis
+                                                blandit
                                                 turpis cursus in
                                             </div>
                                         </div>
@@ -337,94 +335,94 @@
         </section><!-- End Call To Action Section -->
 
         <!-- ======= Features Section ======= -->
-{{--        <section id="features" class="features">--}}
-{{--            <div class="container">--}}
+        {{--        <section id="features" class="features">--}}
+        {{--            <div class="container">--}}
 
-{{--                <div class="row gy-4 align-items-center features-item" data-aos="fade-up">--}}
+        {{--                <div class="row gy-4 align-items-center features-item" data-aos="fade-up">--}}
 
-{{--                    <div class="col-md-5">--}}
-{{--                        <img src="scss/img/features-1.jpg" class="img-fluid" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-7">--}}
-{{--                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>--}}
-{{--                        <p class="fst-italic">--}}
-{{--                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut--}}
-{{--                            labore et dolore--}}
-{{--                            magna aliqua.--}}
-{{--                        </p>--}}
-{{--                        <ul>--}}
-{{--                            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.--}}
-{{--                            </li>--}}
-{{--                            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.--}}
-{{--                            </li>--}}
-{{--                            <li><i class="bi bi-check"></i> Ullam est qui quos consequatur eos accusamus.</li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </div><!-- Features Item -->--}}
+        {{--                    <div class="col-md-5">--}}
+        {{--                        <img src="scss/img/features-1.jpg" class="img-fluid" alt="">--}}
+        {{--                    </div>--}}
+        {{--                    <div class="col-md-7">--}}
+        {{--                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>--}}
+        {{--                        <p class="fst-italic">--}}
+        {{--                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut--}}
+        {{--                            labore et dolore--}}
+        {{--                            magna aliqua.--}}
+        {{--                        </p>--}}
+        {{--                        <ul>--}}
+        {{--                            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.--}}
+        {{--                            </li>--}}
+        {{--                            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.--}}
+        {{--                            </li>--}}
+        {{--                            <li><i class="bi bi-check"></i> Ullam est qui quos consequatur eos accusamus.</li>--}}
+        {{--                        </ul>--}}
+        {{--                    </div>--}}
+        {{--                </div><!-- Features Item -->--}}
 
-{{--                <div class="row gy-4 align-items-center features-item" data-aos="fade-up">--}}
-{{--                    <div class="col-md-5 order-1 order-md-2">--}}
-{{--                        <img src="scss/img/features-2.jpg" class="img-fluid" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-7 order-2 order-md-1">--}}
-{{--                        <h3>Corporis temporibus maiores provident</h3>--}}
-{{--                        <p class="fst-italic">--}}
-{{--                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut--}}
-{{--                            labore et dolore--}}
-{{--                            magna aliqua.--}}
-{{--                        </p>--}}
-{{--                        <p>--}}
-{{--                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in--}}
-{{--                            reprehenderit in voluptate--}}
-{{--                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non--}}
-{{--                            proident, sunt in--}}
-{{--                            culpa qui officia deserunt mollit anim id est laborum--}}
-{{--                        </p>--}}
-{{--                    </div>--}}
-{{--                </div><!-- Features Item -->--}}
+        {{--                <div class="row gy-4 align-items-center features-item" data-aos="fade-up">--}}
+        {{--                    <div class="col-md-5 order-1 order-md-2">--}}
+        {{--                        <img src="scss/img/features-2.jpg" class="img-fluid" alt="">--}}
+        {{--                    </div>--}}
+        {{--                    <div class="col-md-7 order-2 order-md-1">--}}
+        {{--                        <h3>Corporis temporibus maiores provident</h3>--}}
+        {{--                        <p class="fst-italic">--}}
+        {{--                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut--}}
+        {{--                            labore et dolore--}}
+        {{--                            magna aliqua.--}}
+        {{--                        </p>--}}
+        {{--                        <p>--}}
+        {{--                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in--}}
+        {{--                            reprehenderit in voluptate--}}
+        {{--                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non--}}
+        {{--                            proident, sunt in--}}
+        {{--                            culpa qui officia deserunt mollit anim id est laborum--}}
+        {{--                        </p>--}}
+        {{--                    </div>--}}
+        {{--                </div><!-- Features Item -->--}}
 
-{{--                <div class="row gy-4 align-items-center features-item" data-aos="fade-up">--}}
-{{--                    <div class="col-md-5">--}}
-{{--                        <img src="scss/img/features-3.jpg" class="img-fluid" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-7">--}}
-{{--                        <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>--}}
-{{--                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe--}}
-{{--                            odit aut quia voluptatem hic voluptas dolor doloremque.</p>--}}
-{{--                        <ul>--}}
-{{--                            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.--}}
-{{--                            </li>--}}
-{{--                            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.--}}
-{{--                            </li>--}}
-{{--                            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </div><!-- Features Item -->--}}
+        {{--                <div class="row gy-4 align-items-center features-item" data-aos="fade-up">--}}
+        {{--                    <div class="col-md-5">--}}
+        {{--                        <img src="scss/img/features-3.jpg" class="img-fluid" alt="">--}}
+        {{--                    </div>--}}
+        {{--                    <div class="col-md-7">--}}
+        {{--                        <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>--}}
+        {{--                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe--}}
+        {{--                            odit aut quia voluptatem hic voluptas dolor doloremque.</p>--}}
+        {{--                        <ul>--}}
+        {{--                            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.--}}
+        {{--                            </li>--}}
+        {{--                            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.--}}
+        {{--                            </li>--}}
+        {{--                            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.--}}
+        {{--                            </li>--}}
+        {{--                        </ul>--}}
+        {{--                    </div>--}}
+        {{--                </div><!-- Features Item -->--}}
 
-{{--                <div class="row gy-4 align-items-center features-item" data-aos="fade-up">--}}
-{{--                    <div class="col-md-5 order-1 order-md-2">--}}
-{{--                        <img src="scss/img/features-4.jpg" class="img-fluid" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-7 order-2 order-md-1">--}}
-{{--                        <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>--}}
-{{--                        <p class="fst-italic">--}}
-{{--                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut--}}
-{{--                            labore et dolore--}}
-{{--                            magna aliqua.--}}
-{{--                        </p>--}}
-{{--                        <p>--}}
-{{--                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in--}}
-{{--                            reprehenderit in voluptate--}}
-{{--                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non--}}
-{{--                            proident, sunt in--}}
-{{--                            culpa qui officia deserunt mollit anim id est laborum--}}
-{{--                        </p>--}}
-{{--                    </div>--}}
-{{--                </div><!-- Features Item -->--}}
+        {{--                <div class="row gy-4 align-items-center features-item" data-aos="fade-up">--}}
+        {{--                    <div class="col-md-5 order-1 order-md-2">--}}
+        {{--                        <img src="scss/img/features-4.jpg" class="img-fluid" alt="">--}}
+        {{--                    </div>--}}
+        {{--                    <div class="col-md-7 order-2 order-md-1">--}}
+        {{--                        <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>--}}
+        {{--                        <p class="fst-italic">--}}
+        {{--                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut--}}
+        {{--                            labore et dolore--}}
+        {{--                            magna aliqua.--}}
+        {{--                        </p>--}}
+        {{--                        <p>--}}
+        {{--                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in--}}
+        {{--                            reprehenderit in voluptate--}}
+        {{--                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non--}}
+        {{--                            proident, sunt in--}}
+        {{--                            culpa qui officia deserunt mollit anim id est laborum--}}
+        {{--                        </p>--}}
+        {{--                    </div>--}}
+        {{--                </div><!-- Features Item -->--}}
 
-{{--            </div>--}}
-{{--        </section><!-- End Features Section -->--}}
+        {{--            </div>--}}
+        {{--        </section><!-- End Features Section -->--}}
 
         <!-- ======= Contact Section ======= -->
         <section id="pricing" class="pricing pt-0">
@@ -448,7 +446,8 @@
                                     <div class="text_column content_element ">
                                         <div class="wrapper">
                                             <p style="color: #808080;">
-                                                Over 42,000 dedicated employees, working in 17 regional clusters around the globe, deliver operational excellence.
+                                                Over 42,000 dedicated employees, working in 17 regional clusters around
+                                                the globe, deliver operational excellence.
                                             </p>
                                         </div>
                                     </div>
@@ -560,7 +559,8 @@
                                                                 <input type="hidden" name="wpcf7" value="1322">
                                                                 <input type="hidden" name="version" value="5.7.2">
                                                                 <input type="hidden" name="locale" value="en_US">
-                                                                <input type="hidden" name="unit_tag" value="f1322-p2-o1">
+                                                                <input type="hidden" name="unit_tag"
+                                                                       value="f1322-p2-o1">
                                                                 <input type="hidden" name="container_post" value="2">
                                                                 <input type="hidden" name="posted_data_hash" value="">
                                                             </div>
@@ -576,19 +576,24 @@
                                                                                             name="freight_type"
                                                                                             tabindex="-1"
                                                                                             aria-hidden="true">
-                                                                                        <option class="select2-option" value="">
+                                                                                        <option class="select2-option"
+                                                                                                value="">
                                                                                             Freight Type
                                                                                         </option>
-                                                                                        <option class="select2-option" value="Road Transportation">
+                                                                                        <option class="select2-option"
+                                                                                                value="Road Transportation">
                                                                                             Road Transportation
                                                                                         </option>
-                                                                                        <option class="select2-option" value="Air Transportation">
+                                                                                        <option class="select2-option"
+                                                                                                value="Air Transportation">
                                                                                             Air Transportation
                                                                                         </option>
-                                                                                        <option class="select2-option" value="Sea Transportation">
+                                                                                        <option class="select2-option"
+                                                                                                value="Sea Transportation">
                                                                                             Sea Transportation
                                                                                         </option>
-                                                                                        <option class="select2-option" value="Warehousing">
+                                                                                        <option class="select2-option"
+                                                                                                value="Warehousing">
                                                                                             Warehousing
                                                                                         </option>
                                                                                     </select>
@@ -604,7 +609,8 @@
                                                                                                   aria-labelledby="select2-freight_type-1p-container">
                                                                                                 <span class="select2-selection__rendered"
                                                                                                       id="select2-freight_type-1p-container"
-                                                                                                      title="Freight Type" hidden="">
+                                                                                                      title="Freight Type"
+                                                                                                      hidden="">
                                                                                                     Freight Type
                                                                                                 </span>
                                                                                                 <span class="select2-selection__arrow"
@@ -654,42 +660,55 @@
                                                                                       data-name="incoterms">
                                                                                     <select class="form-control select select2-hidden-accessible"
                                                                                             aria-invalid="false"
-                                                                                            name="incoterms" tabindex="-1"
+                                                                                            name="incoterms"
+                                                                                            tabindex="-1"
                                                                                             aria-hidden="true">
-                                                                                        <option class="select2-option" value="">
+                                                                                        <option class="select2-option"
+                                                                                                value="">
                                                                                             Incoterms
                                                                                         </option>
-                                                                                        <option class="select2-option" value="EXW">
+                                                                                        <option class="select2-option"
+                                                                                                value="EXW">
                                                                                             EXW
                                                                                         </option>
-                                                                                        <option class="select2-option" value="FCA">
+                                                                                        <option class="select2-option"
+                                                                                                value="FCA">
                                                                                             FCA
                                                                                         </option>
-                                                                                        <option class="select2-option" value="CPT">
+                                                                                        <option class="select2-option"
+                                                                                                value="CPT">
                                                                                             CPT
                                                                                         </option>
-                                                                                        <option class="select2-option" value="CIP">
+                                                                                        <option class="select2-option"
+                                                                                                value="CIP">
                                                                                             CIP
                                                                                         </option>
-                                                                                        <option class="select2-option" value="DAT">
+                                                                                        <option class="select2-option"
+                                                                                                value="DAT">
                                                                                             DAT
                                                                                         </option>
-                                                                                        <option class="select2-option" value="DAP">
+                                                                                        <option class="select2-option"
+                                                                                                value="DAP">
                                                                                             DAP
                                                                                         </option>
-                                                                                        <option class="select2-option" value="DDP">
+                                                                                        <option class="select2-option"
+                                                                                                value="DDP">
                                                                                             DDP
                                                                                         </option>
-                                                                                        <option class="select2-option" value="FAS">
+                                                                                        <option class="select2-option"
+                                                                                                value="FAS">
                                                                                             FAS
                                                                                         </option>
-                                                                                        <option class="select2-option" value="FOB">
+                                                                                        <option class="select2-option"
+                                                                                                value="FOB">
                                                                                             FOB
                                                                                         </option>
-                                                                                        <option class="select2-option" value="CFR">
+                                                                                        <option class="select2-option"
+                                                                                                value="CFR">
                                                                                             CFR
                                                                                         </option>
-                                                                                        <option class="select2-option" value="CIF">
+                                                                                        <option class="select2-option"
+                                                                                                value="CIF">
                                                                                             CIF
                                                                                         </option>
                                                                                     </select>
@@ -706,7 +725,8 @@
                                                                                                   aria-labelledby="select2-incoterms-jv-container">
                                                                                                 <span class="select2-selection__rendered"
                                                                                                       id="select2-incoterms-jv-container"
-                                                                                                      title="Incoterms" hidden="">
+                                                                                                      title="Incoterms"
+                                                                                                      hidden="">
                                                                                                     Incoterms
                                                                                                 </span>
                                                                                                 <span class="select2-selection__arrow"
@@ -745,7 +765,8 @@
                                                                                     <input size="40"
                                                                                            class="form-control text"
                                                                                            aria-invalid="false"
-                                                                                           placeholder="Dimension" value=""
+                                                                                           placeholder="Dimension"
+                                                                                           value=""
                                                                                            type="text" name="dimension">
                                                                                 </span>
                                                                             </p>
@@ -805,118 +826,118 @@
             </div>
         </section><!-- End Pricing Section -->
 
-{{--        <!-- ======= Testimonials Section ======= -->--}}
-{{--        <section id="testimonials" class="testimonials">--}}
-{{--            <div class="container">--}}
+        {{--        <!-- ======= Testimonials Section ======= -->--}}
+        {{--        <section id="testimonials" class="testimonials">--}}
+        {{--            <div class="container">--}}
 
-{{--                <div class="slides-1 swiper" data-aos="fade-up">--}}
-{{--                    <div class="swiper-wrapper">--}}
-{{--                        <div class="swiper-slide">--}}
-{{--                            <div class="testimonial-item">--}}
-{{--                                <img src="scss/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">--}}
-{{--                                <h3>Saul Goodman</h3>--}}
-{{--                                <h4>Ceo &amp; Founder</h4>--}}
-{{--                                <div class="stars">--}}
-{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i>--}}
-{{--                                </div>--}}
-{{--                                <p>--}}
-{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
-{{--                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit--}}
-{{--                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,--}}
-{{--                                    risus at semper.--}}
-{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
-{{--                                </p>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- End testimonial item -->--}}
+        {{--                <div class="slides-1 swiper" data-aos="fade-up">--}}
+        {{--                    <div class="swiper-wrapper">--}}
+        {{--                        <div class="swiper-slide">--}}
+        {{--                            <div class="testimonial-item">--}}
+        {{--                                <img src="scss/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">--}}
+        {{--                                <h3>Saul Goodman</h3>--}}
+        {{--                                <h4>Ceo &amp; Founder</h4>--}}
+        {{--                                <div class="stars">--}}
+        {{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i>--}}
+        {{--                                </div>--}}
+        {{--                                <p>--}}
+        {{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+        {{--                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit--}}
+        {{--                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,--}}
+        {{--                                    risus at semper.--}}
+        {{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+        {{--                                </p>--}}
+        {{--                            </div>--}}
+        {{--                        </div><!-- End testimonial item -->--}}
 
-{{--                        <div class="swiper-slide">--}}
-{{--                            <div class="testimonial-item">--}}
-{{--                                <img src="scss/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">--}}
-{{--                                <h3>Sara Wilsson</h3>--}}
-{{--                                <h4>Designer</h4>--}}
-{{--                                <div class="stars">--}}
-{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i>--}}
-{{--                                </div>--}}
-{{--                                <p>--}}
-{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
-{{--                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid--}}
-{{--                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet--}}
-{{--                                    legam anim culpa.--}}
-{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
-{{--                                </p>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- End testimonial item -->--}}
+        {{--                        <div class="swiper-slide">--}}
+        {{--                            <div class="testimonial-item">--}}
+        {{--                                <img src="scss/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">--}}
+        {{--                                <h3>Sara Wilsson</h3>--}}
+        {{--                                <h4>Designer</h4>--}}
+        {{--                                <div class="stars">--}}
+        {{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i>--}}
+        {{--                                </div>--}}
+        {{--                                <p>--}}
+        {{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+        {{--                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid--}}
+        {{--                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet--}}
+        {{--                                    legam anim culpa.--}}
+        {{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+        {{--                                </p>--}}
+        {{--                            </div>--}}
+        {{--                        </div><!-- End testimonial item -->--}}
 
-{{--                        <div class="swiper-slide">--}}
-{{--                            <div class="testimonial-item">--}}
-{{--                                <img src="scss/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">--}}
-{{--                                <h3>Jena Karlis</h3>--}}
-{{--                                <h4>Store Owner</h4>--}}
-{{--                                <div class="stars">--}}
-{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i>--}}
-{{--                                </div>--}}
-{{--                                <p>--}}
-{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
-{{--                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem--}}
-{{--                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint--}}
-{{--                                    minim.--}}
-{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
-{{--                                </p>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- End testimonial item -->--}}
+        {{--                        <div class="swiper-slide">--}}
+        {{--                            <div class="testimonial-item">--}}
+        {{--                                <img src="scss/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">--}}
+        {{--                                <h3>Jena Karlis</h3>--}}
+        {{--                                <h4>Store Owner</h4>--}}
+        {{--                                <div class="stars">--}}
+        {{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i>--}}
+        {{--                                </div>--}}
+        {{--                                <p>--}}
+        {{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+        {{--                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem--}}
+        {{--                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint--}}
+        {{--                                    minim.--}}
+        {{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+        {{--                                </p>--}}
+        {{--                            </div>--}}
+        {{--                        </div><!-- End testimonial item -->--}}
 
-{{--                        <div class="swiper-slide">--}}
-{{--                            <div class="testimonial-item">--}}
-{{--                                <img src="scss/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">--}}
-{{--                                <h3>Matt Brandon</h3>--}}
-{{--                                <h4>Freelancer</h4>--}}
-{{--                                <div class="stars">--}}
-{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i>--}}
-{{--                                </div>--}}
-{{--                                <p>--}}
-{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
-{{--                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim--}}
-{{--                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem--}}
-{{--                                    dolore labore illum veniam.--}}
-{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
-{{--                                </p>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- End testimonial item -->--}}
+        {{--                        <div class="swiper-slide">--}}
+        {{--                            <div class="testimonial-item">--}}
+        {{--                                <img src="scss/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">--}}
+        {{--                                <h3>Matt Brandon</h3>--}}
+        {{--                                <h4>Freelancer</h4>--}}
+        {{--                                <div class="stars">--}}
+        {{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i>--}}
+        {{--                                </div>--}}
+        {{--                                <p>--}}
+        {{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+        {{--                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim--}}
+        {{--                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem--}}
+        {{--                                    dolore labore illum veniam.--}}
+        {{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+        {{--                                </p>--}}
+        {{--                            </div>--}}
+        {{--                        </div><!-- End testimonial item -->--}}
 
-{{--                        <div class="swiper-slide">--}}
-{{--                            <div class="testimonial-item">--}}
-{{--                                <img src="scss/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">--}}
-{{--                                <h3>John Larson</h3>--}}
-{{--                                <h4>Entrepreneur</h4>--}}
-{{--                                <div class="stars">--}}
-{{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
-{{--                                            class="bi bi-star-fill"></i>--}}
-{{--                                </div>--}}
-{{--                                <p>--}}
-{{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
-{{--                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster--}}
-{{--                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam--}}
-{{--                                    culpa fore nisi cillum quid.--}}
-{{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
-{{--                                </p>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- End testimonial item -->--}}
+        {{--                        <div class="swiper-slide">--}}
+        {{--                            <div class="testimonial-item">--}}
+        {{--                                <img src="scss/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">--}}
+        {{--                                <h3>John Larson</h3>--}}
+        {{--                                <h4>Entrepreneur</h4>--}}
+        {{--                                <div class="stars">--}}
+        {{--                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i--}}
+        {{--                                            class="bi bi-star-fill"></i>--}}
+        {{--                                </div>--}}
+        {{--                                <p>--}}
+        {{--                                    <i class="bi bi-quote quote-icon-left"></i>--}}
+        {{--                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster--}}
+        {{--                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam--}}
+        {{--                                    culpa fore nisi cillum quid.--}}
+        {{--                                    <i class="bi bi-quote quote-icon-right"></i>--}}
+        {{--                                </p>--}}
+        {{--                            </div>--}}
+        {{--                        </div><!-- End testimonial item -->--}}
 
-{{--                    </div>--}}
-{{--                    <div class="swiper-pagination"></div>--}}
-{{--                </div>--}}
+        {{--                    </div>--}}
+        {{--                    <div class="swiper-pagination"></div>--}}
+        {{--                </div>--}}
 
-{{--            </div>--}}
-{{--        </section><!-- End Testimonials Section -->--}}
+        {{--            </div>--}}
+        {{--        </section><!-- End Testimonials Section -->--}}
 
         <section class="home-showcase">
             <div class="swiper home-showcaseSlider">
@@ -1664,7 +1685,7 @@
     {{--                    </div>--}}
     {{--                </div>--}}
     {{--            </article>--}}
-{{--     start hero slide 2    --}}
+    {{--     start hero slide 2    --}}
     {{--            <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-3">--}}
     {{--                <div class="container"> <a class="navbar-brand font-weight-bold text-uppercase" href="#"></a>--}}
     {{--                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>--}}
@@ -2168,7 +2189,7 @@
     {{--                referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
     {{--    </div>--}}
 @endsection
-<script >
+<script>
     document.addEventListener('DOMContentLoaded', () => {
         new PureCounter();
     })
