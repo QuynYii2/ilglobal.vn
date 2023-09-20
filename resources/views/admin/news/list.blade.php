@@ -6,8 +6,8 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">{{ __('Home.Home') }}</a></li>
-                <li class="breadcrumb-item active">{{ __('Home.List News') }}</li>
+                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">{{ __('home.Home') }}</a></li>
+                <li class="breadcrumb-item active">{{ __('home.List News') }}</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -15,8 +15,8 @@
     <section class="section dashboard">
         <div class="row">
             <div class="mb-3">
-                <h5>{{ __('Home.Search') }}</h5>
-                <input class="form-control" id="inputSearchNews" type="text" placeholder="{{ __('Home.Search') }}..">
+                <h5>{{ __('home.Search') }}</h5>
+                <input class="form-control" id="inputSearchNews" type="text" placeholder="{{ __('home.Search') }}..">
                 <br>
             </div>
             <table class="table table-bordered" id="tableNews">
@@ -24,14 +24,14 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Image</th>
-                    <th scope="col">{{ __('Home.News Title') }}</th>
-                    <th scope="col">{{ __('Home.Category') }}</th>
-                    <th scope="col">{{ __('Home.Views') }}</th>
-                    <th scope="col">{{ __('Home.Create By') }}</th>
-                    <th scope="col">{{ __('Home.Create At') }}</th>
-                    <th scope="col">{{ __('Home.Active') }}</th>
-                    <th scope="col">{{ __('Home.Status') }}</th>
-                    <th scope="col">{{ __('Home.Action') }}</th>
+                    <th scope="col">{{ __('home.News Title') }}</th>
+                    <th scope="col">{{ __('home.Category') }}</th>
+                    <th scope="col">{{ __('home.Views') }}</th>
+                    <th scope="col">{{ __('home.Create By') }}</th>
+                    <th scope="col">{{ __('home.Create At') }}</th>
+                    <th scope="col">{{ __('home.Active') }}</th>
+                    <th scope="col">{{ __('home.Status') }}</th>
+                    <th scope="col">{{ __('home.Action') }}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -85,19 +85,19 @@
                                             @method('DELETE')
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">{{ __('Home.Confirm Delete') }}</h5>
+                                                    <h5 class="modal-title" id="exampleModalLabel">{{ __('home.Confirm Delete') }}</h5>
                                                     <button type="button" class="btn-close"
                                                             data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    {{ __('Home.Are you sure you want to delete it?') }}
+                                                    {{ __('home.Are you sure you want to delete it?') }}
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">{{ __('Home.Close') }}
+                                                            data-bs-dismiss="modal">{{ __('home.Close') }}
                                                     </button>
-                                                    <button type="submit" class="btn btn-danger">{{ __('Home.Delete') }}
+                                                    <button type="submit" class="btn btn-danger">{{ __('home.Delete') }}
                                                     </button>
                                                 </div>
                                             </div>

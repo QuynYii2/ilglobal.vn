@@ -1,9 +1,13 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="">
-            <span class="d-none d-lg-block"></span>
+        <a href="{{route('index')}}" class="logo d-flex align-items-center">
+            @php
+                $configs = \App\Models\Configs::where('status', \App\Enums\CategoryStatus::ACTIVE)->first();
+            @endphp
+            @if($configs)
+                <img src="{{asset($configs->logo)}}" alt="">
+            @endif
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -20,7 +24,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
                     <i class="bi bi-globe"></i>
-                    <span class="language">{{ __('Home.Language') }}</span>
+                    <span class="language">{{ __('home.Language') }}</span>
                 </a>
                 <!-- End Messages Icon -->
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
@@ -50,16 +54,17 @@
             </li><!-- End Messages Nav -->
 
             <li class="nav-item dropdown pe-3">
-
+                @php
+                    $user =  \App\Models\User::where('status', \App\Enums\UserStatus::ACTIVE)->first();
+                @endphp
                 <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                    <img src="https://static.thenounproject.com/png/4035892-200.png" alt="Profile" class="rounded-circle">
-                    <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                    <img src="{{$user->avt}}" alt="Profile" class="rounded-circle">
+                    <span class="d-none d-md-block dropdown-toggle ps-2">{{$user->name}}</span>
                 </a><!-- End Profile Iamge Icon -->
 
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                     <li class="dropdown-header">
-                        <h6>Kevin Anderson</h6>
-                        <span>Web Designer</span>
+                        <h6>{{$user->name}}</h6>
                     </li>
                     <li>
                         <hr class="dropdown-divider">
@@ -68,7 +73,7 @@
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="{{route('auth.logout')}}">
                             <i class="bi bi-box-arrow-right"></i>
-                            <span>{{ __('Home.Sign Out') }}</span>
+                            <span>{{ __('home.Sign Out') }}</span>
                         </a>
                     </li>
 

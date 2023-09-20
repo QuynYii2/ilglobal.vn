@@ -30,6 +30,7 @@ class ConfigsController extends Controller
             $address = $request->input('address');
             $zalo = $request->input('zalo');
             $facebook = $request->input('facebook');
+            $location = $request->input('location');
             $status = $request->input('status');
             $short_introduction_vi = $request->input('short_introduction_vi');
             $short_introduction_en = $request->input('short_introduction_en');
@@ -43,14 +44,22 @@ class ConfigsController extends Controller
                 $logo->move($destinationPath, $imageName);
                 $imageURL = asset('upload/images/' . $imageName);
             } else {
-                $imageURL = null;
+                if ($config){
+                    $imageURL = $config->logo;
+                } else{
+                    $imageURL = null;
+                }
             }
 
             if ($request->has('avatar')) {
                 $imagePath = $avatar->store('avatar', 'public');
                 $avatarURL = asset('storage/' . $imagePath);
             } else {
-                $avatarURL = null;
+                if ($config){
+                    $avatarURL = $config->avatar;
+                } else{
+                    $avatarURL = null;
+                }
             }
             if (!$config){
                 $configs = [
@@ -59,6 +68,7 @@ class ConfigsController extends Controller
                     'phone' => $phone,
                     'zalo' => $zalo,
                     'facebook' => $facebook,
+                    'location' => $location,
                     'address' => $address,
                     'cskh' => $cskh,
                     'name_company' => $name_company,
@@ -78,6 +88,7 @@ class ConfigsController extends Controller
                 $config->phone = $phone;
                 $config->zalo = $zalo;
                 $config->facebook = $facebook;
+                $config->location = $location;
                 $config->address = $address;
                 $config->cskh = $cskh;
                 $config->name_company = $name_company;

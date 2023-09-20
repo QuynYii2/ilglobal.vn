@@ -1,4 +1,9 @@
 <!-- ======= Footer ======= -->
+@if($configs)
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
+<a href="tel: {{$configs->phone}}" class="icon-contact-phone d-flex align-items-center justify-content-center"><img src="{{asset('assets/img/phone.png')}}" alt=""></a>
+<a href="{{$configs->zalo}}" class="icon-contact-zalo d-flex align-items-center justify-content-center"><img src="{{asset('assets/img/zalo.png')}}" alt=""></a>
+@endif
 <footer id="footer" class="footer">
 
     <div class="container">
@@ -6,15 +11,22 @@
             <div class="col-lg-5 col-md-12 footer-info">
                 @if($configs)
                     <a href="index.html" class="logo d-flex align-items-center">
-                            <span><img src="{{asset($configs->logo)}}" alt=""></span>
+                        <span><img src="{{asset($configs->logo)}}" alt=""></span>
                     </a>
-                    <p>{{$configs->short_introduction_vi}}</p>
+                    <p>
+                        @if(app()->getLocale() == 'vi')
+                            {{$configs->short_introduction_vi}}
+                        @else
+                            {{$configs->short_introduction_en}}
+                        @endif
+                    </p>
                 @endif
                 <div class="social-links d-flex mt-4">
-                    <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    @if($configs)
+                        <a href="tel: {{$configs->phone}}" class="phone" rel="nofollow" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                        <a href="{{$configs->facebook}}" class="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="{{$configs->zalo}}" class="zalo" target="_blank"><i class="fa-solid fa-comments"></i></a>
+                    @endif
                 </div>
             </div>
 
@@ -41,13 +53,12 @@
             </div>
 
             <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                <h4>Contact Us</h4>
+                <h4>{{ __('home.Contact Us') }}</h4>
                 <p>
-                    A108 Adam Street <br>
-                    New York, NY 535022<br>
-                    United States <br><br>
-                    <strong>Phone:</strong> +1 5589 55488 55<br>
-                    <strong>Email:</strong> info@example.com<br>
+                    {{$configs->address}}
+                    <br><br>
+                    <strong>Phone: </strong> {{$configs->phone}}<br>
+                    <strong>Email: </strong> {{$configs->email}}<br>
                 </p>
 
             </div>

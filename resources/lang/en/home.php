@@ -33,7 +33,7 @@ return [
     'Company Profile' => 'Company Profile',
     'Choose logo' => 'Choose logo',
     'Email' => 'Email',
-    'PhoneNumber' => 'PhoneNumber',
+    'PhoneNumber' => 'Phone Number',
     'CSKH' => 'CSKH',
     'Address' => 'Address',
     'Language' => 'Language',
@@ -102,4 +102,7 @@ return [
     'Service' => 'Service',
     'Show' => 'Show',
     'Hidden' => 'Hidden',
+    'Contact Us' => 'Contact Us',
+    'Location' => 'Location',
+    'Locate' => 'Locate',
 ];

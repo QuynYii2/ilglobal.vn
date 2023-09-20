@@ -20,7 +20,7 @@ class ServicesController extends Controller
     public function index()
     {
         $news = News::where('status', NewsStatus::ACTIVE)->get();
-        $menus = Menu::where('status', MenuStatus::ACTIVE)->get();
+        $menus = Menu::where('status', MenuStatus::ACTIVE)->first();
         $pages = Pages::where('status', PagesStatus::ACTIVE)->get();
         $cate = Category::where('status', CategoryStatus::ACTIVE)->get();
         $configs = Configs::where('status', ConfigStatus::ACTIVE)->first();

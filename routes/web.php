@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\frontend\ContactController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,9 +26,9 @@ Route::get('about', [\App\Http\Controllers\frontend\AboutController::class, 'ind
 
 //Route::get('pricing', [\App\Http\Controllers\frontend\PricingController::class, 'index'])->name('pricing');
 
-Route::get('contact', [\App\Http\Controllers\frontend\ContactController::class, 'index'])->name('contact');
+Route::get('contact', [ContactController::class, 'index'])->name('contact');
 
-Route::get('services', [\App\Http\Controllers\frontend\ServicesController::class, 'index'])->name('services');
+Route::get('news', [\App\Http\Controllers\frontend\ServicesController::class, 'index'])->name('services');
 
 Route::get('service-details/{id}', [\App\Http\Controllers\frontend\ServiceDetailsController::class, 'index'])->name('service-details');
 
@@ -46,6 +48,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'role.admin'], function () {
     require_once __DIR__ . '/admin.php';
 });
 
+Route::post('send-email', [\App\Http\Controllers\EmailController::class, 'sendEmail'])->name('send.email');
 
+Route::get('admin', [HomeController::class, 'index'])->name('admin.homepage');
 
-Route::get('admin', [\App\Http\Controllers\HomeController::class, 'index'])->name('admin.homepage');
+Route::post('create-contact', [ContactController::class, 'createContact'])->name('create.contact');

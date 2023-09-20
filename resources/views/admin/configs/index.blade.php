@@ -6,8 +6,8 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">{{ __('Home.Home') }}</a></li>
-                <li class="breadcrumb-item active">{{ __('Home.Company Profile') }}</li>
+                <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">{{ __('home.Home') }}</a></li>
+                <li class="breadcrumb-item active">{{ __('home.Company Profile') }}</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -18,7 +18,7 @@
                 @csrf
                 <div class="row">
                     <div class="form-group col-md-4">
-                        <label for="thumbnail">{{ __('Home.Choose logo') }}</label>
+                        <label for="thumbnail">{{ __('home.Choose logo') }}</label>
                         @if($config)
                             <input class="form-control" type="file" id="logo" name="logo"
                                    accept="image/*">
@@ -29,7 +29,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="thumbnail">{{ __('Home.Choose avatar') }}</label>
+                        <label for="thumbnail">{{ __('home.Choose avatar') }}</label>
                         @if($config)
                             <input class="form-control" type="file" id="avatar" name="avatar"
                                    accept="image/*">
@@ -40,7 +40,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="facebook">{{ __('Home.Name company') }}</label>
+                        <label for="facebook">{{ __('home.Name company') }}</label>
                         @if($config)
                             <input class="form-control" type="text" id="name_company" name="name_company" value="{{$config->name_company}}" >
                         @else
@@ -48,7 +48,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="email">{{ __('Home.Email') }}</label>
+                        <label for="email">{{ __('home.Email') }}</label>
                         @if($config)
                             <input class="form-control" type="email" id="email" name="email" value="{{$config->email}}" >
                         @else
@@ -56,7 +56,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="phone_number">{{ __('Home.PhoneNumber') }}</label>
+                        <label for="phone_number">{{ __('home.PhoneNumber') }}</label>
                         @if($config)
                             <input class="form-control" type="number" id="phone" name="phone" value="{{$config->phone}}" >
                         @else
@@ -64,7 +64,7 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="cskh">{{ __('Home.CSKH') }}</label>
+                        <label for="cskh">{{ __('home.CSKH') }}</label>
                         @if($config)
                             <input class="form-control" type="text" id="cskh" name="cskh" value="{{$config->cskh}}" >
                         @else
@@ -88,7 +88,15 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="address">{{ __('Home.Address') }}</label>
+                        <label for="facebook">{{ __('home.Locate') }}</label>
+                        @if($config)
+                            <input class="form-control" type="text" id="location" name="location" value="{{$config->location}}" >
+                        @else
+                            <input class="form-control" type="text" id="location" name="location" required>
+                        @endif
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="address">{{ __('home.Address') }}</label>
                         @if($config)
                             <input class="form-control" type="text" id="address" name="address" value="{{$config->address}}" >
                         @else
@@ -96,24 +104,24 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="selectStatus">{{ __('Home.Select status') }}</label>
+                        <label for="selectStatus">{{ __('home.Select status') }}</label>
                         <select class="form-select" id="selectStatus" name="status">
                             @if($config)
                                 @if($config->status == \App\Enums\ConfigStatus::ACTIVE)
-                                    <option value="{{\App\Enums\ConfigStatus::ACTIVE}}">{{ __('Home.ACTIVE') }}</option>
-                                    <option value="{{\App\Enums\ConfigStatus::INACTIVE}}">{{ __('Home.INACTIVE') }}</option>
+                                    <option value="{{\App\Enums\ConfigStatus::ACTIVE}}">{{ __('home.ACTIVE') }}</option>
+                                    <option value="{{\App\Enums\ConfigStatus::INACTIVE}}">{{ __('home.INACTIVE') }}</option>
                                 @else
-                                    <option value="{{\App\Enums\ConfigStatus::INACTIVE}}">{{ __('Home.INACTIVE') }}</option>
-                                    <option value="{{\App\Enums\ConfigStatus::ACTIVE}}">{{ __('Home.ACTIVE') }}</option>
+                                    <option value="{{\App\Enums\ConfigStatus::INACTIVE}}">{{ __('home.INACTIVE') }}</option>
+                                    <option value="{{\App\Enums\ConfigStatus::ACTIVE}}">{{ __('home.ACTIVE') }}</option>
                                 @endif
                             @else
-                                <option value="{{\App\Enums\ConfigStatus::ACTIVE}}">{{ __('Home.ACTIVE') }}</option>
-                                <option value="{{\App\Enums\ConfigStatus::INACTIVE}}">{{ __('Home.INACTIVE') }}</option>
+                                <option value="{{\App\Enums\ConfigStatus::ACTIVE}}">{{ __('home.ACTIVE') }}</option>
+                                <option value="{{\App\Enums\ConfigStatus::INACTIVE}}">{{ __('home.INACTIVE') }}</option>
                             @endif
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="short_content">{{ __('Home.Short Content') }} (VI)</label>
+                        <label for="short_content">{{ __('home.Short Content') }} (VI)</label>
                         @if($config)
                             <textarea type="text" class="form-control" name="short_introduction_vi"
                                       id="short_content"
@@ -125,7 +133,7 @@
                         @endif
                     </div>
                     <div class="form-group">
-                        <label for="short_content">{{ __('Home.Short Content') }} (EN)</label>
+                        <label for="short_content">{{ __('home.Short Content') }} (EN)</label>
                         @if($config)
                             <textarea type="text" class="form-control" name="short_introduction_en"
                                       id="short_content"
@@ -137,7 +145,7 @@
                         @endif
                     </div>
                     <div class="form-group">
-                        <label for="content">{{ __('Home.Content') }} (VI)</label>
+                        <label for="content">{{ __('home.Content') }} (VI)</label>
                         @if($config)
                             <textarea type="text" class="form-control description" name="introduce_vi" id="content"
                                       placeholder="Enter description" >{{$config->introduce_vi}}</textarea>
@@ -147,7 +155,7 @@
                         @endif
                     </div>
                     <div class="form-group">
-                        <label for="content">{{ __('Home.Content') }} (EN)</label>
+                        <label for="content">{{ __('home.Content') }} (EN)</label>
                         @if($config)
                             <textarea type="text" class="form-control description" name="introduce_en" id="content"
                                       placeholder="Enter description" >{{$config->introduce_en}}</textarea>
@@ -157,7 +165,7 @@
                         @endif
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">{{ __('Home.Create') }}</button>
+                <button type="submit" class="btn btn-primary mt-3">{{ __('home.Create') }}</button>
             </form>
         </div>
     </section>
