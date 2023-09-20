@@ -41,7 +41,9 @@ a {
     color: var(--color-primary);
     text-decoration: none !important;
 }
-
+.modal-backdrop {
+    z-index: 5!important;
+}
 
 a:hover {
     color: #406aff;
@@ -196,13 +198,35 @@ section h2{
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
+.icon-contact-phone{
+    position: fixed;
+    right: 15px;
+    bottom: 70px;
+    z-index: 5;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+.icon-contact-zalo{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 5;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
 .scroll-top {
     position: fixed;
     visibility: hidden;
     opacity: 0;
     right: 15px;
-    bottom: 15px;
-    z-index: 99999;
+    bottom: 125px;
+    z-index: 5;
     background: var(--color-primary);
     width: 40px;
     height: 40px;

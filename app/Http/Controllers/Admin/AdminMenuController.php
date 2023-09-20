@@ -17,13 +17,15 @@ class AdminMenuController extends Controller
 {
     public function index()
     {
+        $categories = Category::where('status','!=', CategoryStatus::DELETED)->get();
+        $pages = Pages::where('status','!=', PagesStatus::DELETED)->get();
         $listMenu = Menu::where('status', '!=', MenuStatus::DELETED)->get();
-        return view('admin.menu.list', compact('listMenu'));
+        return view('admin.menu.list', compact('listMenu','categories','pages'));
     }
 
     public function processCreate()
     {
-        $categories = Category::where('status', CategoryStatus::ACTIVE)->get();
+        $categories = Category::where('status', CategoryStatus::ACTIVE)->where('parent_id', null)->get();
         $pages = Pages::where('status', PagesStatus::ACTIVE)->get();
         return view('admin.menu.create', compact('categories', 'pages'));
     }
@@ -35,7 +37,7 @@ class AdminMenuController extends Controller
             $title_en = $request->input('title_en');
             $url = $request->input('url');
             $status = $request->input('status');
-
+            $arrange = $request->input('arrange');
             $key = $request->input('key');
             $location = $request->input('location');
 
@@ -45,6 +47,7 @@ class AdminMenuController extends Controller
                         'title_vi' => $title_vi,
                         'title_en' => $title_en,
                         'url' => $url,
+                        'arrange' => $arrange,
                         'key' => 'category',
                         'status' => $status,
                         'location' => $location,
@@ -56,6 +59,7 @@ class AdminMenuController extends Controller
                         'title_vi' => $title_vi,
                         'title_en' => $title_en,
                         'url' => $url,
+                        'arrange' => $arrange,
                         'key' => 'page',
                         'status' => $status,
                         'location' => $location,
@@ -67,6 +71,7 @@ class AdminMenuController extends Controller
                         'title_vi' => $title_vi,
                         'title_en' => $title_en,
                         'url' => $url,
+                        'arrange' => $arrange,
                         'key' => 'default',
                         'status' => $status,
                         'location' => $location,
@@ -105,12 +110,14 @@ class AdminMenuController extends Controller
             $title_vi = $request->input('title_vi');
             $title_en = $request->input('title_en');
             $url = $request->input('url');
+            $arrange = $request->input('arrange');
             $status = $request->input('status');
 
             $menu->title_vi = $title_vi;
             $menu->title_en = $title_en;
 
             $menu->url = $url;
+            $menu->arrange = $arrange;
             $menu->status = $status;
             $success = $menu->save();
             if ($success) {

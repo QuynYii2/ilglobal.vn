@@ -20,11 +20,10 @@ class PricingController extends Controller
     public function index()
     {
         $news = News::where('status', NewsStatus::ACTIVE)->get();
-        $menus = Menu::where('status', MenuStatus::ACTIVE)->get();
         $pages = Pages::where('status', PagesStatus::ACTIVE)->get();
         $cate = Category::where('status', CategoryStatus::ACTIVE)->get();
         $configs = Configs::where('status', ConfigStatus::ACTIVE)->first();
         $banners = Banners::all();
-        return view('frontend.layouts.pricing', compact('news', 'menus', 'pages', 'configs', 'banners','cate'));
+        return view('frontend.layouts.pricing', compact('news', 'pages', 'configs', 'banners','cate'));
     }
 }

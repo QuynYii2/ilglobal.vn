@@ -7,8 +7,8 @@
     <div class="pagetitle">
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="">{{ __('Home.Home') }}</a></li>
-                <li class="breadcrumb-item active">{{ __('Home.List Banners') }}</li>
+                <li class="breadcrumb-item"><a href="">{{ __('home.Home') }}</a></li>
+                <li class="breadcrumb-item active">{{ __('home.List Banners') }}</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
@@ -16,17 +16,17 @@
     <section class="section dashboard">
         <div class="row">
             <div class="mb-3">
-                <h5>{{ __('Home.Search') }}</h5>
-                <input class="form-control" id="inputSearchNews" type="text" placeholder="{{ __('Home.Search') }}">
+                <h5>{{ __('home.Search') }}</h5>
+                <input class="form-control" id="inputSearchNews" type="text" placeholder="{{ __('home.Search') }}">
                 <br>
             </div>
             <table class="table table-bordered" id="tableNews">
                 <thead>
                 <tr>
-                    <th scope="col">{{ __('Home.ID') }}</th>
-                    <th scope="col">{{ __('Home.Banner Image') }}</th>
-                    <th scope="col">{{ __('Home.Created At') }}</th>
-                    <th scope="col">{{ __('Home.Updated At') }}</th>
+                    <th scope="col">{{ __('home.ID') }}</th>
+                    <th scope="col">{{ __('home.Banner Image') }}</th>
+                    <th scope="col">{{ __('home.Created At') }}</th>
+                    <th scope="col">{{ __('home.Updated At') }}</th>
                 </tr>
                 </thead>
                 <tbody>

@@ -17,6 +17,7 @@ class Configs extends Model
         'address',
         'cskh',
         'facebook',
+        'location',
         'zalo',
         'short_introduction_vi',
         'short_introduction_en',

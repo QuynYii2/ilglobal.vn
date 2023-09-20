@@ -33,7 +33,7 @@ return [
     'Company Profile' => 'Hồ sơ công ty',
     'Choose logo' => 'Chọn logo',
     'Email' => 'Email',
-    'PhoneNumber' => 'PhoneNumber',
+    'PhoneNumber' => 'Phone',
     'CSKH' => 'CSKH',
     'Address' => 'Địa chỉ',
     'Language' => 'Ngôn ngữ',
@@ -99,4 +99,8 @@ return [
     'Service' => 'Dịch vụ',
     'Show' => 'Hiện',
     'Hidden' => 'Ẩn',
+    'Contact Us' => 'Liên hệ',
+    'Location' => 'Địa chỉ',
+    'Locate' => 'Định vị',
+
 ];
