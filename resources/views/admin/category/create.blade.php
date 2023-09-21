@@ -23,7 +23,7 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="name_en">{{ __('home.Category Title') }} (EN)</label>
-                        <input class="form-control" type="text" id="name_en" name="name_en" >
+                        <input class="form-control" type="text" id="name_en" name="name_en">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="selectStatus">{{ __('home.Select status') }}</label>
@@ -50,13 +50,40 @@
                         <input class="form-control" type="file" id="thumbnail" name="thumbnail"
                                accept="image/*">
                     </div>
+                    <div class="col-md-3 form-group d-none" id="divSttCategory">
+                        <label for="parent_id">{{ __('home.Choose location...') }}</label>
+                        <select class="form-select disabled" id="sttCategory" name="sttCategory">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label for="check_box">Check</label>
-                        <input type="checkbox" id="check" name="check" value="1"/>
+                        <input type="checkbox" id="check_box" name="check" value="1"/>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">{{ __('home.Create') }}</button>
             </form>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#check_box').on('change', function () {
+                let divSttCategory = $('#divSttCategory');
+                let sttCategory = $('#sttCategory');
+                if ($(this).is(":checked")) {
+                    divSttCategory.removeClass('d-none');
+                    sttCategory.prop("disabled", false);
+                } else {
+                    divSttCategory.addClass('d-none');
+                    sttCategory.prop("disabled", true);
+                }
+            })
+        })
+    </script>
 @endsection

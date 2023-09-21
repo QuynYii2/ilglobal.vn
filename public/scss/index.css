@@ -17,6 +17,30 @@
     --font-secondary: "Poppins", sans-serif;
 }
 
+.modal-dialog{
+    max-width: 80vw !important;
+}
+
+.modal-dialog .modal-body .modal-title{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.modal-dialog .modal-body a{
+    height: 16vh;
+}
+
+.modal-dialog .modal-body a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.modal-dialog .modal-body a img:hover{
+    transform: scale(1.05);
+    border: none;
+}
+
 /* Colors */
 :root {
     --color-default: #0a0d13;
@@ -35,6 +59,16 @@
 body {
     font-family: var(--font-default);
     color: var(--color-default);
+}
+.parents .img{
+    padding: 30px;
+    height: 35vh;
+}
+.parents .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #eeeeee;
 }
 
 a {
@@ -75,6 +109,7 @@ section h2{
     text-align: center;
     font-weight: bold;
     color: #001f8d;
+    text-transform: uppercase;
 }
 
 .section-header {
@@ -517,12 +552,15 @@ section h2{
 
 .services .card .card-img {
     overflow: hidden;
-    margin-bottom: 15px;
     border-radius: 0;
+    height: 25vh;
 }
 
 .services .card .card-img img {
     transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .services .card h3 {
@@ -533,8 +571,20 @@ section h2{
     text-transform: uppercase;
 }
 
+.services .card .title{
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px;
+}
+
 .services .card a {
     color: #001973;
+    height: 50px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
 .services .card a:hover {
@@ -542,10 +592,15 @@ section h2{
 }
 
 .services .card p {
-    padding: 0 30px;
-    margin-bottom: 30px;
+    padding: 0 10px;
     color: var(--color-secondary);
     font-size: 15px;
+    height: 70px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
 .services .card:hover .card-img img {
@@ -1248,13 +1303,14 @@ section h2{
     line-height: 1;
     padding: 8px 0 8px 15px;
     border-left: 3px solid #c2cbdf;
-    margin: 20px 0;
+    margin: 10px 0;
     color: var(--color-secondary);
     transition: 0.3s;
 }
 
 .service-details .services-list a.active {
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 15px;
     border-color: var(--color-primary);
 }
 
@@ -1397,6 +1453,7 @@ section h2{
 # Footer
 --------------------------------------------------------------*/
 .footer {
+    margin-top: 20px;
     font-size: 14px;
     background-color: var(--color-secondary);
     padding: 50px 0;

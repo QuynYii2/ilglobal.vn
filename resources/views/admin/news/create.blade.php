@@ -53,10 +53,10 @@
                                 </label>
                                 @if(!$categories->isEmpty())
                                     @php
-                                        $categories = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', $category->id)->get();
+                                        $listChild = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', $category->id)->get();
                                     @endphp
-                                    @foreach($categories as $child)
-                                        <label class="category-child" for="category-{{$child->id}}">
+                                    @foreach($listChild as $child)
+                                        <label class="category-child mr-2" for="category-{{$child->id}}">
                                             <input type="checkbox" id="category-{{$child->id}}"
                                                    name="category[]"
                                                    value="{{$child->id}}"
