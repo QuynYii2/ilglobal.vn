@@ -95,7 +95,8 @@
                             <select id="url" class="form-select" name="url">
                                 @if($categories->isNotEmpty())
                                     @foreach($categories as $category)
-                                        <option value="{{$category->id)}}">{{$category->name_vi}}</option>
+                                        <option value="{{$category->id}}">
+                                            {{$category->name_vi}}</option>
                                     @endforeach
                                 @endif
                             </select>
@@ -143,7 +144,7 @@
                             <select id="url" class="form-select" name="url">
                                 @if($pages->isNotEmpty())
                                     @foreach($pages as $page)
-                                        <option value="{{$page->id)}}">{{$page->title_vi}}</option>
+                                        <option value="{{$page->id}}">{{$page->title_vi}}</option>
                                     @endforeach
                                 @endif
                             </select>

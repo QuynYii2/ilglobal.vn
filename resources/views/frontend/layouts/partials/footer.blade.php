@@ -2,7 +2,7 @@
 @if($configs)
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
 <a href="tel: {{$configs->phone}}" class="icon-contact-phone d-flex align-items-center justify-content-center"><img src="{{asset('assets/img/phone.png')}}" alt=""></a>
-<a href="{{$configs->zalo}}" class="icon-contact-zalo d-flex align-items-center justify-content-center"><img src="{{asset('assets/img/zalo.png')}}" alt=""></a>
+<a href="zalo://chat?to={{$configs->zalo}}" class="icon-contact-zalo d-flex align-items-center justify-content-center"><img src="{{asset('assets/img/zalo.png')}}" alt=""></a>
 @endif
 <footer id="footer" class="footer">
 
@@ -29,26 +29,39 @@
                     @endif
                 </div>
             </div>
+            @php
+                $listNew = \App\Models\News::where('status', \App\Enums\NewsStatus::ACTIVE)->limit(5)->get();
+                $listService = \App\Models\Category::where('status', \App\Enums\CategoryStatus::ACTIVE)->where('parent_id', '!=', null)->orderByDesc('id')->limit(5)->get();
+            @endphp
 
             <div class="col-lg-2 col-6 footer-links">
-                <h4>Useful Links</h4>
+                <h4>{{ __('home.Service') }}</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    @foreach($listService as $service)
+                        <li>
+                            <a href="/">
+                                @if(app()->getLocale() == 'vi')
+                                    {{$service->name_vi}}
+                                @else
+                                    {{$service->name_en}}
+                                @endif
+                            </a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
-
             <div class="col-lg-2 col-6 footer-links">
-                <h4>Our Services</h4>
+                <h4>{{ __('home.News') }}</h4>
                 <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
+                    @foreach($listNew as $new)
+                        <li><a href="{{route('service-details', $new->id)}}">
+                        @if(app()->getLocale() == 'vi')
+                            {{$new->title_vi}}
+                        @else
+                            {{$new->title_en}}
+                        @endif
+                        </a></li>
+                    @endforeach
                 </ul>
             </div>
 
@@ -57,8 +70,8 @@
                 <p>
                     {{$configs->address}}
                     <br><br>
-                    <strong>Phone: </strong> {{$configs->phone}}<br>
-                    <strong>Email: </strong> {{$configs->email}}<br>
+                    <strong>Phone:  </strong> {{$configs->phone}}<br>
+                    <strong>Email:  </strong> {{$configs->email}}<br>
                 </p>
 
             </div>
@@ -69,13 +82,6 @@
     <div class="container mt-4">
         <div class="copyright">
             &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
     </div>
 

@@ -43,7 +43,7 @@
 <body class="animsition">
 
 <!-- Header -->
-@include('frontend.layouts.partials.header'))
+@include('frontend.layouts.partials.header')
 <!-- Content -->
 @yield('main-content')
 

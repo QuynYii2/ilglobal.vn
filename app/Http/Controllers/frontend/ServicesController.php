@@ -27,4 +27,14 @@ class ServicesController extends Controller
         $banners = Banners::all();
         return view('frontend.layouts.services', compact('news', 'menus', 'pages', 'configs', 'banners','cate'));
     }
+
+    public function detail($id){
+        $news = News::whereRaw("FIND_IN_SET(?, news.category_vi)", [$id])->where('status', NewsStatus::ACTIVE)->get();
+        $menus = Menu::where('status', MenuStatus::ACTIVE)->first();
+        $pages = Pages::where('status', PagesStatus::ACTIVE)->get();
+        $cate = Category::where('status', CategoryStatus::ACTIVE)->get();
+        $configs = Configs::where('status', ConfigStatus::ACTIVE)->first();
+        $banners = Banners::all();
+        return view('frontend.layouts.service-news', compact('news', 'menus', 'pages', 'configs', 'banners','cate'));
+    }
 }

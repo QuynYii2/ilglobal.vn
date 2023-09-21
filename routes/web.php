@@ -29,6 +29,7 @@ Route::get('about', [\App\Http\Controllers\frontend\AboutController::class, 'ind
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 
 Route::get('news', [\App\Http\Controllers\frontend\ServicesController::class, 'index'])->name('services');
+Route::get('news-service/{id}', [\App\Http\Controllers\frontend\ServicesController::class, 'detail'])->name('news.services');
 
 Route::get('service-details/{id}', [\App\Http\Controllers\frontend\ServiceDetailsController::class, 'index'])->name('service-details');
 

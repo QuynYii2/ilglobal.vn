@@ -105,4 +105,11 @@ return [
     'Contact Us' => 'Contact Us',
     'Location' => 'Location',
     'Locate' => 'Locate',
+    'Track&Trace' => 'Track&Trace',
+    'Create Track&Trace' => 'Create Track&Trace',
+    'Edit Track&Trace' => 'Edit Track&Trace',
+    'List Track&Trace' => 'List Track&Trace',
+    'Send' => 'Send',
+    'List of shipping companies' => 'List of shipping companies',
+    'Partner Association' => 'Partner Association',
 ];

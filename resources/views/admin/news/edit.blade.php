@@ -51,7 +51,6 @@
                             $categories = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', null)->get();
                         @endphp
                         <div id="checkboxes">
-
                             @foreach($categories as $category)
                                 @php
                                     $isChecked = null;
@@ -65,16 +64,15 @@
                                 <label class="category" for="category-{{$category->id}}">
                                     <input type="checkbox" id="category-{{$category->id}}"
                                            name="category[]"
-                                           value="{{$category->id}}"
-                                           {{ $isChecked ? 'checked' : '' }}
+                                           value="{{$category->id}}" {{ $isChecked ? 'checked' : '' }}
                                            class="inputCheckboxCategory mr-2 p-3"/>
                                     <span class="labelCheckboxCategory">{{($category->name_vi)}}</span>
                                 </label>
                                 @if(!$categories->isEmpty())
                                     @php
-                                        $categories = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', $category->id)->get();
+                                        $listChild = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', $category->id)->get();
                                     @endphp
-                                    @foreach($categories as $child)
+                                    @foreach($listChild as $child)
                                         @php
                                             $isChecked1 = null;
                                             $value1 = explode(',', $news->category_vi);
@@ -84,11 +82,10 @@
                                                     }
                                                 }
                                         @endphp
-                                        <label class="category-child" for="category-{{$child->id}}">
+                                        <label class="category-child mr-2" for="category-{{$child->id}}">
                                             <input type="checkbox" id="category-{{$child->id}}"
                                                    name="category[]"
-                                                   value="{{$child->id}}"
-                                                   {{ $isChecked1 ? 'checked' : '' }}
+                                                   value="{{$child->id}}" {{ $isChecked1 ? 'checked' : '' }}
                                                    class="inputCheckboxCategory mr-2 p-3"/>
                                             <span class="labelCheckboxCategory">{{($child->name_vi)}}</span>
                                         </label>

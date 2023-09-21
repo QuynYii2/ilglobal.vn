@@ -17,6 +17,7 @@ class Category extends Model
         'status',
         'thumbnail',
         'check',
+        'stt',
     ];
 
     public function cate()

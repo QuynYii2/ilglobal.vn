@@ -20,7 +20,7 @@ class CategoryController extends Controller
     public function create()
     {
         $listCategory = Category::where('status', '!=', CategoryStatus::DELETED)->get();
-        return view('admin.category.create',compact('listCategory'));
+        return view('admin.category.create', compact('listCategory'));
     }
 
 
@@ -34,6 +34,8 @@ class CategoryController extends Controller
             $check = $request->input('check');
             $status = $request->input('status');
 
+            $sttCategory = $request->input('sttCategory');
+
             if ($thumbnail) {
                 $imageName = time() . '.' . $thumbnail->getClientOriginalExtension();
                 $destinationPath = public_path('upload/images');
@@ -42,11 +44,11 @@ class CategoryController extends Controller
             } else {
                 $imageURL = null;
             }
-            if ($parent_id == '0'){
+            if ($parent_id == '0') {
                 $parent_id = null;
             }
-            if (!$check){
-                $check=0;
+            if (!$check) {
+                $check = 0;
             }
 
             $category = [
@@ -56,6 +58,7 @@ class CategoryController extends Controller
                 'status' => $status,
                 'thumbnail' => $imageURL,
                 'check' => $check,
+                'stt' => $sttCategory,
                 'user_id' => Auth::user()->id,
             ];
 
@@ -79,7 +82,7 @@ class CategoryController extends Controller
         if (!$cate || $cate->status == CategoryStatus::DELETED) {
             return redirect(route('not.found'));
         }
-        return view('admin.category.edit', compact('cate','listCategory'));
+        return view('admin.category.edit', compact('cate', 'listCategory'));
     }
 
     public function update(Request $request, $id)
@@ -94,15 +97,20 @@ class CategoryController extends Controller
             $thumbnail = $request->file('thumbnail');
             $check = $request->input('check');
 
-            if ($parent_id == '0'){
+            $sttCategory = $request->input('sttCategory');
+            if (!$sttCategory) {
+                $sttCategory = $cate->stt;
+            }
+
+            if ($parent_id == '0') {
                 $parent_id = null;
             }
 
-            if ($cate->parent_id != $parent_id){
+            if ($cate->parent_id != $parent_id) {
                 $cate->parent_id = $parent_id;
             }
-            if (!$check){
-                $check=0;
+            if (!$check) {
+                $check = 0;
             }
             if ($thumbnail) {
                 $imageName = time() . '.' . $thumbnail->getClientOriginalExtension();
@@ -114,6 +122,7 @@ class CategoryController extends Controller
             }
             $cate->thumbnail = $imageURL;
             $cate->name_vi = $name_vi;
+            $cate->stt = $sttCategory;
             $cate->name_en = $name_en;
             $cate->status = $status;
             $cate->check = $check;
@@ -133,7 +142,7 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function delete($id)

@@ -25,7 +25,7 @@ return [
     'Category Parent' => 'Chuyên mục cha',
     'Active' => 'Active',
     'Status' => 'Trạng thái',
-    'Action' => 'Hoạt động',
+    'Action' => 'Hành động',
     'Confirm Delete' => 'Xác nhận xóa',
     'Are you sure you want to delete it?' => 'Bạn có chắc chắn muốn xóa nó?',
     'Close' => 'Đóng',
@@ -102,5 +102,12 @@ return [
     'Contact Us' => 'Liên hệ',
     'Location' => 'Địa chỉ',
     'Locate' => 'Định vị',
+    'Track&Trace' => 'Track&Trace',
+    'Create Track&Trace' => 'Tạo Track&Trace',
+    'Edit Track&Trace' => 'Sửa Track&Trace',
+    'List Track&Trace' => 'Danh sách Track&Trace',
+    'Send' => 'Gửi',
+    'List of shipping companies' => 'Danh sách hãng tàu',
+    'Partner Association' => 'Hiệp hội đối tác',
 
 ];
