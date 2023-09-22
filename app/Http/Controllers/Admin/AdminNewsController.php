@@ -37,7 +37,9 @@ class AdminNewsController extends Controller
             } else {
                 $imageURL = null;
             }
-            $listCategory = implode(',',$category);
+            if ($category){
+                $listCategory = implode(',',$category);
+            }
             $news = [
                 'title_vi' => $title_vi,
                 'title_en' => $title_en,

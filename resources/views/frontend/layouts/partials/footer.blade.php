@@ -68,10 +68,12 @@
             <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                 <h4>{{ __('home.Contact Us') }}</h4>
                 <p>
-                    {{$configs->address}}
-                    <br><br>
-                    <strong>Phone:  </strong> {{$configs->phone}}<br>
-                    <strong>Email:  </strong> {{$configs->email}}<br>
+                    @if($configs)
+                        {{$configs->address}}
+                        <br><br>
+                        <strong>Phone:  </strong> {{$configs->phone}}<br>
+                        <strong>Email:  </strong> {{$configs->email}}<br>
+                    @endif
                 </p>
 
             </div>

@@ -42,18 +42,34 @@
                             <td>
                                 <img src="{{$news->thumbnail}}" alt="" width="60px" height="60px">
                             </td>
-                            <td>{{$news->title_vi}}</td>
+                            <td>
+                                @if(app()->getLocale() == 'vi')
+                                    {{$news->title_vi}}
+                                @else
+                                    {{$news->title_en}}
+                                @endif
+                            </td>
+
                             @php
                                 $listCate = $news->category_vi;
-                                $cates = explode(',', $listCate);
+                                $cates = null;
+                                if($listCate){
+                                    $cates = explode(',', $listCate);
+                                }
                             @endphp
                             <td>
-                            @foreach($cates as $cate)
-                                @php
-                                    $category = \App\Models\Category::find($cate);
-                                @endphp
-                            <span>{{$category->name_vi}}</span>,</br>
-                            @endforeach
+                                @if($cates)
+                                    @foreach($cates as $cate)
+                                        @php
+                                            $category = \App\Models\Category::find($cate);
+                                        @endphp
+                                        @if($category)
+                                            <span>{{$category->name_vi}}</span></br>
+                                        @else
+                                            -
+                                        @endif
+                                    @endforeach
+                                @endif
                             </td>
                             <td class="text-center">{{$news->views}}</td>
                             <td>{{$news->user->name}}</td>

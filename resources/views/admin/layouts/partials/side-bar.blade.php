@@ -105,7 +105,7 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#track-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-images"></i><span>{{ __('home.Track&Trace') }}</span><i
+                <i class="bi bi-truck"></i><span>{{ __('home.Track&Trace') }}</span><i
                         class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="track-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
@@ -124,17 +124,17 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#partner-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-images"></i><span>Partner</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-people-fill"></i><span>Partner</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="partner-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
                     <a href="{{route('admin.partner.list')}}">
-                        <i class="bi bi-circle"></i><span>{{ __('home.List Parents') }}</span>
+                        <span>{{ __('home.List Parents') }}</span>
                     </a>
                 </li>
                 <li>
                     <a href="{{route('admin.partner.processCreate')}}">
-                        <i class="bi bi-circle"></i><span>{{ __('home.Create Parents') }}</span>
+                        <span>{{ __('home.Create Parents') }}</span>
                     </a>
                 </li>
             </ul>

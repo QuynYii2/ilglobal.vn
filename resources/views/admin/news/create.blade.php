@@ -42,31 +42,50 @@
                         @php
                             $categories = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', null)->get();
                         @endphp
+                        @if($categories->isNotEmpty())
                         <div id="checkboxes">
-                            @foreach($categories as $category)
-                                <label class="category" for="category-{{$category->id}}">
-                                    <input type="checkbox" id="category-{{$category->id}}"
-                                           name="category[]"
-                                           value="{{$category->id}}"
-                                           class="inputCheckboxCategory mr-2 p-3"/>
-                                    <span class="labelCheckboxCategory">{{($category->name_vi)}}</span>
-                                </label>
-                                @if(!$categories->isEmpty())
-                                    @php
-                                        $listChild = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', $category->id)->get();
-                                    @endphp
-                                    @foreach($listChild as $child)
-                                        <label class="category-child mr-2" for="category-{{$child->id}}">
-                                            <input type="checkbox" id="category-{{$child->id}}"
-                                                   name="category[]"
-                                                   value="{{$child->id}}"
-                                                   class="inputCheckboxCategory mr-2 p-3"/>
-                                            <span class="labelCheckboxCategory">{{($child->name_vi)}}</span>
-                                        </label>
-                                    @endforeach
-                                @endif
-                            @endforeach
+                                @foreach($categories as $category)
+                                    <label class="category" for="category-{{$category->id}}">
+                                        <input type="checkbox" id="category-{{$category->id}}"
+                                               name="category[]"
+                                               value="{{$category->id}}"
+                                               class="inputCheckboxCategory mr-2 p-3" required/>
+                                        <span class="labelCheckboxCategory">
+                                            @if(app()->getLocale() == 'vi')
+                                                {{$category->name_vi}}
+                                            @else
+                                                {{$category->name_en}}
+                                            @endif
+                                        </span>
+                                    </label>
+                                    @if(!$categories->isEmpty())
+                                        @php
+                                            $listChild = \Illuminate\Support\Facades\DB::table('categories')->where('parent_id', $category->id)->get();
+                                        @endphp
+                                        @foreach($listChild as $child)
+                                            <label class="category-child mr-2" for="category-{{$child->id}}">
+                                                <input type="checkbox" id="category-{{$child->id}}"
+                                                       name="category[]"
+                                                       value="{{$child->id}}"
+                                                       class="inputCheckboxCategory mr-2 p-3"/>
+                                                <span class="labelCheckboxCategory">
+                                                    @if(app()->getLocale() == 'vi')
+                                                        {{$child->name_vi}}
+                                                    @else
+                                                        {{$child->name_en}}
+                                                    @endif
+                                                </span>
+                                            </label>
+                                        @endforeach
+                                    @endif
+                                @endforeach
                         </div>
+                        @else
+                            <div>
+                                <input class="form-control" type="text" disabled>
+                                <div style="color: red; font-size: 14px; margin-top: 5px">{{ __('home.Please create a category') }}</div>
+                            </div>
+                        @endif
                     </div>
                 </div>
                 <div class="form-group">
