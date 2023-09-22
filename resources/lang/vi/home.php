@@ -109,5 +109,8 @@ return [
     'Send' => 'Gửi',
     'List of shipping companies' => 'Danh sách hãng tàu',
     'Partner Association' => 'Hiệp hội đối tác',
-
+    'Please create a category' => 'Vui lòng tạo chuyên mục',
+    'List Parents' => 'Danh sách đối tác',
+    'Create Parents' => 'Tạo mới danh sách đối tác',
+    'Edit Parents' => 'Chỉnh sửa đối tác',
 ];

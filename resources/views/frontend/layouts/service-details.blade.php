@@ -33,7 +33,7 @@
             </div>
           </div>
 
-          <div class="col-lg-9">
+          <div class="col-lg-9 content-long">
             <h3 class="mb-3">
               @if(app()->getLocale() == 'vi')
                 {{$productDetail->title_vi}}
@@ -41,7 +41,6 @@
                 {{$productDetail->title_en}}
               @endif
             </h3>
-            <img src="{{$productDetail->thumbnail}}" alt="" class="mb-3" style="width: 100%">
             <p>
               @if(app()->getLocale() == 'vi')
                 {{$productDetail->short_content_vi}}
@@ -49,6 +48,9 @@
                 {{$productDetail->short_content_en}}
               @endif
             </p>
+            <div class="avt-detail">
+              <img src="{{$productDetail->thumbnail}}" alt="" class="mb-3">
+            </div>
             <p>
               @if(app()->getLocale() == 'vi')
                 {!! ($productDetail->content_vi) !!}

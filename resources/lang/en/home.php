@@ -112,4 +112,8 @@ return [
     'Send' => 'Send',
     'List of shipping companies' => 'List of shipping companies',
     'Partner Association' => 'Partner Association',
+    'Please create a category' => 'Please create a category',
+    'List Parents' => 'List Parents',
+    'Create Parents' => 'Create Parents',
+    'Edit Parents' => 'Edit Parents',
 ];

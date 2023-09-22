@@ -7,7 +7,7 @@
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.homepage')}}">{{ __('home.Home') }}</a></li>
-                <li class="breadcrumb-item active">{{ __('home.Create Partner') }}</li>
+                <li class="breadcrumb-item active">{{ __('home.Create Parents') }}</li>
             </ol>
         </nav>
     </div><!-- End Page Title -->
